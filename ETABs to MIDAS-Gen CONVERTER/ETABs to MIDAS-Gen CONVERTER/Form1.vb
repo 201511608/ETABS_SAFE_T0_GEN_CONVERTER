@@ -4708,7 +4708,7 @@ Public Class Form1
                         & vbNewLine & " " _
                         & vbNewLine & "SAFE" _
                         & vbNewLine & "1. SAFE .f2k file Must generete from SAFE (FILE->EXPORT MODEL-> SAFE .F2K > Check All In Table  -> ClickOK -> SAVE .f2k |Open this file through Converter)" _
-                        & vbNewLine & "2. Prefer SAFE 12 version to generate .f2k files and then convert f2k -> mgt" _
+                        & vbNewLine & "2. Works on any version.If not works then Prefer SAFE 12 version to generate .f2k files and then convert f2k -> mgt" _
                         & vbNewLine & "3. Meshing Should be done wherever required" _
                         & vbNewLine & "4. If type of loading is not found in GEN it will be considered as other load" _
                         & vbNewLine & "5. Earthquake Loading and Wind Loading Should be generated as per requirement." _
