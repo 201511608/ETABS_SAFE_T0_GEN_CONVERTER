@@ -2096,13 +2096,13 @@ Public Class Form1
                     dtMPO_read.Rows.Add(mc(b), mc(b + 1), mc(b + 2), mc(b + 3), mc(b + 4))
                 Next
 
-                '''''''''''''''''''''''''''''''''''''''''''''''''''
-            ElseIf words(a).Contains("""SLAB PROPERTIES 01 - GENERAL""") Then
-                temp = words(a).Remove(2, ("""SLAB PROPERTIES 01 - GENERAL""").Length)
-                Dim mc As MatchCollection = Regex.Matches(temp, "((?<==)[\w\.+-]+)")
-                For b = 0 To mc.Count - 1 Step 3
-                    dtSPG_read.Rows.Add(mc(b), mc(b + 1), mc(b + 2))
-                Next
+                '''''''''''''''''''''''''''''''''''''''''''''''''''  NOTREQUIRED
+                'ElseIf words(a).Contains("""SLAB PROPERTIES 01 - GENERAL""") Then
+                '    temp = words(a).Remove(2, ("""SLAB PROPERTIES 01 - GENERAL""").Length)
+                '    Dim mc As MatchCollection = Regex.Matches(temp, "((?<==)[\w\.+-]+)")
+                '    For b = 0 To mc.Count - 1 Step 3
+                '        dtSPG_read.Rows.Add(mc(b), mc(b + 1), mc(b + 2))
+                '    Next
 
                 '''''''''''''''''''''''''''''''''''''''''''''''''''
             ElseIf words(a).Contains("""SLAB PROPERTIES 02 - SOLID SLABS""") Then
