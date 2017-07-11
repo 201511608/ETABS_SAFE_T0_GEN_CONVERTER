@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<propertyFile xmlns="http://www.csiamerica.com"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.csiamerica.com CSiMaterialLibrary.xsd">
+
+  <control lengthUnits="mm" forceUnits="N">
+    <fileID>CSI Materials</fileID>
+    <fileVersion>1.0</fileVersion>
+    <fileDescription>Built-in Material Definitions for China</fileDescription>
+  </control>
+
+  <region name="China" lengthUnits="mm" forceUnits="N" isDefault="true">
+    <collection type="Materials" lengthUnits="mm" forceUnits="N">
+      <standard name="GB" lengthUnits="mm" forceUnits="N">
+        <!-- Concrete -->
+        <material type="Concrete" grade="GB50010 C40" name="C40">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>32500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>40.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C15" name="C15">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>22000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>15.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C20" name="C20">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>25500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>20.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C25" name="C25">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>28000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>25.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C30" name="C30" isDefault="true">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>30000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>30.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C35" name="C35">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>31500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>35.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C45" name="C45">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>33500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>45.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C50" name="C50">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>34500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>50.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C55" name="C55">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>35500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>55.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C60" name="C60">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>60.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C65" name="C65">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>65.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C70" name="C70">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>37000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>70.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C75" name="C75">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>37500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>75.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="GB50010 C80" name="C80">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>38000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>80.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+
+        <!-- GB Rebar -->
+        <material type="rebar" grade="GB50010 HPB300" name="HPB300" isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>300</minimumYieldStress>
+          <minimumTensileStress>420</minimumTensileStress>
+          <expectedYieldStress>330</expectedYieldStress>
+          <expectedTensileStress>460</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="GB50010 HRB335" name="HRB335">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>335</minimumYieldStress>
+          <minimumTensileStress>455</minimumTensileStress>
+          <expectedYieldStress>368.5</expectedYieldStress>
+          <expectedTensileStress>500.5</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="GB50010 HRB400" name="HRB400">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>400</minimumYieldStress>
+          <minimumTensileStress>540</minimumTensileStress>
+          <expectedYieldStress>440</expectedYieldStress>
+          <expectedTensileStress>590</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="GB50010 HRB500" name="HRB500">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>500</minimumYieldStress>
+          <minimumTensileStress>630</minimumTensileStress>
+          <expectedYieldStress>550</expectedYieldStress>
+          <expectedTensileStress>690</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+                
+        <!-- Steel -->        
+        <material type="Steel" grade="Q235" name="Q235">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>235</minimumYieldStress>
+          <minimumTensileStress>390</minimumTensileStress>
+          <effectiveYieldStress>260</effectiveYieldStress>
+          <effectiveTensileStress>430</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="Q345" name="Q345"  isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>345</minimumYieldStress>
+          <minimumTensileStress>510</minimumTensileStress>
+          <effectiveYieldStress>380</effectiveYieldStress>
+          <effectiveTensileStress>560</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="Q390" name="Q390">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>390</minimumYieldStress>
+          <minimumTensileStress>540</minimumTensileStress>
+          <effectiveYieldStress>430</effectiveYieldStress>
+          <effectiveTensileStress>590</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="Q420" name="Q420">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>420</minimumYieldStress>
+          <minimumTensileStress>570</minimumTensileStress>
+          <effectiveYieldStress>460</effectiveYieldStress>
+          <effectiveTensileStress>620</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+      </standard>
+      <standard name="JTG" lengthUnits="mm" forceUnits="N" isDefaultConcrete="true" isDefaultSteel="true"  isDefaultRebar="true"  isDefaultTendon="true">
+        <!-- JTG Concrete -->
+        <material type="Concrete" grade="JTG D62-2004 C15" name="JTG-C15">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>22000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>15.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C20" name="JTG-C20">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>25500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>20.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C25" name="JTG-C25">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>28000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>25.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C30" name="JTG-C30" isDefault="true">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>30000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>30.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C35" name="JTG-C35">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>31500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>35.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C40" name="JTG-C40">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>32500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>40.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C45" name="JTG-C45">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>33500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>45.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C50" name="JTG-C50">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>34500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>50.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C55" name="JTG-C55">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>35500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>55.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C60" name="JTG-C60">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>60.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C65" name="JTG-C65">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>65.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C70" name="JTG-C70">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>37000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>70.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C75" name="JTG-C75">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>37500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>75.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="JTG D62-2004 C80" name="JTG-C80">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>38000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>80.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+
+        <!-- JTG Steel -->
+        <material type="Steel" grade="GB/T 714-2008 Q345q" name="JTG-Q345q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>345</minimumYieldStress>
+          <minimumTensileStress>510</minimumTensileStress>
+          <effectiveYieldStress>380</effectiveYieldStress>
+          <effectiveTensileStress>560</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q235q" name="JTG-Q235q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>235</minimumYieldStress>
+          <minimumTensileStress>400</minimumTensileStress>
+          <effectiveYieldStress>260</effectiveYieldStress>
+          <effectiveTensileStress>440</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q370q" name="JTG-Q370q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>370</minimumYieldStress>
+          <minimumTensileStress>510</minimumTensileStress>
+          <effectiveYieldStress>410</effectiveYieldStress>
+          <effectiveTensileStress>560</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q420q" name="JTG-Q420q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>420</minimumYieldStress>
+          <minimumTensileStress>540</minimumTensileStress>
+          <effectiveYieldStress>460</effectiveYieldStress>
+          <effectiveTensileStress>590</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q460q" name="JTG-Q460q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>460</minimumYieldStress>
+          <minimumTensileStress>570</minimumTensileStress>
+          <effectiveYieldStress>510</effectiveYieldStress>
+          <effectiveTensileStress>630</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q500q" name="JTG-Q500q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>500</minimumYieldStress>
+          <minimumTensileStress>600</minimumTensileStress>
+          <effectiveYieldStress>550</effectiveYieldStress>
+          <effectiveTensileStress>660</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q550q" name="JTG-Q550q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>550</minimumYieldStress>
+          <minimumTensileStress>660</minimumTensileStress>
+          <effectiveYieldStress>600</effectiveYieldStress>
+          <effectiveTensileStress>730</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q620q" name="JTG-Q620q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>620</minimumYieldStress>
+          <minimumTensileStress>720</minimumTensileStress>
+          <effectiveYieldStress>680</effectiveYieldStress>
+          <effectiveTensileStress>790</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="GB/T 714-2008 Q690q" name="JTG-Q690q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>690</minimumYieldStress>
+          <minimumTensileStress>770</minimumTensileStress>
+          <effectiveYieldStress>760</effectiveYieldStress>
+          <effectiveTensileStress>850</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+
+        <!-- JTG Tendon-->
+        <material type="Tendon" grade="JTGD62 fpk1470" name="JTG-fpk1470" isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1470</minimumYieldStress>
+          <minimumTensileStress>1690</minimumTensileStress>
+        </material>
+        <material type="Tendon" grade="JTGD62 fpk1570" name="JTG-fpk1570">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1570</minimumYieldStress>
+          <minimumTensileStress>1800</minimumTensileStress>
+        </material>
+        <material type="Tendon" grade="JTGD62 fpk1720" name="JTG-fpk1720">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1720</minimumYieldStress>
+          <minimumTensileStress>1980</minimumTensileStress>
+        </material>
+        <material type="Tendon" grade="JTGD62 fpk1860" name="JTG-fpk1860">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1860</minimumYieldStress>
+          <minimumTensileStress>2140</minimumTensileStress>
+        </material>
+
+        <!-- JTG Rebar -->
+        <material type="rebar" grade="JTG D62-2004 R235" name="JTG-R235">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>235</minimumYieldStress>
+          <minimumTensileStress>290</minimumTensileStress>
+          <expectedYieldStress>260</expectedYieldStress>
+          <expectedTensileStress>320</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="JTG D62-2004 HRB335" name="JTG-HRB335"  isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>335</minimumYieldStress>
+          <minimumTensileStress>420</minimumTensileStress>
+          <expectedYieldStress>440</expectedYieldStress>
+          <expectedTensileStress>460</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="JTG D62-2004 HRB400" name="JTG-HRB400">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>400</minimumYieldStress>
+          <minimumTensileStress>630</minimumTensileStress>
+          <expectedYieldStress>550</expectedYieldStress>
+          <expectedTensileStress>690</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="JTG D62-2004 KL400" name="JTG-KL400">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>400</minimumYieldStress>
+          <minimumTensileStress>630</minimumTensileStress>
+          <expectedYieldStress>550</expectedYieldStress>
+          <expectedTensileStress>690</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+
+      </standard>          
+      <standard name="TB" lengthUnits="mm" forceUnits="N">
+        <!-- TB Concrete -->
+        <material type="Concrete" grade="TB10002.3 C20" name="TB-C20">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>28000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>20.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C25" name="TB-C25">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>30000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>25.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C30" name="TB-C30" isDefault="true">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>32000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>30.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C35" name="TB-C35">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>33000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>35.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C40" name="TB-C40">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>34000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>40.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C45" name="TB-C45">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>34500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>45.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C50" name="TB-C50">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>35500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>50.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C55" name="TB-C55">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36000</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>55.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <material type="Concrete" grade="TB10002.3 C60" name="TB-C60">
+          <weightDensity>2.5E-05</weightDensity>
+          <massDensity>2.55E-09</massDensity>
+          <modulusOfElasticity>36500</modulusOfElasticity>
+          <poissonsRatio>0.2</poissonsRatio>
+          <coefficientOfThermalExpansion>0.00001</coefficientOfThermalExpansion>
+          <compressiveStrength>60.0</compressiveStrength>
+          <strainAtfc>0.002</strainAtfc>
+          <strainAtUltimate>0.005</strainAtUltimate>
+          <isLightWeight>false</isLightWeight>
+          <shearStrengthReductionFactor>1.0</shearStrengthReductionFactor>
+        </material>
+        <!-- TB Steel -->
+        <material type="Steel" grade="TB10002.2 Q235q" name="TB-Q235q"  isDefault ="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>235</minimumYieldStress>
+          <minimumTensileStress>390</minimumTensileStress>
+          <effectiveYieldStress>260</effectiveYieldStress>
+          <effectiveTensileStress>430</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="TB10002.2 Q345q" name="TB-Q345q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>345</minimumYieldStress>
+          <minimumTensileStress>490</minimumTensileStress>
+          <effectiveYieldStress>380</effectiveYieldStress>
+          <effectiveTensileStress>560</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="TB10002.2 Q370q" name="TB-Q370q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>370</minimumYieldStress>
+          <minimumTensileStress>530</minimumTensileStress>
+          <effectiveYieldStress>410</effectiveYieldStress>
+          <effectiveTensileStress>580</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <material type="Steel" grade="TB10002.2 Q420q" name="TB-Q420q">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>420</minimumYieldStress>
+          <minimumTensileStress>570</minimumTensileStress>
+          <effectiveYieldStress>460</effectiveYieldStress>
+          <effectiveTensileStress>630</effectiveTensileStress>
+          <strainAtHardening>0.015</strainAtHardening>
+          <strainAtMaxStress>0.11</strainAtMaxStress>
+          <strainAtRupture>0.17</strainAtRupture>
+        </material>
+        <!-- TB Tendon-->
+        <material type="tendon" grade="TB fpk1470" name="TB-fpk1470" isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1470</minimumYieldStress>
+          <minimumTensileStress>1690</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1570" name="TB-fpk1570">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1570</minimumYieldStress>
+          <minimumTensileStress>1800</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1670" name="TB-fpk1670">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1670</minimumYieldStress>
+          <minimumTensileStress>1920</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1720" name="TB-fpk1720">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1720</minimumYieldStress>
+          <minimumTensileStress>1980</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1770" name="TB-fpk1770">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1770</minimumYieldStress>
+          <minimumTensileStress>2040</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1860" name="TB-fpk1860">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1860</minimumYieldStress>
+          <minimumTensileStress>2130</minimumTensileStress>
+        </material>
+        <material type="tendon" grade="TB fpk1960" name="TB-fpk1960">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>195000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>1960</minimumYieldStress>
+          <minimumTensileStress>2250</minimumTensileStress>
+        </material>
+        <material type="rebar" grade="TB Q235" name="TB-Q235" isDefault="true">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>210000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>235</minimumYieldStress>
+          <minimumTensileStress>290</minimumTensileStress>
+          <expectedYieldStress>260</expectedYieldStress>
+          <expectedTensileStress>320</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="TB HRB335" name="TB-HRB335">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>335</minimumYieldStress>
+          <minimumTensileStress>420</minimumTensileStress>
+          <expectedYieldStress>440</expectedYieldStress>
+          <expectedTensileStress>460</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+        <material type="rebar" grade="TB PSB830" name="TB-PSB830">
+          <weightDensity>7.85E-05</weightDensity>
+          <massDensity>8.0E-09</massDensity>
+          <modulusOfElasticity>200000</modulusOfElasticity>
+          <poissonsRatio>0.3</poissonsRatio>
+          <coefficientOfThermalExpansion>0.0000117</coefficientOfThermalExpansion>
+          <minimumYieldStress>830</minimumYieldStress>
+          <minimumTensileStress>950</minimumTensileStress>
+          <expectedYieldStress>910</expectedYieldStress>
+          <expectedTensileStress>1040</expectedTensileStress>
+          <strainAtHardening>0.01</strainAtHardening>
+          <strainAtUltimate>0.1</strainAtUltimate>
+        </material>
+      </standard>      
+    </collection>
+  </region>
+
+</propertyFile>

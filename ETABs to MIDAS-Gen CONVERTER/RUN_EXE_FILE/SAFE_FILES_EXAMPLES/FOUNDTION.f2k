@@ -1,0 +1,1927 @@
+File C:\Users\midas\Desktop\SAFEconverter\W\FOUNDTION.f2k was saved on 6/30/17 at 13:13:09
+ 
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAFE   Version=12.3.2   ProgLevel="Post Tensioning"   LicenseNum=Trial   CurrUnits="KN, m, C"   MergeTol=0.00254   ModelDatum=0   StHtAbove=0   StHtBelow=3.6576   ConcCode="ACI 318-08"
+ 
+TABLE:  "MASS SOURCE"
+   LoadPat=Dead_ABOVE   Multiplier=1
+ 
+TABLE:  "PROJECT INFORMATION"
+   Item="Client Name"   Data=EOM
+   Item="Project Name"   Data=HYP
+   Item="Project Number"
+   Item="Company Name"
+   Item=Engineer
+   Item=Checker
+   Item=Supervisor
+   Item="Model Name"
+   Item="Model Description"
+   Item="Revision Number"
+   Item="Issue Number"
+ 
+TABLE:  "AUTOMATIC SLAB MESH OPTIONS"
+   MeshOpt=Rectangular   Localize=Yes   Merge=Yes   MaxSize=1.2192
+ 
+TABLE:  "CRACKING ANALYSIS REINFORCEMENT"
+   ReinfOpt="FE Design"   MinReinfT=0.0018   MinReinfC=0   UserModRup=No
+ 
+TABLE:  "ADVANCED SAPFIRE OPTIONS"
+   SolverOpt=Advanced   ProcessOpt=Auto   Always32Bit=No
+ 
+TABLE:  "ADVANCED MODELING OPTIONS"
+   2DOnly=No   RigDiaTop=No   NoOffsets=Yes
+ 
+TABLE:  "OBJECT GEOMETRY - POINT COORDINATES"
+   Point=41   GlobalX=8.25000032   GlobalY=-6.32143104   GlobalZ=0   SpecialPt=No
+   Point=42   GlobalX=11.75000032   GlobalY=-6.32143104   GlobalZ=0   SpecialPt=No
+   Point=43   GlobalX=11.75000032   GlobalY=-2.82143104   GlobalZ=0   SpecialPt=No
+   Point=44   GlobalX=8.25000032   GlobalY=-2.82143104   GlobalZ=0   SpecialPt=No
+   Point=45   GlobalX=28.2499908   GlobalY=-15.4642982   GlobalZ=0   SpecialPt=No
+   Point=46   GlobalX=31.7499908   GlobalY=-15.4642982   GlobalZ=0   SpecialPt=No
+   Point=47   GlobalX=31.7499908   GlobalY=-11.9642982   GlobalZ=0   SpecialPt=No
+   Point=48   GlobalX=28.2499908   GlobalY=-11.9642982   GlobalZ=0   SpecialPt=No
+   Point=49   GlobalX=48.2500016   GlobalY=-24.60709932   GlobalZ=0   SpecialPt=No
+   Point=50   GlobalX=51.7500016   GlobalY=-24.60709932   GlobalZ=0   SpecialPt=No
+   Point=51   GlobalX=51.7500016   GlobalY=-21.10709932   GlobalZ=0   SpecialPt=No
+   Point=52   GlobalX=48.2500016   GlobalY=-21.10709932   GlobalZ=0   SpecialPt=No
+   Point=53   GlobalX=68.2500124   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=54   GlobalX=71.7500124   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=55   GlobalX=71.7500124   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=56   GlobalX=68.2500124   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=57   GlobalX=68.2500124   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=58   GlobalX=71.7500124   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=59   GlobalX=71.7500124   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=60   GlobalX=68.2500124   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=61   GlobalX=48.2500016   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=62   GlobalX=51.7500016   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=63   GlobalX=51.7500016   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=64   GlobalX=48.2500016   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=65   GlobalX=48.2500016   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=66   GlobalX=51.7500016   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=67   GlobalX=0   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=68   GlobalX=51.7500016   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=69   GlobalX=0   GlobalY=-16.00000102   GlobalZ=0   SpecialPt=Yes
+   Point=70   GlobalX=48.2500016   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=71   GlobalX=0   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=Yes
+   Point=72   GlobalX=28.2499908   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=73   GlobalX=0   GlobalY=-48.0000056   GlobalZ=0   SpecialPt=Yes
+   Point=74   GlobalX=31.7499908   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=75   GlobalX=0   GlobalY=-63.999999   GlobalZ=0   SpecialPt=Yes
+   Point=76   GlobalX=31.7499908   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=77   GlobalX=28.2499908   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=78   GlobalX=8.25000032   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=79   GlobalX=11.75000032   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=80   GlobalX=11.75000032   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=81   GlobalX=8.25000032   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=82   GlobalX=8.25000032   GlobalY=-17.75000102   GlobalZ=0   SpecialPt=No
+   Point=83   GlobalX=11.75000032   GlobalY=-17.75000102   GlobalZ=0   SpecialPt=No
+   Point=84   GlobalX=11.75000032   GlobalY=-14.25000102   GlobalZ=0   SpecialPt=No
+   Point=85   GlobalX=8.25000032   GlobalY=-14.25000102   GlobalZ=0   SpecialPt=No
+   Point=86   GlobalX=-1.75   GlobalY=-17.75000102   GlobalZ=0   SpecialPt=No
+   Point=87   GlobalX=1.75   GlobalY=-17.75000102   GlobalZ=0   SpecialPt=No
+   Point=88   GlobalX=1.75   GlobalY=-14.25000102   GlobalZ=0   SpecialPt=No
+   Point=89   GlobalX=-1.75   GlobalY=-14.25000102   GlobalZ=0   SpecialPt=No
+   Point=90   GlobalX=-1.75   GlobalY=-1.75   GlobalZ=0   SpecialPt=No
+   Point=91   GlobalX=1.75   GlobalY=-1.75   GlobalZ=0   SpecialPt=No
+   Point=92   GlobalX=1.75   GlobalY=1.75   GlobalZ=0   SpecialPt=No
+   Point=93   GlobalX=-1.75   GlobalY=1.75   GlobalZ=0   SpecialPt=No
+   Point=94   GlobalX=-1.75   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=95   GlobalX=1.75   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=96   GlobalX=1.75   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=97   GlobalX=-1.75   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=98   GlobalX=-1.75   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=99   GlobalX=1.75   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=100   GlobalX=1.75   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=101   GlobalX=-1.75   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=102   GlobalX=8.25000032   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=103   GlobalX=11.75000032   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=104   GlobalX=11.75000032   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=105   GlobalX=8.25000032   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=106   GlobalX=28.2499908   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=107   GlobalX=31.7499908   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=108   GlobalX=31.7499908   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=109   GlobalX=28.2499908   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=110   GlobalX=-1.75   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=111   GlobalX=70.0000124   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=Yes
+   Point=112   GlobalX=70.0000124   GlobalY=-48.0000056   GlobalZ=0   SpecialPt=Yes
+   Point=113   GlobalX=70.0000124   GlobalY=-63.999999   GlobalZ=0   SpecialPt=Yes
+   Point=114   GlobalX=1.75   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=115   GlobalX=1.75   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=116   GlobalX=-1.75   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=117   GlobalX=8.25000032   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=118   GlobalX=11.75000032   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=119   GlobalX=11.75000032   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=120   GlobalX=8.25000032   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=121   GlobalX=28.2499908   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=122   GlobalX=31.7499908   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=123   GlobalX=31.7499908   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=124   GlobalX=28.2499908   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=125   GlobalX=48.2500016   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=126   GlobalX=51.7500016   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=127   GlobalX=51.7500016   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=128   GlobalX=48.2500016   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=129   GlobalX=68.2500124   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=130   GlobalX=71.7500124   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=131   GlobalX=71.7500124   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=132   GlobalX=68.2500124   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=133   GlobalX=68.2500124   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=134   GlobalX=71.7500124   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=135   GlobalX=71.7500124   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=136   GlobalX=68.2500124   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=137   GlobalX=48.2500016   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=138   GlobalX=51.7500016   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=139   GlobalX=51.7500016   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=140   GlobalX=48.2500016   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=141   GlobalX=28.2499908   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=142   GlobalX=31.7499908   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=143   GlobalX=31.7499908   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=144   GlobalX=28.2499908   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=145   GlobalX=8.25000032   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=146   GlobalX=11.75000032   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=147   GlobalX=11.75000032   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=148   GlobalX=8.25000032   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=149   GlobalX=-1.75   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=150   GlobalX=1.75   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=151   GlobalX=1.75   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=152   GlobalX=-1.75   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=153   GlobalX=48.2500016   GlobalY=-90.8929002   GlobalZ=0   SpecialPt=No
+   Point=154   GlobalX=51.7500016   GlobalY=-90.8929002   GlobalZ=0   SpecialPt=No
+   Point=155   GlobalX=51.7500016   GlobalY=-87.3929002   GlobalZ=0   SpecialPt=No
+   Point=156   GlobalX=48.2500016   GlobalY=-87.3929002   GlobalZ=0   SpecialPt=No
+   Point=157   GlobalX=28.2499908   GlobalY=-100.0357064   GlobalZ=0   SpecialPt=No
+   Point=158   GlobalX=31.7499908   GlobalY=-100.0357064   GlobalZ=0   SpecialPt=No
+   Point=159   GlobalX=31.7499908   GlobalY=-96.5357064   GlobalZ=0   SpecialPt=No
+   Point=160   GlobalX=50.0000016   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=Yes
+   Point=161   GlobalX=50.0000016   GlobalY=-48.0000056   GlobalZ=0   SpecialPt=Yes
+   Point=162   GlobalX=50.0000016   GlobalY=-63.999999   GlobalZ=0   SpecialPt=Yes
+   Point=163   GlobalX=28.2499908   GlobalY=-96.5357064   GlobalZ=0   SpecialPt=No
+   Point=164   GlobalX=8.25000032   GlobalY=-97.7500112   GlobalZ=0   SpecialPt=No
+   Point=165   GlobalX=11.75000032   GlobalY=-97.7500112   GlobalZ=0   SpecialPt=No
+   Point=166   GlobalX=11.75000032   GlobalY=-94.2500112   GlobalZ=0   SpecialPt=No
+   Point=167   GlobalX=8.25000032   GlobalY=-94.2500112   GlobalZ=0   SpecialPt=No
+   Point=168   GlobalX=-1.75   GlobalY=-97.7500112   GlobalZ=0   SpecialPt=No
+   Point=169   GlobalX=1.75   GlobalY=-97.7500112   GlobalZ=0   SpecialPt=No
+   Point=170   GlobalX=1.75   GlobalY=-94.2500112   GlobalZ=0   SpecialPt=No
+   Point=171   GlobalX=-1.75   GlobalY=-94.2500112   GlobalZ=0   SpecialPt=No
+   Point=172   GlobalX=-1.75   GlobalY=-113.7500046   GlobalZ=0   SpecialPt=No
+   Point=173   GlobalX=1.75   GlobalY=-113.7500046   GlobalZ=0   SpecialPt=No
+   Point=174   GlobalX=1.75   GlobalY=-110.2500046   GlobalZ=0   SpecialPt=No
+   Point=175   GlobalX=-1.75   GlobalY=-110.2500046   GlobalZ=0   SpecialPt=No
+   Point=176   GlobalX=8.25000032   GlobalY=-109.1789952   GlobalZ=0   SpecialPt=No
+   Point=177   GlobalX=11.75000032   GlobalY=-109.1789952   GlobalZ=0   SpecialPt=No
+   Point=178   GlobalX=11.75000032   GlobalY=-105.6789952   GlobalZ=0   SpecialPt=No
+   Point=179   GlobalX=8.25000032   GlobalY=-105.6789952   GlobalZ=0   SpecialPt=No
+   Point=180   GlobalX=73.8500124   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=No
+   Point=181   GlobalX=73.8500124   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=No
+   Point=183   GlobalX=70.0000124   GlobalY=-27.5000122   GlobalZ=0   SpecialPt=No
+   Point=185   GlobalX=70.0000124   GlobalY=-84.4999924   GlobalZ=0   SpecialPt=No
+   Point=189   GlobalX=0   GlobalY=11.5   GlobalZ=0   SpecialPt=No
+   Point=200   GlobalX=0   GlobalY=-123.5000046   GlobalZ=0   SpecialPt=No
+   Point=203   GlobalX=29.9999908   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=Yes
+   Point=204   GlobalX=29.9999908   GlobalY=-48.0000056   GlobalZ=0   SpecialPt=Yes
+   Point=205   GlobalX=29.9999908   GlobalY=-63.999999   GlobalZ=0   SpecialPt=Yes
+   Point=207   GlobalX=3.75   GlobalY=-114.785718535816   GlobalZ=0   SpecialPt=No
+   Point=209   GlobalX=71.7500124   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=No
+   Point=210   GlobalX=0   GlobalY=-113.7500046   GlobalZ=0   SpecialPt=No
+   Point=211   GlobalX=73.8500124   GlobalY=-84.4999924   GlobalZ=0   SpecialPt=No
+   Point=212   GlobalX=73.8500124   GlobalY=-27.5000122   GlobalZ=0   SpecialPt=No
+   Point=213   GlobalX=3.75   GlobalY=2.78571393581639   GlobalZ=0   SpecialPt=No
+   Point=214   GlobalX=71.7500124   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=No
+   Point=215   GlobalX=0   GlobalY=1.75   GlobalZ=0   SpecialPt=No
+   Point=224   GlobalX=0   GlobalY=-110.2500046   GlobalZ=0   SpecialPt=No
+   Point=225   GlobalX=0   GlobalY=-97.7500112   GlobalZ=0   SpecialPt=No
+   Point=226   GlobalX=0   GlobalY=-1.75   GlobalZ=0   SpecialPt=No
+   Point=227   GlobalX=0   GlobalY=-14.25000102   GlobalZ=0   SpecialPt=No
+   Point=228   GlobalX=0   GlobalY=-17.75000102   GlobalZ=0   SpecialPt=No
+   Point=229   GlobalX=0   GlobalY=-94.2500112   GlobalZ=0   SpecialPt=No
+   Point=230   GlobalX=0   GlobalY=-81.7499924   GlobalZ=0   SpecialPt=No
+   Point=231   GlobalX=0   GlobalY=-78.2499924   GlobalZ=0   SpecialPt=No
+   Point=232   GlobalX=0   GlobalY=-65.749999   GlobalZ=0   SpecialPt=No
+   Point=233   GlobalX=0   GlobalY=-62.249999   GlobalZ=0   SpecialPt=No
+   Point=234   GlobalX=0   GlobalY=-49.7500056   GlobalZ=0   SpecialPt=No
+   Point=235   GlobalX=0   GlobalY=-46.2500056   GlobalZ=0   SpecialPt=No
+   Point=236   GlobalX=0   GlobalY=-33.7500122   GlobalZ=0   SpecialPt=No
+   Point=237   GlobalX=0   GlobalY=-30.2500122   GlobalZ=0   SpecialPt=No
+   Point=244   GlobalX=-9.5   GlobalY=11   GlobalZ=0   SpecialPt=Yes
+   Point=245   GlobalX=85.5   GlobalY=11   GlobalZ=0   SpecialPt=Yes
+   Point=246   GlobalX=-9.5   GlobalY=10   GlobalZ=0   SpecialPt=Yes
+   Point=247   GlobalX=85.5   GlobalY=10   GlobalZ=0   SpecialPt=Yes
+   Point=248   GlobalX=-9.5   GlobalY=9   GlobalZ=0   SpecialPt=Yes
+   Point=249   GlobalX=85.5   GlobalY=9   GlobalZ=0   SpecialPt=Yes
+   Point=250   GlobalX=-9.5   GlobalY=8   GlobalZ=0   SpecialPt=Yes
+   Point=251   GlobalX=85.5   GlobalY=8   GlobalZ=0   SpecialPt=Yes
+   Point=252   GlobalX=-9.5   GlobalY=7   GlobalZ=0   SpecialPt=Yes
+   Point=253   GlobalX=85.5   GlobalY=7   GlobalZ=0   SpecialPt=Yes
+   Point=254   GlobalX=-9.5   GlobalY=6   GlobalZ=0   SpecialPt=Yes
+   Point=255   GlobalX=85.5   GlobalY=6   GlobalZ=0   SpecialPt=Yes
+   Point=256   GlobalX=-9.5   GlobalY=5   GlobalZ=0   SpecialPt=Yes
+   Point=257   GlobalX=85.5   GlobalY=5   GlobalZ=0   SpecialPt=Yes
+   Point=258   GlobalX=-9.5   GlobalY=4   GlobalZ=0   SpecialPt=Yes
+   Point=259   GlobalX=85.5   GlobalY=4   GlobalZ=0   SpecialPt=Yes
+   Point=260   GlobalX=-9.5   GlobalY=3   GlobalZ=0   SpecialPt=Yes
+   Point=261   GlobalX=85.5   GlobalY=3   GlobalZ=0   SpecialPt=Yes
+   Point=262   GlobalX=-9.5   GlobalY=2   GlobalZ=0   SpecialPt=Yes
+   Point=263   GlobalX=85.5   GlobalY=2   GlobalZ=0   SpecialPt=Yes
+   Point=264   GlobalX=-9.5   GlobalY=1   GlobalZ=0   SpecialPt=Yes
+   Point=265   GlobalX=85.5   GlobalY=1   GlobalZ=0   SpecialPt=Yes
+   Point=266   GlobalX=-9.5   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=267   GlobalX=85.5   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=268   GlobalX=-9.5   GlobalY=-1   GlobalZ=0   SpecialPt=Yes
+   Point=269   GlobalX=85.5   GlobalY=-1   GlobalZ=0   SpecialPt=Yes
+   Point=270   GlobalX=-9.5   GlobalY=-2   GlobalZ=0   SpecialPt=Yes
+   Point=271   GlobalX=85.5   GlobalY=-2   GlobalZ=0   SpecialPt=Yes
+   Point=272   GlobalX=-9.5   GlobalY=-3   GlobalZ=0   SpecialPt=Yes
+   Point=273   GlobalX=10.00000032   GlobalY=-16.00000102   GlobalZ=0   SpecialPt=Yes
+   Point=274   GlobalX=10.00000032   GlobalY=-32.0000122   GlobalZ=0   SpecialPt=Yes
+   Point=275   GlobalX=10.00000032   GlobalY=-48.0000056   GlobalZ=0   SpecialPt=Yes
+   Point=276   GlobalX=10.00000032   GlobalY=-63.999999   GlobalZ=0   SpecialPt=Yes
+   Point=277   GlobalX=85.5   GlobalY=-3   GlobalZ=0   SpecialPt=Yes
+   Point=278   GlobalX=-9.5   GlobalY=-4   GlobalZ=0   SpecialPt=Yes
+   Point=279   GlobalX=85.5   GlobalY=-4   GlobalZ=0   SpecialPt=Yes
+   Point=280   GlobalX=-9.5   GlobalY=-5   GlobalZ=0   SpecialPt=Yes
+   Point=281   GlobalX=85.5   GlobalY=-5   GlobalZ=0   SpecialPt=Yes
+   Point=282   GlobalX=-9.5   GlobalY=-6   GlobalZ=0   SpecialPt=Yes
+   Point=283   GlobalX=85.5   GlobalY=-6   GlobalZ=0   SpecialPt=Yes
+   Point=284   GlobalX=-9.5   GlobalY=-7   GlobalZ=0   SpecialPt=Yes
+   Point=285   GlobalX=85.5   GlobalY=-7   GlobalZ=0   SpecialPt=Yes
+   Point=286   GlobalX=-9.5   GlobalY=-8   GlobalZ=0   SpecialPt=Yes
+   Point=287   GlobalX=85.5   GlobalY=-8   GlobalZ=0   SpecialPt=Yes
+   Point=288   GlobalX=-9.5   GlobalY=-9   GlobalZ=0   SpecialPt=Yes
+   Point=289   GlobalX=85.5   GlobalY=-9   GlobalZ=0   SpecialPt=Yes
+   Point=290   GlobalX=-9.5   GlobalY=-10   GlobalZ=0   SpecialPt=Yes
+   Point=291   GlobalX=85.5   GlobalY=-10   GlobalZ=0   SpecialPt=Yes
+   Point=292   GlobalX=-9.5   GlobalY=-11   GlobalZ=0   SpecialPt=Yes
+   Point=293   GlobalX=85.5   GlobalY=-11   GlobalZ=0   SpecialPt=Yes
+   Point=294   GlobalX=-9.5   GlobalY=-12   GlobalZ=0   SpecialPt=Yes
+   Point=295   GlobalX=85.5   GlobalY=-12   GlobalZ=0   SpecialPt=Yes
+   Point=296   GlobalX=-9.5   GlobalY=-13   GlobalZ=0   SpecialPt=Yes
+   Point=297   GlobalX=85.5   GlobalY=-13   GlobalZ=0   SpecialPt=Yes
+   Point=298   GlobalX=-9.5   GlobalY=-14   GlobalZ=0   SpecialPt=Yes
+   Point=299   GlobalX=85.5   GlobalY=-14   GlobalZ=0   SpecialPt=Yes
+   Point=300   GlobalX=-9.5   GlobalY=-15   GlobalZ=0   SpecialPt=Yes
+   Point=301   GlobalX=85.5   GlobalY=-15   GlobalZ=0   SpecialPt=Yes
+   Point=302   GlobalX=-9.5   GlobalY=-16   GlobalZ=0   SpecialPt=Yes
+   Point=303   GlobalX=85.5   GlobalY=-16   GlobalZ=0   SpecialPt=Yes
+   Point=304   GlobalX=-9.5   GlobalY=-17   GlobalZ=0   SpecialPt=Yes
+   Point=305   GlobalX=85.5   GlobalY=-17   GlobalZ=0   SpecialPt=Yes
+   Point=306   GlobalX=-9.5   GlobalY=-18   GlobalZ=0   SpecialPt=Yes
+   Point=307   GlobalX=85.5   GlobalY=-18   GlobalZ=0   SpecialPt=Yes
+   Point=308   GlobalX=-9.5   GlobalY=-19   GlobalZ=0   SpecialPt=Yes
+   Point=309   GlobalX=85.5   GlobalY=-19   GlobalZ=0   SpecialPt=Yes
+   Point=310   GlobalX=-9.5   GlobalY=-20   GlobalZ=0   SpecialPt=Yes
+   Point=311   GlobalX=85.5   GlobalY=-20   GlobalZ=0   SpecialPt=Yes
+   Point=312   GlobalX=-9.5   GlobalY=-21   GlobalZ=0   SpecialPt=Yes
+   Point=313   GlobalX=85.5   GlobalY=-21   GlobalZ=0   SpecialPt=Yes
+   Point=314   GlobalX=-9.5   GlobalY=-22   GlobalZ=0   SpecialPt=Yes
+   Point=315   GlobalX=85.5   GlobalY=-22   GlobalZ=0   SpecialPt=Yes
+   Point=316   GlobalX=-9.5   GlobalY=-23   GlobalZ=0   SpecialPt=Yes
+   Point=317   GlobalX=85.5   GlobalY=-23   GlobalZ=0   SpecialPt=Yes
+   Point=318   GlobalX=-9.5   GlobalY=-24   GlobalZ=0   SpecialPt=Yes
+   Point=319   GlobalX=85.5   GlobalY=-24   GlobalZ=0   SpecialPt=Yes
+   Point=320   GlobalX=-9.5   GlobalY=-25   GlobalZ=0   SpecialPt=Yes
+   Point=321   GlobalX=85.5   GlobalY=-25   GlobalZ=0   SpecialPt=Yes
+   Point=322   GlobalX=-9.5   GlobalY=-26   GlobalZ=0   SpecialPt=Yes
+   Point=323   GlobalX=85.5   GlobalY=-26   GlobalZ=0   SpecialPt=Yes
+   Point=324   GlobalX=-9.5   GlobalY=-27   GlobalZ=0   SpecialPt=Yes
+   Point=325   GlobalX=85.5   GlobalY=-27   GlobalZ=0   SpecialPt=Yes
+   Point=326   GlobalX=-9.5   GlobalY=-28   GlobalZ=0   SpecialPt=Yes
+   Point=327   GlobalX=85.5   GlobalY=-28   GlobalZ=0   SpecialPt=Yes
+   Point=328   GlobalX=-9.5   GlobalY=-29   GlobalZ=0   SpecialPt=Yes
+   Point=329   GlobalX=85.5   GlobalY=-29   GlobalZ=0   SpecialPt=Yes
+   Point=330   GlobalX=-9.5   GlobalY=-30   GlobalZ=0   SpecialPt=Yes
+   Point=331   GlobalX=85.5   GlobalY=-30   GlobalZ=0   SpecialPt=Yes
+   Point=332   GlobalX=-9.5   GlobalY=-31   GlobalZ=0   SpecialPt=Yes
+   Point=333   GlobalX=85.5   GlobalY=-31   GlobalZ=0   SpecialPt=Yes
+   Point=334   GlobalX=-9.5   GlobalY=-32   GlobalZ=0   SpecialPt=Yes
+   Point=335   GlobalX=85.5   GlobalY=-32   GlobalZ=0   SpecialPt=Yes
+   Point=336   GlobalX=-9.5   GlobalY=-33   GlobalZ=0   SpecialPt=Yes
+   Point=337   GlobalX=85.5   GlobalY=-33   GlobalZ=0   SpecialPt=Yes
+   Point=338   GlobalX=-9.5   GlobalY=-34   GlobalZ=0   SpecialPt=Yes
+   Point=339   GlobalX=85.5   GlobalY=-34   GlobalZ=0   SpecialPt=Yes
+   Point=340   GlobalX=-9.5   GlobalY=-35   GlobalZ=0   SpecialPt=Yes
+   Point=341   GlobalX=85.5   GlobalY=-35   GlobalZ=0   SpecialPt=Yes
+   Point=342   GlobalX=-9.5   GlobalY=-36   GlobalZ=0   SpecialPt=Yes
+   Point=343   GlobalX=85.5   GlobalY=-36   GlobalZ=0   SpecialPt=Yes
+   Point=344   GlobalX=-9.5   GlobalY=-37   GlobalZ=0   SpecialPt=Yes
+   Point=345   GlobalX=85.5   GlobalY=-37   GlobalZ=0   SpecialPt=Yes
+   Point=346   GlobalX=-9.5   GlobalY=-38   GlobalZ=0   SpecialPt=Yes
+   Point=347   GlobalX=85.5   GlobalY=-38   GlobalZ=0   SpecialPt=Yes
+   Point=348   GlobalX=-9.5   GlobalY=-39   GlobalZ=0   SpecialPt=Yes
+   Point=349   GlobalX=85.5   GlobalY=-39   GlobalZ=0   SpecialPt=Yes
+   Point=350   GlobalX=-9.5   GlobalY=-40   GlobalZ=0   SpecialPt=Yes
+   Point=351   GlobalX=85.5   GlobalY=-40   GlobalZ=0   SpecialPt=Yes
+   Point=352   GlobalX=-9.5   GlobalY=-41   GlobalZ=0   SpecialPt=Yes
+   Point=353   GlobalX=85.5   GlobalY=-41   GlobalZ=0   SpecialPt=Yes
+   Point=354   GlobalX=-9.5   GlobalY=-42   GlobalZ=0   SpecialPt=Yes
+   Point=355   GlobalX=85.5   GlobalY=-42   GlobalZ=0   SpecialPt=Yes
+   Point=356   GlobalX=-9.5   GlobalY=-43   GlobalZ=0   SpecialPt=Yes
+   Point=357   GlobalX=85.5   GlobalY=-43   GlobalZ=0   SpecialPt=Yes
+   Point=358   GlobalX=-9.5   GlobalY=-44   GlobalZ=0   SpecialPt=Yes
+   Point=359   GlobalX=85.5   GlobalY=-44   GlobalZ=0   SpecialPt=Yes
+   Point=360   GlobalX=-9.5   GlobalY=-45   GlobalZ=0   SpecialPt=Yes
+   Point=361   GlobalX=85.5   GlobalY=-45   GlobalZ=0   SpecialPt=Yes
+   Point=362   GlobalX=-9.5   GlobalY=-46   GlobalZ=0   SpecialPt=Yes
+   Point=363   GlobalX=85.5   GlobalY=-46   GlobalZ=0   SpecialPt=Yes
+   Point=364   GlobalX=-9.5   GlobalY=-47   GlobalZ=0   SpecialPt=Yes
+   Point=365   GlobalX=85.5   GlobalY=-47   GlobalZ=0   SpecialPt=Yes
+   Point=366   GlobalX=-9.5   GlobalY=-48   GlobalZ=0   SpecialPt=Yes
+   Point=367   GlobalX=85.5   GlobalY=-48   GlobalZ=0   SpecialPt=Yes
+   Point=368   GlobalX=-9.5   GlobalY=-49   GlobalZ=0   SpecialPt=Yes
+   Point=369   GlobalX=85.5   GlobalY=-49   GlobalZ=0   SpecialPt=Yes
+   Point=370   GlobalX=-9.5   GlobalY=-50   GlobalZ=0   SpecialPt=Yes
+   Point=371   GlobalX=85.5   GlobalY=-50   GlobalZ=0   SpecialPt=Yes
+   Point=372   GlobalX=-9.5   GlobalY=-51   GlobalZ=0   SpecialPt=Yes
+   Point=373   GlobalX=85.5   GlobalY=-51   GlobalZ=0   SpecialPt=Yes
+   Point=374   GlobalX=-9.5   GlobalY=-52   GlobalZ=0   SpecialPt=Yes
+   Point=375   GlobalX=85.5   GlobalY=-52   GlobalZ=0   SpecialPt=Yes
+   Point=376   GlobalX=-9.5   GlobalY=-53   GlobalZ=0   SpecialPt=Yes
+   Point=377   GlobalX=85.5   GlobalY=-53   GlobalZ=0   SpecialPt=Yes
+   Point=378   GlobalX=-9.5   GlobalY=-54   GlobalZ=0   SpecialPt=Yes
+   Point=379   GlobalX=85.5   GlobalY=-54   GlobalZ=0   SpecialPt=Yes
+   Point=380   GlobalX=-9.5   GlobalY=-55   GlobalZ=0   SpecialPt=Yes
+   Point=381   GlobalX=85.5   GlobalY=-55   GlobalZ=0   SpecialPt=Yes
+   Point=382   GlobalX=-9.5   GlobalY=-56   GlobalZ=0   SpecialPt=Yes
+   Point=383   GlobalX=85.5   GlobalY=-56   GlobalZ=0   SpecialPt=Yes
+   Point=384   GlobalX=-9.5   GlobalY=-57   GlobalZ=0   SpecialPt=Yes
+   Point=385   GlobalX=85.5   GlobalY=-57   GlobalZ=0   SpecialPt=Yes
+   Point=386   GlobalX=-9.5   GlobalY=-58   GlobalZ=0   SpecialPt=Yes
+   Point=387   GlobalX=85.5   GlobalY=-58   GlobalZ=0   SpecialPt=Yes
+   Point=388   GlobalX=-9.5   GlobalY=-59   GlobalZ=0   SpecialPt=Yes
+   Point=389   GlobalX=85.5   GlobalY=-59   GlobalZ=0   SpecialPt=Yes
+   Point=390   GlobalX=-9.5   GlobalY=-60   GlobalZ=0   SpecialPt=Yes
+   Point=391   GlobalX=85.5   GlobalY=-60   GlobalZ=0   SpecialPt=Yes
+   Point=392   GlobalX=-9.5   GlobalY=-61   GlobalZ=0   SpecialPt=Yes
+   Point=393   GlobalX=85.5   GlobalY=-61   GlobalZ=0   SpecialPt=Yes
+   Point=394   GlobalX=-9.5   GlobalY=-62   GlobalZ=0   SpecialPt=Yes
+   Point=395   GlobalX=85.5   GlobalY=-62   GlobalZ=0   SpecialPt=Yes
+   Point=396   GlobalX=-9.5   GlobalY=-63   GlobalZ=0   SpecialPt=Yes
+   Point=397   GlobalX=85.5   GlobalY=-63   GlobalZ=0   SpecialPt=Yes
+   Point=398   GlobalX=-9.5   GlobalY=-64   GlobalZ=0   SpecialPt=Yes
+   Point=399   GlobalX=85.5   GlobalY=-64   GlobalZ=0   SpecialPt=Yes
+   Point=400   GlobalX=-9.5   GlobalY=-65   GlobalZ=0   SpecialPt=Yes
+   Point=401   GlobalX=85.5   GlobalY=-65   GlobalZ=0   SpecialPt=Yes
+   Point=402   GlobalX=-9.5   GlobalY=-66   GlobalZ=0   SpecialPt=Yes
+   Point=403   GlobalX=85.5   GlobalY=-66   GlobalZ=0   SpecialPt=Yes
+   Point=404   GlobalX=-9.5   GlobalY=-67   GlobalZ=0   SpecialPt=Yes
+   Point=405   GlobalX=85.5   GlobalY=-67   GlobalZ=0   SpecialPt=Yes
+   Point=406   GlobalX=-9.5   GlobalY=-68   GlobalZ=0   SpecialPt=Yes
+   Point=407   GlobalX=85.5   GlobalY=-68   GlobalZ=0   SpecialPt=Yes
+   Point=408   GlobalX=-9.5   GlobalY=-69   GlobalZ=0   SpecialPt=Yes
+   Point=409   GlobalX=85.5   GlobalY=-69   GlobalZ=0   SpecialPt=Yes
+   Point=410   GlobalX=-9.5   GlobalY=-70   GlobalZ=0   SpecialPt=Yes
+   Point=411   GlobalX=85.5   GlobalY=-70   GlobalZ=0   SpecialPt=Yes
+   Point=412   GlobalX=-9.5   GlobalY=-71   GlobalZ=0   SpecialPt=Yes
+   Point=413   GlobalX=85.5   GlobalY=-71   GlobalZ=0   SpecialPt=Yes
+   Point=414   GlobalX=-9.5   GlobalY=-72   GlobalZ=0   SpecialPt=Yes
+   Point=415   GlobalX=85.5   GlobalY=-72   GlobalZ=0   SpecialPt=Yes
+   Point=416   GlobalX=-9.5   GlobalY=-73   GlobalZ=0   SpecialPt=Yes
+   Point=417   GlobalX=85.5   GlobalY=-73   GlobalZ=0   SpecialPt=Yes
+   Point=418   GlobalX=-9.5   GlobalY=-74   GlobalZ=0   SpecialPt=Yes
+   Point=419   GlobalX=85.5   GlobalY=-74   GlobalZ=0   SpecialPt=Yes
+   Point=420   GlobalX=-9.5   GlobalY=-75   GlobalZ=0   SpecialPt=Yes
+   Point=421   GlobalX=85.5   GlobalY=-75   GlobalZ=0   SpecialPt=Yes
+   Point=422   GlobalX=-9.5   GlobalY=-76   GlobalZ=0   SpecialPt=Yes
+   Point=423   GlobalX=85.5   GlobalY=-76   GlobalZ=0   SpecialPt=Yes
+   Point=424   GlobalX=-9.5   GlobalY=-77   GlobalZ=0   SpecialPt=Yes
+   Point=425   GlobalX=85.5   GlobalY=-77   GlobalZ=0   SpecialPt=Yes
+   Point=426   GlobalX=-9.5   GlobalY=-78   GlobalZ=0   SpecialPt=Yes
+   Point=427   GlobalX=85.5   GlobalY=-78   GlobalZ=0   SpecialPt=Yes
+   Point=428   GlobalX=-9.5   GlobalY=-79   GlobalZ=0   SpecialPt=Yes
+   Point=429   GlobalX=85.5   GlobalY=-79   GlobalZ=0   SpecialPt=Yes
+   Point=430   GlobalX=-9.5   GlobalY=-80   GlobalZ=0   SpecialPt=Yes
+   Point=431   GlobalX=85.5   GlobalY=-80   GlobalZ=0   SpecialPt=Yes
+   Point=432   GlobalX=-9.5   GlobalY=-81   GlobalZ=0   SpecialPt=Yes
+   Point=433   GlobalX=85.5   GlobalY=-81   GlobalZ=0   SpecialPt=Yes
+   Point=434   GlobalX=-9.5   GlobalY=-82   GlobalZ=0   SpecialPt=Yes
+   Point=435   GlobalX=85.5   GlobalY=-82   GlobalZ=0   SpecialPt=Yes
+   Point=436   GlobalX=-9.5   GlobalY=-83   GlobalZ=0   SpecialPt=Yes
+   Point=437   GlobalX=85.5   GlobalY=-83   GlobalZ=0   SpecialPt=Yes
+   Point=438   GlobalX=-9.5   GlobalY=-84   GlobalZ=0   SpecialPt=Yes
+   Point=439   GlobalX=85.5   GlobalY=-84   GlobalZ=0   SpecialPt=Yes
+   Point=440   GlobalX=-9.5   GlobalY=-85   GlobalZ=0   SpecialPt=Yes
+   Point=441   GlobalX=85.5   GlobalY=-85   GlobalZ=0   SpecialPt=Yes
+   Point=442   GlobalX=-9.5   GlobalY=-86   GlobalZ=0   SpecialPt=Yes
+   Point=443   GlobalX=85.5   GlobalY=-86   GlobalZ=0   SpecialPt=Yes
+   Point=444   GlobalX=-9.5   GlobalY=-87   GlobalZ=0   SpecialPt=Yes
+   Point=445   GlobalX=85.5   GlobalY=-87   GlobalZ=0   SpecialPt=Yes
+   Point=446   GlobalX=-9.5   GlobalY=-88   GlobalZ=0   SpecialPt=Yes
+   Point=447   GlobalX=85.5   GlobalY=-88   GlobalZ=0   SpecialPt=Yes
+   Point=448   GlobalX=-9.5   GlobalY=-89   GlobalZ=0   SpecialPt=Yes
+   Point=449   GlobalX=85.5   GlobalY=-89   GlobalZ=0   SpecialPt=Yes
+   Point=450   GlobalX=-9.5   GlobalY=-90   GlobalZ=0   SpecialPt=Yes
+   Point=451   GlobalX=85.5   GlobalY=-90   GlobalZ=0   SpecialPt=Yes
+   Point=452   GlobalX=-9.5   GlobalY=-91   GlobalZ=0   SpecialPt=Yes
+   Point=453   GlobalX=85.5   GlobalY=-91   GlobalZ=0   SpecialPt=Yes
+   Point=454   GlobalX=-9.5   GlobalY=-92   GlobalZ=0   SpecialPt=Yes
+   Point=455   GlobalX=85.5   GlobalY=-92   GlobalZ=0   SpecialPt=Yes
+   Point=456   GlobalX=-9.5   GlobalY=-93   GlobalZ=0   SpecialPt=Yes
+   Point=457   GlobalX=85.5   GlobalY=-93   GlobalZ=0   SpecialPt=Yes
+   Point=458   GlobalX=-9.5   GlobalY=-94   GlobalZ=0   SpecialPt=Yes
+   Point=459   GlobalX=85.5   GlobalY=-94   GlobalZ=0   SpecialPt=Yes
+   Point=460   GlobalX=-9.5   GlobalY=-95   GlobalZ=0   SpecialPt=Yes
+   Point=461   GlobalX=85.5   GlobalY=-95   GlobalZ=0   SpecialPt=Yes
+   Point=462   GlobalX=-9.5   GlobalY=-96   GlobalZ=0   SpecialPt=Yes
+   Point=463   GlobalX=85.5   GlobalY=-96   GlobalZ=0   SpecialPt=Yes
+   Point=464   GlobalX=-9.5   GlobalY=-97   GlobalZ=0   SpecialPt=Yes
+   Point=465   GlobalX=85.5   GlobalY=-97   GlobalZ=0   SpecialPt=Yes
+   Point=466   GlobalX=-9.5   GlobalY=-98   GlobalZ=0   SpecialPt=Yes
+   Point=467   GlobalX=85.5   GlobalY=-98   GlobalZ=0   SpecialPt=Yes
+   Point=468   GlobalX=-9.5   GlobalY=-99   GlobalZ=0   SpecialPt=Yes
+   Point=469   GlobalX=85.5   GlobalY=-99   GlobalZ=0   SpecialPt=Yes
+   Point=470   GlobalX=-9.5   GlobalY=-100   GlobalZ=0   SpecialPt=Yes
+   Point=471   GlobalX=85.5   GlobalY=-100   GlobalZ=0   SpecialPt=Yes
+   Point=472   GlobalX=-9.5   GlobalY=-101   GlobalZ=0   SpecialPt=Yes
+   Point=473   GlobalX=85.5   GlobalY=-101   GlobalZ=0   SpecialPt=Yes
+   Point=474   GlobalX=-9.5   GlobalY=-102   GlobalZ=0   SpecialPt=Yes
+   Point=475   GlobalX=85.5   GlobalY=-102   GlobalZ=0   SpecialPt=Yes
+   Point=476   GlobalX=-9.5   GlobalY=-103   GlobalZ=0   SpecialPt=Yes
+   Point=477   GlobalX=85.5   GlobalY=-103   GlobalZ=0   SpecialPt=Yes
+   Point=478   GlobalX=-9.5   GlobalY=-104   GlobalZ=0   SpecialPt=Yes
+   Point=479   GlobalX=85.5   GlobalY=-104   GlobalZ=0   SpecialPt=Yes
+   Point=480   GlobalX=-9.5   GlobalY=-105   GlobalZ=0   SpecialPt=Yes
+   Point=481   GlobalX=85.5   GlobalY=-105   GlobalZ=0   SpecialPt=Yes
+   Point=482   GlobalX=-9.5   GlobalY=-106   GlobalZ=0   SpecialPt=Yes
+   Point=483   GlobalX=85.5   GlobalY=-106   GlobalZ=0   SpecialPt=Yes
+   Point=484   GlobalX=-9.5   GlobalY=-107   GlobalZ=0   SpecialPt=Yes
+   Point=485   GlobalX=85.5   GlobalY=-107   GlobalZ=0   SpecialPt=Yes
+   Point=486   GlobalX=-9.5   GlobalY=-108   GlobalZ=0   SpecialPt=Yes
+   Point=487   GlobalX=85.5   GlobalY=-108   GlobalZ=0   SpecialPt=Yes
+   Point=488   GlobalX=-9.5   GlobalY=-109   GlobalZ=0   SpecialPt=Yes
+   Point=489   GlobalX=85.5   GlobalY=-109   GlobalZ=0   SpecialPt=Yes
+   Point=490   GlobalX=-9.5   GlobalY=-110   GlobalZ=0   SpecialPt=Yes
+   Point=491   GlobalX=85.5   GlobalY=-110   GlobalZ=0   SpecialPt=Yes
+   Point=492   GlobalX=-9.5   GlobalY=-111   GlobalZ=0   SpecialPt=Yes
+   Point=493   GlobalX=85.5   GlobalY=-111   GlobalZ=0   SpecialPt=Yes
+   Point=494   GlobalX=-9.5   GlobalY=-112   GlobalZ=0   SpecialPt=Yes
+   Point=495   GlobalX=85.5   GlobalY=-112   GlobalZ=0   SpecialPt=Yes
+   Point=496   GlobalX=-9.5   GlobalY=-113   GlobalZ=0   SpecialPt=Yes
+   Point=497   GlobalX=85.5   GlobalY=-113   GlobalZ=0   SpecialPt=Yes
+   Point=498   GlobalX=-9.5   GlobalY=-114   GlobalZ=0   SpecialPt=Yes
+   Point=499   GlobalX=85.5   GlobalY=-114   GlobalZ=0   SpecialPt=Yes
+   Point=500   GlobalX=-9.5   GlobalY=-115   GlobalZ=0   SpecialPt=Yes
+   Point=501   GlobalX=85.5   GlobalY=-115   GlobalZ=0   SpecialPt=Yes
+   Point=502   GlobalX=-9.5   GlobalY=-116   GlobalZ=0   SpecialPt=Yes
+   Point=503   GlobalX=85.5   GlobalY=-116   GlobalZ=0   SpecialPt=Yes
+   Point=504   GlobalX=-9.5   GlobalY=-117   GlobalZ=0   SpecialPt=Yes
+   Point=505   GlobalX=85.5   GlobalY=-117   GlobalZ=0   SpecialPt=Yes
+   Point=506   GlobalX=-9.5   GlobalY=-118   GlobalZ=0   SpecialPt=Yes
+   Point=507   GlobalX=85.5   GlobalY=-118   GlobalZ=0   SpecialPt=Yes
+   Point=508   GlobalX=-9.5   GlobalY=-119   GlobalZ=0   SpecialPt=Yes
+   Point=509   GlobalX=85.5   GlobalY=-119   GlobalZ=0   SpecialPt=Yes
+   Point=510   GlobalX=-9.5   GlobalY=-120   GlobalZ=0   SpecialPt=Yes
+   Point=511   GlobalX=85.5   GlobalY=-120   GlobalZ=0   SpecialPt=Yes
+   Point=512   GlobalX=-9.5   GlobalY=-121   GlobalZ=0   SpecialPt=Yes
+   Point=513   GlobalX=85.5   GlobalY=-121   GlobalZ=0   SpecialPt=Yes
+   Point=514   GlobalX=-9.5   GlobalY=-122   GlobalZ=0   SpecialPt=Yes
+   Point=515   GlobalX=85.5   GlobalY=-122   GlobalZ=0   SpecialPt=Yes
+   Point=516   GlobalX=-9.5   GlobalY=-123   GlobalZ=0   SpecialPt=Yes
+   Point=517   GlobalX=85.5   GlobalY=-123   GlobalZ=0   SpecialPt=Yes
+   Point=551   GlobalX=-2.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=552   GlobalX=-1.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=553   GlobalX=-1.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=554   GlobalX=-0.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=555   GlobalX=-0.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=556   GlobalX=0.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=557   GlobalX=0.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=558   GlobalX=1.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=559   GlobalX=1.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=560   GlobalX=2.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=561   GlobalX=2.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=562   GlobalX=3.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=563   GlobalX=3.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=564   GlobalX=4.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=565   GlobalX=4.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=566   GlobalX=5.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=567   GlobalX=5.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=568   GlobalX=6.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=569   GlobalX=6.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=570   GlobalX=7.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=571   GlobalX=7.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=572   GlobalX=8.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=573   GlobalX=8.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=574   GlobalX=9.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=575   GlobalX=9.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=576   GlobalX=10.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=577   GlobalX=10.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=578   GlobalX=11.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=579   GlobalX=11.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=580   GlobalX=12.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=581   GlobalX=12.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=582   GlobalX=13.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=583   GlobalX=13.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=584   GlobalX=14.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=585   GlobalX=14.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=586   GlobalX=15.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=587   GlobalX=15.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=588   GlobalX=16.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=589   GlobalX=16.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=590   GlobalX=17.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=591   GlobalX=17.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=592   GlobalX=18.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=593   GlobalX=18.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=594   GlobalX=19.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=595   GlobalX=19.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=596   GlobalX=20.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=597   GlobalX=20.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=598   GlobalX=21.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=599   GlobalX=21.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=600   GlobalX=22.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=601   GlobalX=22.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=602   GlobalX=23.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=603   GlobalX=23.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=604   GlobalX=24.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=605   GlobalX=24.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=606   GlobalX=25.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=607   GlobalX=25.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=608   GlobalX=26.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=609   GlobalX=26.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=610   GlobalX=27.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=611   GlobalX=27.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=612   GlobalX=28.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=613   GlobalX=28.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=614   GlobalX=29.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=615   GlobalX=29.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=616   GlobalX=30.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=617   GlobalX=30.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=618   GlobalX=31.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=619   GlobalX=31.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=620   GlobalX=32.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=621   GlobalX=32.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=622   GlobalX=33.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=623   GlobalX=33.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=624   GlobalX=34.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=625   GlobalX=34.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=626   GlobalX=35.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=627   GlobalX=35.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=628   GlobalX=36.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=629   GlobalX=36.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=630   GlobalX=37.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=631   GlobalX=37.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=632   GlobalX=38.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=633   GlobalX=38.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=634   GlobalX=39.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=635   GlobalX=39.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=636   GlobalX=40.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=637   GlobalX=40.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=638   GlobalX=41.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=639   GlobalX=41.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=640   GlobalX=42.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=641   GlobalX=42.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=642   GlobalX=43.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=643   GlobalX=43.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=644   GlobalX=44.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=645   GlobalX=44.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=646   GlobalX=45.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=647   GlobalX=45.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=648   GlobalX=46.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=649   GlobalX=46.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=650   GlobalX=47.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=651   GlobalX=47.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=652   GlobalX=48.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=653   GlobalX=48.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=654   GlobalX=49.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=655   GlobalX=49.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=656   GlobalX=50.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=657   GlobalX=50.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=658   GlobalX=51.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=659   GlobalX=51.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=660   GlobalX=52.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=661   GlobalX=52.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=662   GlobalX=53.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=663   GlobalX=53.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=664   GlobalX=54.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=665   GlobalX=54.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=666   GlobalX=55.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=667   GlobalX=55.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=668   GlobalX=56.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=669   GlobalX=56.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=670   GlobalX=57.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=671   GlobalX=57.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=672   GlobalX=58.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=673   GlobalX=58.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=674   GlobalX=59.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=675   GlobalX=59.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=676   GlobalX=60.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=677   GlobalX=60.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=678   GlobalX=61.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=679   GlobalX=61.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=680   GlobalX=62.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=681   GlobalX=62.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=682   GlobalX=63.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=683   GlobalX=63.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=684   GlobalX=64.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=685   GlobalX=64.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=686   GlobalX=65.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=687   GlobalX=65.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=688   GlobalX=66.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=689   GlobalX=66.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=690   GlobalX=67.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=691   GlobalX=67.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=692   GlobalX=68.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=693   GlobalX=68.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=694   GlobalX=69.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=695   GlobalX=69.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=696   GlobalX=70.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=697   GlobalX=70.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=698   GlobalX=71.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=699   GlobalX=71.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=700   GlobalX=72.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=701   GlobalX=72.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=702   GlobalX=73.5   GlobalY=21   GlobalZ=0   SpecialPt=Yes
+   Point=703   GlobalX=73.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=705   GlobalX=74.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=707   GlobalX=75.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=709   GlobalX=76.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=711   GlobalX=77.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=713   GlobalX=78.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=715   GlobalX=79.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=717   GlobalX=80.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=719   GlobalX=81.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=721   GlobalX=82.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=723   GlobalX=83.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=725   GlobalX=84.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=727   GlobalX=85.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=729   GlobalX=86.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=731   GlobalX=87.5   GlobalY=-131.5   GlobalZ=0   SpecialPt=Yes
+   Point=787   GlobalX=0   GlobalY=-112.0000046   GlobalZ=0   SpecialPt=Yes
+   Point=789   GlobalX=0   GlobalY=-96.0000112   GlobalZ=0   SpecialPt=Yes
+   Point=791   GlobalX=0   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=Yes
+   Point=809   GlobalX=70.0000124   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=Yes
+   Point=838   GlobalX=50.0000016   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=Yes
+   Point=861   GlobalX=29.9999908   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=Yes
+   Point=911   GlobalX=10.00000032   GlobalY=-96.0000112   GlobalZ=0   SpecialPt=Yes
+   Point=912   GlobalX=10.00000032   GlobalY=-79.9999924   GlobalZ=0   SpecialPt=Yes
+   Point=1213   GlobalX=29.9999908   GlobalY=-13.7142982   GlobalZ=0   SpecialPt=Yes
+   Point=1215   GlobalX=50.0000016   GlobalY=-22.85709932   GlobalZ=0   SpecialPt=Yes
+   Point=1217   GlobalX=10.00000032   GlobalY=-107.4289952   GlobalZ=0   SpecialPt=Yes
+   Point=1219   GlobalX=29.9999908   GlobalY=-98.2857064   GlobalZ=0   SpecialPt=Yes
+   Point=1221   GlobalX=50.0000016   GlobalY=-89.1429002   GlobalZ=0   SpecialPt=Yes
+   Point=1223   GlobalX=10.00000032   GlobalY=-4.57143104   GlobalZ=0   SpecialPt=Yes
+ 
+TABLE:  "OBJECT GEOMETRY - LINES 01 - GENERAL"
+   Line=9   PointI=180   PointJ=181   LineType=Beam   CurveType=Straight   Length=47.9999802
+   Line=28   PointI=200   PointJ=787   LineType=Beam   CurveType=Straight   Length=11.5
+   Line=37   PointI=67   PointJ=189   LineType=Beam   CurveType=Straight   Length=11.5
+   Line=W8-W   PointI=787   PointJ=789   LineType=Beam   CurveType=Straight   Length=15.9999934
+   Line=W9-W   PointI=789   PointJ=791   LineType=Beam   CurveType=Straight   Length=16.0000188
+   Line=W10-W   PointI=791   PointJ=75   LineType=Beam   CurveType=Straight   Length=15.9999934
+   Line=W11-W   PointI=75   PointJ=73   LineType=Beam   CurveType=Straight   Length=15.9999934
+   Line=W12-W   PointI=73   PointJ=71   LineType=Beam   CurveType=Straight   Length=15.9999934
+   Line=W13-W   PointI=71   PointJ=69   LineType=Beam   CurveType=Straight   Length=16.00001118
+   Line=W14-W   PointI=69   PointJ=67   LineType=Beam   CurveType=Straight   Length=16.00000102
+ 
+TABLE:  "OBJECT GEOMETRY - AREAS 01 - GENERAL"
+   Area=3   NumPoints=4   Point1=41   Point2=42   Point3=43   Point4=44   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=4   NumPoints=4   Point1=45   Point2=46   Point3=47   Point4=48   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=5   NumPoints=4   Point1=49   Point2=50   Point3=51   Point4=52   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=6   NumPoints=4   Point1=53   Point2=54   Point3=55   Point4=56   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=7   NumPoints=4   Point1=57   Point2=58   Point3=59   Point4=60   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=8   NumPoints=4   Point1=61   Point2=62   Point3=63   Point4=64   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=9   NumPoints=4   Point1=65   Point2=66   Point3=68   Point4=70   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=10   NumPoints=4   Point1=72   Point2=74   Point3=76   Point4=77   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=11   NumPoints=4   Point1=78   Point2=79   Point3=80   Point4=81   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=12   NumPoints=4   Point1=82   Point2=83   Point3=84   Point4=85   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=13   NumPoints=4   Point1=86   Point2=87   Point3=88   Point4=89   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=14   NumPoints=4   Point1=90   Point2=91   Point3=92   Point4=93   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=15   NumPoints=4   Point1=94   Point2=95   Point3=96   Point4=97   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=16   NumPoints=4   Point1=98   Point2=99   Point3=100   Point4=101   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=17   NumPoints=4   Point1=102   Point2=103   Point3=104   Point4=105   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=18   NumPoints=4   Point1=106   Point2=107   Point3=108   Point4=109   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=19   NumPoints=4   Point1=110   Point2=114   Point3=115   Point4=116   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=20   NumPoints=4   Point1=117   Point2=118   Point3=119   Point4=120   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=21   NumPoints=4   Point1=121   Point2=122   Point3=123   Point4=124   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=22   NumPoints=4   Point1=125   Point2=126   Point3=127   Point4=128   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=23   NumPoints=4   Point1=129   Point2=130   Point3=131   Point4=132   Auto=No   TotalArea=12.2499999999999   AreaType=Slab   CurvedEdges=0
+   Area=24   NumPoints=4   Point1=133   Point2=134   Point3=135   Point4=136   Auto=No   TotalArea=12.2499999999999   AreaType=Slab   CurvedEdges=0
+   Area=25   NumPoints=4   Point1=137   Point2=138   Point3=139   Point4=140   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=26   NumPoints=4   Point1=141   Point2=142   Point3=143   Point4=144   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=27   NumPoints=4   Point1=145   Point2=146   Point3=147   Point4=148   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=28   NumPoints=4   Point1=149   Point2=150   Point3=151   Point4=152   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=29   NumPoints=4   Point1=153   Point2=154   Point3=155   Point4=156   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=30   NumPoints=4   Point1=157   Point2=158   Point3=159   Point4=163   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=31   NumPoints=4   Point1=164   Point2=165   Point3=166   Point4=167   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=32   NumPoints=4   Point1=168   Point2=169   Point3=170   Point4=171   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=33   NumPoints=4   Point1=172   Point2=173   Point3=174   Point4=175   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=34   NumPoints=4   Point1=176   Point2=177   Point3=178   Point4=179   Auto=No   TotalArea=12.25   AreaType=Slab   CurvedEdges=0
+   Area=35   NumPoints=20   Point1=200   Point2=207   Point3=185   Point4=211   Auto=No   TotalArea=317.880652807225   AreaType=Slab   CurvedEdges=0
+   Area=35   Point1=180   Point2=209   Point3=134   Point4=133
+   Area=35   Point1=155   Point2=154   Point3=153   Point4=159
+   Area=35   Point1=158   Point2=157   Point3=178   Point4=177
+   Area=35   Point1=176   Point2=174   Point3=173   Point4=210
+   Area=38   NumPoints=20   Point1=215   Point2=92   Point3=91   Point4=44   Auto=No   TotalArea=317.886973050972   AreaType=Slab   CurvedEdges=0
+   Area=38   Point1=43   Point2=42   Point3=48   Point4=47
+   Area=38   Point1=46   Point2=52   Point3=51   Point4=50
+   Area=38   Point1=56   Point2=55   Point3=214   Point4=181
+   Area=38   Point1=212   Point2=183   Point3=213   Point4=189
+   Area=39   NumPoints=16   Point1=214   Point2=54   Point3=53   Point4=60   Auto=No   TotalArea=232.04988912   AreaType=Slab   CurvedEdges=0
+   Area=39   Point1=59   Point2=58   Point3=57   Point4=132
+   Area=39   Point1=131   Point2=130   Point3=129   Point4=136
+   Area=39   Point1=135   Point2=209   Point3=180   Point4=181
+   Area=43   NumPoints=14   Point1=169   Point2=225   Point3=224   Point4=174   Auto=No   TotalArea=273.309660886672   AreaType=Slab   CurvedEdges=0
+   Area=43   Point1=176   Point2=179   Point3=178   Point4=157
+   Area=43   Point1=163   Point2=166   Point3=165   Point4=164
+   Area=43   Point1=167   Point2=170
+   Area=44   NumPoints=14   Point1=227   Point2=88   Point3=87   Point4=82   Auto=No   TotalArea=273.303488688578   AreaType=Slab   CurvedEdges=0
+   Area=44   Point1=85   Point2=84   Point3=83   Point4=45
+   Area=44   Point1=48   Point2=42   Point3=41   Point4=44
+   Area=44   Point1=91   Point2=226
+   Area=45   NumPoints=39   Point1=237   Point2=96   Point3=95   Point4=236   Auto=No   TotalArea=825.375144095003   AreaType=Slab   CurvedEdges=0
+   Area=45   Point1=235   Point2=100   Point3=99   Point4=234
+   Area=45   Point1=233   Point2=115   Point3=114   Point4=232
+   Area=45   Point1=231   Point2=151   Point3=150   Point4=230
+   Area=45   Point1=229   Point2=170   Point3=167   Point4=166
+   Area=45   Point1=146   Point2=145   Point3=148   Point4=147
+   Area=45   Point1=118   Point2=117   Point3=120   Point4=119
+   Area=45   Point1=103   Point2=102   Point3=105   Point4=104
+   Area=45   Point1=79   Point2=78   Point3=81   Point4=80
+   Area=45   Point1=83   Point2=82   Point3=228
+   Area=47   NumPoints=4   Point1=77   Point2=76   Point3=46   Point4=45   Auto=No   TotalArea=51.749999   AreaType=Slab   CurvedEdges=0
+   Area=48   NumPoints=4   Point1=109   Point2=108   Point3=74   Point4=72   Auto=No   TotalArea=43.7499769   AreaType=Slab   CurvedEdges=0
+   Area=49   NumPoints=4   Point1=124   Point2=123   Point3=107   Point4=106   Auto=No   TotalArea=43.7499769   AreaType=Slab   CurvedEdges=0
+   Area=50   NumPoints=4   Point1=144   Point2=143   Point3=122   Point4=121   Auto=No   TotalArea=43.7499769000001   AreaType=Slab   CurvedEdges=0
+   Area=54   NumPoints=4   Point1=156   Point2=155   Point3=138   Point4=137   Auto=No   TotalArea=19.7501773   AreaType=Slab   CurvedEdges=0
+   Area=55   NumPoints=4   Point1=140   Point2=139   Point3=126   Point4=125   Auto=No   TotalArea=43.7499769000001   AreaType=Slab   CurvedEdges=0
+   Area=56   NumPoints=4   Point1=128   Point2=127   Point3=62   Point4=61   Auto=No   TotalArea=43.7499769   AreaType=Slab   CurvedEdges=0
+   Area=59   NumPoints=4   Point1=64   Point2=63   Point3=66   Point4=65   Auto=No   TotalArea=43.7499769   AreaType=Slab   CurvedEdges=0
+   Area=60   NumPoints=4   Point1=70   Point2=68   Point3=50   Point4=49   Auto=No   TotalArea=19.75019508   AreaType=Slab   CurvedEdges=0
+   Area=61   NumPoints=4   Point1=80   Point2=77   Point3=45   Point4=83   Auto=No   TotalArea=225.107102854948   AreaType=Slab   CurvedEdges=0
+   Area=62   NumPoints=5   Point1=76   Point2=70   Point3=49   Point4=52   Auto=No   TotalArea=197.411300974585   AreaType=Slab   CurvedEdges=0
+   Area=62   Point1=46
+   Area=63   NumPoints=3   Point1=68   Point2=56   Point3=50   Auto=No   TotalArea=46.5540617317296   AreaType=Slab   CurvedEdges=0
+   Area=65   NumPoints=5   Point1=159   Point2=153   Point3=156   Point4=137   Auto=No   TotalArea=197.411259064558   AreaType=Slab   CurvedEdges=0
+   Area=65   Point1=142
+   Area=66   NumPoints=3   Point1=155   Point2=133   Point3=138   Auto=No   TotalArea=46.5540198217022   AreaType=Slab   CurvedEdges=0
+   Area=67   NumPoints=16   Point1=79   Point2=104   Point3=103   Point4=119   Auto=No   TotalArea=849.749183020188   AreaType=Slab   CurvedEdges=0
+   Area=67   Point1=118   Point2=147   Point3=146   Point4=141
+   Area=67   Point1=144   Point2=121   Point3=124   Point4=106
+   Area=67   Point1=109   Point2=72   Point3=77   Point4=80
+   Area=68   NumPoints=16   Point1=74   Point2=108   Point3=107   Point4=123   Auto=No   TotalArea=849.750229499786   AreaType=Slab   CurvedEdges=0
+   Area=68   Point1=122   Point2=143   Point3=142   Point4=137
+   Area=68   Point1=140   Point2=125   Point3=128   Point4=61
+   Area=68   Point1=64   Point2=65   Point3=70   Point4=76
+   Area=69   NumPoints=16   Point1=66   Point2=63   Point3=62   Point4=127   Auto=No   TotalArea=849.750229499787   AreaType=Slab   CurvedEdges=0
+   Area=69   Point1=126   Point2=139   Point3=138   Point4=133
+   Area=69   Point1=136   Point2=129   Point3=132   Point4=57
+   Area=69   Point1=60   Point2=53   Point3=56   Point4=68
+   Area=71   NumPoints=6   Point1=166   Point2=163   Point3=159   Point4=142   Auto=No   TotalArea=276.857164719912   AreaType=Slab   CurvedEdges=0
+   Area=71   Point1=141   Point2=146
+ 
+TABLE:  "OBJECT GEOMETRY - DESIGN STRIPS"
+   Strip=SA1   Point=244   GlobalX=-9.5   GlobalY=11   WALeft=0.5   WARight=0.5
+   Strip=SA1   Point=245   GlobalX=85.5   GlobalY=11   WBLeft=0.5   WBRight=0.5
+   Strip=SA2   Point=246   GlobalX=-9.5   GlobalY=10   WALeft=0.5   WARight=0.5
+   Strip=SA2   Point=247   GlobalX=85.5   GlobalY=10   WBLeft=0.5   WBRight=0.5
+   Strip=SA3   Point=248   GlobalX=-9.5   GlobalY=9   WALeft=0.5   WARight=0.5
+   Strip=SA3   Point=249   GlobalX=85.5   GlobalY=9   WBLeft=0.5   WBRight=0.5
+   Strip=SA4   Point=250   GlobalX=-9.5   GlobalY=8   WALeft=0.5   WARight=0.5
+   Strip=SA4   Point=251   GlobalX=85.5   GlobalY=8   WBLeft=0.5   WBRight=0.5
+   Strip=SA5   Point=252   GlobalX=-9.5   GlobalY=7   WALeft=0.5   WARight=0.5
+   Strip=SA5   Point=253   GlobalX=85.5   GlobalY=7   WBLeft=0.5   WBRight=0.5
+   Strip=SA6   Point=254   GlobalX=-9.5   GlobalY=6   WALeft=0.5   WARight=0.5
+   Strip=SA6   Point=255   GlobalX=85.5   GlobalY=6   WBLeft=0.5   WBRight=0.5
+   Strip=SA7   Point=256   GlobalX=-9.5   GlobalY=5   WALeft=0.5   WARight=0.5
+   Strip=SA7   Point=257   GlobalX=85.5   GlobalY=5   WBLeft=0.5   WBRight=0.5
+   Strip=SA8   Point=258   GlobalX=-9.5   GlobalY=4   WALeft=0.5   WARight=0.5
+   Strip=SA8   Point=259   GlobalX=85.5   GlobalY=4   WBLeft=0.5   WBRight=0.5
+   Strip=SA9   Point=260   GlobalX=-9.5   GlobalY=3   WALeft=0.5   WARight=0.5
+   Strip=SA9   Point=261   GlobalX=85.5   GlobalY=3   WBLeft=0.5   WBRight=0.5
+   Strip=SB2   Point=552   GlobalX=-1.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB2   Point=553   GlobalX=-1.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB3   Point=554   GlobalX=-0.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB3   Point=555   GlobalX=-0.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB4   Point=556   GlobalX=0.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB4   Point=557   GlobalX=0.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB5   Point=558   GlobalX=1.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB5   Point=559   GlobalX=1.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB6   Point=560   GlobalX=2.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB6   Point=561   GlobalX=2.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB7   Point=562   GlobalX=3.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB7   Point=563   GlobalX=3.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB8   Point=564   GlobalX=4.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB8   Point=565   GlobalX=4.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB9   Point=566   GlobalX=5.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB9   Point=567   GlobalX=5.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SA10   Point=262   GlobalX=-9.5   GlobalY=2   WALeft=0.5   WARight=0.5
+   Strip=SA10   Point=263   GlobalX=85.5   GlobalY=2   WBLeft=0.5   WBRight=0.5
+   Strip=SA11   Point=264   GlobalX=-9.5   GlobalY=1   WALeft=0.5   WARight=0.5
+   Strip=SA11   Point=265   GlobalX=85.5   GlobalY=1   WBLeft=0.5   WBRight=0.5
+   Strip=SA12   Point=266   GlobalX=-9.5   GlobalY=0   WALeft=0.5   WARight=0.5
+   Strip=SA12   Point=267   GlobalX=85.5   GlobalY=0   WBLeft=0.5   WBRight=0.5
+   Strip=SA13   Point=268   GlobalX=-9.5   GlobalY=-1   WALeft=0.5   WARight=0.5
+   Strip=SA13   Point=269   GlobalX=85.5   GlobalY=-1   WBLeft=0.5   WBRight=0.5
+   Strip=SA14   Point=270   GlobalX=-9.5   GlobalY=-2   WALeft=0.5   WARight=0.5
+   Strip=SA14   Point=271   GlobalX=85.5   GlobalY=-2   WBLeft=0.5   WBRight=0.5
+   Strip=SA15   Point=272   GlobalX=-9.5   GlobalY=-3   WALeft=0.5   WARight=0.5
+   Strip=SA15   Point=277   GlobalX=85.5   GlobalY=-3   WBLeft=0.5   WBRight=0.5
+   Strip=SA16   Point=278   GlobalX=-9.5   GlobalY=-4   WALeft=0.5   WARight=0.5
+   Strip=SA16   Point=279   GlobalX=85.5   GlobalY=-4   WBLeft=0.5   WBRight=0.5
+   Strip=SA17   Point=280   GlobalX=-9.5   GlobalY=-5   WALeft=0.5   WARight=0.5
+   Strip=SA17   Point=281   GlobalX=85.5   GlobalY=-5   WBLeft=0.5   WBRight=0.5
+   Strip=SA18   Point=282   GlobalX=-9.5   GlobalY=-6   WALeft=0.5   WARight=0.5
+   Strip=SA18   Point=283   GlobalX=85.5   GlobalY=-6   WBLeft=0.5   WBRight=0.5
+   Strip=SA19   Point=284   GlobalX=-9.5   GlobalY=-7   WALeft=0.5   WARight=0.5
+   Strip=SA19   Point=285   GlobalX=85.5   GlobalY=-7   WBLeft=0.5   WBRight=0.5
+   Strip=SA20   Point=286   GlobalX=-9.5   GlobalY=-8   WALeft=0.5   WARight=0.5
+   Strip=SA20   Point=287   GlobalX=85.5   GlobalY=-8   WBLeft=0.5   WBRight=0.5
+   Strip=SA21   Point=288   GlobalX=-9.5   GlobalY=-9   WALeft=0.5   WARight=0.5
+   Strip=SA21   Point=289   GlobalX=85.5   GlobalY=-9   WBLeft=0.5   WBRight=0.5
+   Strip=SA22   Point=290   GlobalX=-9.5   GlobalY=-10   WALeft=0.5   WARight=0.5
+   Strip=SA22   Point=291   GlobalX=85.5   GlobalY=-10   WBLeft=0.5   WBRight=0.5
+   Strip=SA23   Point=292   GlobalX=-9.5   GlobalY=-11   WALeft=0.5   WARight=0.5
+   Strip=SA23   Point=293   GlobalX=85.5   GlobalY=-11   WBLeft=0.5   WBRight=0.5
+   Strip=SA24   Point=294   GlobalX=-9.5   GlobalY=-12   WALeft=0.5   WARight=0.5
+   Strip=SA24   Point=295   GlobalX=85.5   GlobalY=-12   WBLeft=0.5   WBRight=0.5
+   Strip=SA25   Point=296   GlobalX=-9.5   GlobalY=-13   WALeft=0.5   WARight=0.5
+   Strip=SA25   Point=297   GlobalX=85.5   GlobalY=-13   WBLeft=0.5   WBRight=0.5
+   Strip=SA26   Point=298   GlobalX=-9.5   GlobalY=-14   WALeft=0.5   WARight=0.5
+   Strip=SA26   Point=299   GlobalX=85.5   GlobalY=-14   WBLeft=0.5   WBRight=0.5
+   Strip=SA27   Point=300   GlobalX=-9.5   GlobalY=-15   WALeft=0.5   WARight=0.5
+   Strip=SA27   Point=301   GlobalX=85.5   GlobalY=-15   WBLeft=0.5   WBRight=0.5
+   Strip=SA28   Point=302   GlobalX=-9.5   GlobalY=-16   WALeft=0.5   WARight=0.5
+   Strip=SA28   Point=303   GlobalX=85.5   GlobalY=-16   WBLeft=0.5   WBRight=0.5
+   Strip=SA29   Point=304   GlobalX=-9.5   GlobalY=-17   WALeft=0.5   WARight=0.5
+   Strip=SA29   Point=305   GlobalX=85.5   GlobalY=-17   WBLeft=0.5   WBRight=0.5
+   Strip=SA30   Point=306   GlobalX=-9.5   GlobalY=-18   WALeft=0.5   WARight=0.5
+   Strip=SA30   Point=307   GlobalX=85.5   GlobalY=-18   WBLeft=0.5   WBRight=0.5
+   Strip=SA31   Point=308   GlobalX=-9.5   GlobalY=-19   WALeft=0.5   WARight=0.5
+   Strip=SA31   Point=309   GlobalX=85.5   GlobalY=-19   WBLeft=0.5   WBRight=0.5
+   Strip=SA32   Point=310   GlobalX=-9.5   GlobalY=-20   WALeft=0.5   WARight=0.5
+   Strip=SA32   Point=311   GlobalX=85.5   GlobalY=-20   WBLeft=0.5   WBRight=0.5
+   Strip=SA33   Point=312   GlobalX=-9.5   GlobalY=-21   WALeft=0.5   WARight=0.5
+   Strip=SA33   Point=313   GlobalX=85.5   GlobalY=-21   WBLeft=0.5   WBRight=0.5
+   Strip=SA34   Point=314   GlobalX=-9.5   GlobalY=-22   WALeft=0.5   WARight=0.5
+   Strip=SA34   Point=315   GlobalX=85.5   GlobalY=-22   WBLeft=0.5   WBRight=0.5
+   Strip=SA35   Point=316   GlobalX=-9.5   GlobalY=-23   WALeft=0.5   WARight=0.5
+   Strip=SA35   Point=317   GlobalX=85.5   GlobalY=-23   WBLeft=0.5   WBRight=0.5
+   Strip=SA36   Point=318   GlobalX=-9.5   GlobalY=-24   WALeft=0.5   WARight=0.5
+   Strip=SA36   Point=319   GlobalX=85.5   GlobalY=-24   WBLeft=0.5   WBRight=0.5
+   Strip=SA37   Point=320   GlobalX=-9.5   GlobalY=-25   WALeft=0.5   WARight=0.5
+   Strip=SA37   Point=321   GlobalX=85.5   GlobalY=-25   WBLeft=0.5   WBRight=0.5
+   Strip=SA38   Point=322   GlobalX=-9.5   GlobalY=-26   WALeft=0.5   WARight=0.5
+   Strip=SA38   Point=323   GlobalX=85.5   GlobalY=-26   WBLeft=0.5   WBRight=0.5
+   Strip=SA39   Point=324   GlobalX=-9.5   GlobalY=-27   WALeft=0.5   WARight=0.5
+   Strip=SA39   Point=325   GlobalX=85.5   GlobalY=-27   WBLeft=0.5   WBRight=0.5
+   Strip=SA40   Point=326   GlobalX=-9.5   GlobalY=-28   WALeft=0.5   WARight=0.5
+   Strip=SA40   Point=327   GlobalX=85.5   GlobalY=-28   WBLeft=0.5   WBRight=0.5
+   Strip=SA41   Point=328   GlobalX=-9.5   GlobalY=-29   WALeft=0.5   WARight=0.5
+   Strip=SA41   Point=329   GlobalX=85.5   GlobalY=-29   WBLeft=0.5   WBRight=0.5
+   Strip=SA42   Point=330   GlobalX=-9.5   GlobalY=-30   WALeft=0.5   WARight=0.5
+   Strip=SA42   Point=331   GlobalX=85.5   GlobalY=-30   WBLeft=0.5   WBRight=0.5
+   Strip=SA43   Point=332   GlobalX=-9.5   GlobalY=-31   WALeft=0.5   WARight=0.5
+   Strip=SA43   Point=333   GlobalX=85.5   GlobalY=-31   WBLeft=0.5   WBRight=0.5
+   Strip=SA44   Point=334   GlobalX=-9.5   GlobalY=-32   WALeft=0.5   WARight=0.5
+   Strip=SA44   Point=335   GlobalX=85.5   GlobalY=-32   WBLeft=0.5   WBRight=0.5
+   Strip=SA45   Point=336   GlobalX=-9.5   GlobalY=-33   WALeft=0.5   WARight=0.5
+   Strip=SA45   Point=337   GlobalX=85.5   GlobalY=-33   WBLeft=0.5   WBRight=0.5
+   Strip=SA46   Point=338   GlobalX=-9.5   GlobalY=-34   WALeft=0.5   WARight=0.5
+   Strip=SA46   Point=339   GlobalX=85.5   GlobalY=-34   WBLeft=0.5   WBRight=0.5
+   Strip=SA47   Point=340   GlobalX=-9.5   GlobalY=-35   WALeft=0.5   WARight=0.5
+   Strip=SA47   Point=341   GlobalX=85.5   GlobalY=-35   WBLeft=0.5   WBRight=0.5
+   Strip=SA48   Point=342   GlobalX=-9.5   GlobalY=-36   WALeft=0.5   WARight=0.5
+   Strip=SA48   Point=343   GlobalX=85.5   GlobalY=-36   WBLeft=0.5   WBRight=0.5
+   Strip=SA49   Point=344   GlobalX=-9.5   GlobalY=-37   WALeft=0.5   WARight=0.5
+   Strip=SA49   Point=345   GlobalX=85.5   GlobalY=-37   WBLeft=0.5   WBRight=0.5
+   Strip=SA50   Point=346   GlobalX=-9.5   GlobalY=-38   WALeft=0.5   WARight=0.5
+   Strip=SA50   Point=347   GlobalX=85.5   GlobalY=-38   WBLeft=0.5   WBRight=0.5
+   Strip=SA51   Point=348   GlobalX=-9.5   GlobalY=-39   WALeft=0.5   WARight=0.5
+   Strip=SA51   Point=349   GlobalX=85.5   GlobalY=-39   WBLeft=0.5   WBRight=0.5
+   Strip=SA52   Point=350   GlobalX=-9.5   GlobalY=-40   WALeft=0.5   WARight=0.5
+   Strip=SA52   Point=351   GlobalX=85.5   GlobalY=-40   WBLeft=0.5   WBRight=0.5
+   Strip=SA53   Point=352   GlobalX=-9.5   GlobalY=-41   WALeft=0.5   WARight=0.5
+   Strip=SA53   Point=353   GlobalX=85.5   GlobalY=-41   WBLeft=0.5   WBRight=0.5
+   Strip=SA54   Point=354   GlobalX=-9.5   GlobalY=-42   WALeft=0.5   WARight=0.5
+   Strip=SA54   Point=355   GlobalX=85.5   GlobalY=-42   WBLeft=0.5   WBRight=0.5
+   Strip=SA55   Point=356   GlobalX=-9.5   GlobalY=-43   WALeft=0.5   WARight=0.5
+   Strip=SA55   Point=357   GlobalX=85.5   GlobalY=-43   WBLeft=0.5   WBRight=0.5
+   Strip=SA56   Point=358   GlobalX=-9.5   GlobalY=-44   WALeft=0.5   WARight=0.5
+   Strip=SA56   Point=359   GlobalX=85.5   GlobalY=-44   WBLeft=0.5   WBRight=0.5
+   Strip=SA57   Point=360   GlobalX=-9.5   GlobalY=-45   WALeft=0.5   WARight=0.5
+   Strip=SA57   Point=361   GlobalX=85.5   GlobalY=-45   WBLeft=0.5   WBRight=0.5
+   Strip=SA58   Point=362   GlobalX=-9.5   GlobalY=-46   WALeft=0.5   WARight=0.5
+   Strip=SA58   Point=363   GlobalX=85.5   GlobalY=-46   WBLeft=0.5   WBRight=0.5
+   Strip=SA59   Point=364   GlobalX=-9.5   GlobalY=-47   WALeft=0.5   WARight=0.5
+   Strip=SA59   Point=365   GlobalX=85.5   GlobalY=-47   WBLeft=0.5   WBRight=0.5
+   Strip=SA60   Point=366   GlobalX=-9.5   GlobalY=-48   WALeft=0.5   WARight=0.5
+   Strip=SA60   Point=367   GlobalX=85.5   GlobalY=-48   WBLeft=0.5   WBRight=0.5
+   Strip=SA61   Point=368   GlobalX=-9.5   GlobalY=-49   WALeft=0.5   WARight=0.5
+   Strip=SA61   Point=369   GlobalX=85.5   GlobalY=-49   WBLeft=0.5   WBRight=0.5
+   Strip=SA62   Point=370   GlobalX=-9.5   GlobalY=-50   WALeft=0.5   WARight=0.5
+   Strip=SA62   Point=371   GlobalX=85.5   GlobalY=-50   WBLeft=0.5   WBRight=0.5
+   Strip=SA63   Point=372   GlobalX=-9.5   GlobalY=-51   WALeft=0.5   WARight=0.5
+   Strip=SA63   Point=373   GlobalX=85.5   GlobalY=-51   WBLeft=0.5   WBRight=0.5
+   Strip=SA64   Point=374   GlobalX=-9.5   GlobalY=-52   WALeft=0.5   WARight=0.5
+   Strip=SA64   Point=375   GlobalX=85.5   GlobalY=-52   WBLeft=0.5   WBRight=0.5
+   Strip=SA65   Point=376   GlobalX=-9.5   GlobalY=-53   WALeft=0.5   WARight=0.5
+   Strip=SA65   Point=377   GlobalX=85.5   GlobalY=-53   WBLeft=0.5   WBRight=0.5
+   Strip=SA66   Point=378   GlobalX=-9.5   GlobalY=-54   WALeft=0.5   WARight=0.5
+   Strip=SA66   Point=379   GlobalX=85.5   GlobalY=-54   WBLeft=0.5   WBRight=0.5
+   Strip=SA67   Point=380   GlobalX=-9.5   GlobalY=-55   WALeft=0.5   WARight=0.5
+   Strip=SA67   Point=381   GlobalX=85.5   GlobalY=-55   WBLeft=0.5   WBRight=0.5
+   Strip=SA68   Point=382   GlobalX=-9.5   GlobalY=-56   WALeft=0.5   WARight=0.5
+   Strip=SA68   Point=383   GlobalX=85.5   GlobalY=-56   WBLeft=0.5   WBRight=0.5
+   Strip=SA69   Point=384   GlobalX=-9.5   GlobalY=-57   WALeft=0.5   WARight=0.5
+   Strip=SA69   Point=385   GlobalX=85.5   GlobalY=-57   WBLeft=0.5   WBRight=0.5
+   Strip=SA70   Point=386   GlobalX=-9.5   GlobalY=-58   WALeft=0.5   WARight=0.5
+   Strip=SA70   Point=387   GlobalX=85.5   GlobalY=-58   WBLeft=0.5   WBRight=0.5
+   Strip=SA71   Point=388   GlobalX=-9.5   GlobalY=-59   WALeft=0.5   WARight=0.5
+   Strip=SA71   Point=389   GlobalX=85.5   GlobalY=-59   WBLeft=0.5   WBRight=0.5
+   Strip=SA72   Point=390   GlobalX=-9.5   GlobalY=-60   WALeft=0.5   WARight=0.5
+   Strip=SA72   Point=391   GlobalX=85.5   GlobalY=-60   WBLeft=0.5   WBRight=0.5
+   Strip=SA73   Point=392   GlobalX=-9.5   GlobalY=-61   WALeft=0.5   WARight=0.5
+   Strip=SA73   Point=393   GlobalX=85.5   GlobalY=-61   WBLeft=0.5   WBRight=0.5
+   Strip=SA74   Point=394   GlobalX=-9.5   GlobalY=-62   WALeft=0.5   WARight=0.5
+   Strip=SA74   Point=395   GlobalX=85.5   GlobalY=-62   WBLeft=0.5   WBRight=0.5
+   Strip=SA75   Point=396   GlobalX=-9.5   GlobalY=-63   WALeft=0.5   WARight=0.5
+   Strip=SA75   Point=397   GlobalX=85.5   GlobalY=-63   WBLeft=0.5   WBRight=0.5
+   Strip=SA76   Point=398   GlobalX=-9.5   GlobalY=-64   WALeft=0.5   WARight=0.5
+   Strip=SA76   Point=399   GlobalX=85.5   GlobalY=-64   WBLeft=0.5   WBRight=0.5
+   Strip=SA77   Point=400   GlobalX=-9.5   GlobalY=-65   WALeft=0.5   WARight=0.5
+   Strip=SA77   Point=401   GlobalX=85.5   GlobalY=-65   WBLeft=0.5   WBRight=0.5
+   Strip=SA78   Point=402   GlobalX=-9.5   GlobalY=-66   WALeft=0.5   WARight=0.5
+   Strip=SA78   Point=403   GlobalX=85.5   GlobalY=-66   WBLeft=0.5   WBRight=0.5
+   Strip=SA79   Point=404   GlobalX=-9.5   GlobalY=-67   WALeft=0.5   WARight=0.5
+   Strip=SA79   Point=405   GlobalX=85.5   GlobalY=-67   WBLeft=0.5   WBRight=0.5
+   Strip=SA80   Point=406   GlobalX=-9.5   GlobalY=-68   WALeft=0.5   WARight=0.5
+   Strip=SA80   Point=407   GlobalX=85.5   GlobalY=-68   WBLeft=0.5   WBRight=0.5
+   Strip=SA81   Point=408   GlobalX=-9.5   GlobalY=-69   WALeft=0.5   WARight=0.5
+   Strip=SA81   Point=409   GlobalX=85.5   GlobalY=-69   WBLeft=0.5   WBRight=0.5
+   Strip=SA82   Point=410   GlobalX=-9.5   GlobalY=-70   WALeft=0.5   WARight=0.5
+   Strip=SA82   Point=411   GlobalX=85.5   GlobalY=-70   WBLeft=0.5   WBRight=0.5
+   Strip=SA83   Point=412   GlobalX=-9.5   GlobalY=-71   WALeft=0.5   WARight=0.5
+   Strip=SA83   Point=413   GlobalX=85.5   GlobalY=-71   WBLeft=0.5   WBRight=0.5
+   Strip=SA84   Point=414   GlobalX=-9.5   GlobalY=-72   WALeft=0.5   WARight=0.5
+   Strip=SA84   Point=415   GlobalX=85.5   GlobalY=-72   WBLeft=0.5   WBRight=0.5
+   Strip=SA85   Point=416   GlobalX=-9.5   GlobalY=-73   WALeft=0.5   WARight=0.5
+   Strip=SA85   Point=417   GlobalX=85.5   GlobalY=-73   WBLeft=0.5   WBRight=0.5
+   Strip=SA86   Point=418   GlobalX=-9.5   GlobalY=-74   WALeft=0.5   WARight=0.5
+   Strip=SA86   Point=419   GlobalX=85.5   GlobalY=-74   WBLeft=0.5   WBRight=0.5
+   Strip=SA87   Point=420   GlobalX=-9.5   GlobalY=-75   WALeft=0.5   WARight=0.5
+   Strip=SA87   Point=421   GlobalX=85.5   GlobalY=-75   WBLeft=0.5   WBRight=0.5
+   Strip=SA88   Point=422   GlobalX=-9.5   GlobalY=-76   WALeft=0.5   WARight=0.5
+   Strip=SA88   Point=423   GlobalX=85.5   GlobalY=-76   WBLeft=0.5   WBRight=0.5
+   Strip=SA89   Point=424   GlobalX=-9.5   GlobalY=-77   WALeft=0.5   WARight=0.5
+   Strip=SA89   Point=425   GlobalX=85.5   GlobalY=-77   WBLeft=0.5   WBRight=0.5
+   Strip=SA90   Point=426   GlobalX=-9.5   GlobalY=-78   WALeft=0.5   WARight=0.5
+   Strip=SA90   Point=427   GlobalX=85.5   GlobalY=-78   WBLeft=0.5   WBRight=0.5
+   Strip=SA91   Point=428   GlobalX=-9.5   GlobalY=-79   WALeft=0.5   WARight=0.5
+   Strip=SA91   Point=429   GlobalX=85.5   GlobalY=-79   WBLeft=0.5   WBRight=0.5
+   Strip=SA92   Point=430   GlobalX=-9.5   GlobalY=-80   WALeft=0.5   WARight=0.5
+   Strip=SA92   Point=431   GlobalX=85.5   GlobalY=-80   WBLeft=0.5   WBRight=0.5
+   Strip=SA93   Point=432   GlobalX=-9.5   GlobalY=-81   WALeft=0.5   WARight=0.5
+   Strip=SA93   Point=433   GlobalX=85.5   GlobalY=-81   WBLeft=0.5   WBRight=0.5
+   Strip=SA94   Point=434   GlobalX=-9.5   GlobalY=-82   WALeft=0.5   WARight=0.5
+   Strip=SA94   Point=435   GlobalX=85.5   GlobalY=-82   WBLeft=0.5   WBRight=0.5
+   Strip=SA95   Point=436   GlobalX=-9.5   GlobalY=-83   WALeft=0.5   WARight=0.5
+   Strip=SA95   Point=437   GlobalX=85.5   GlobalY=-83   WBLeft=0.5   WBRight=0.5
+   Strip=SA96   Point=438   GlobalX=-9.5   GlobalY=-84   WALeft=0.5   WARight=0.5
+   Strip=SA96   Point=439   GlobalX=85.5   GlobalY=-84   WBLeft=0.5   WBRight=0.5
+   Strip=SA97   Point=440   GlobalX=-9.5   GlobalY=-85   WALeft=0.5   WARight=0.5
+   Strip=SA97   Point=441   GlobalX=85.5   GlobalY=-85   WBLeft=0.5   WBRight=0.5
+   Strip=SA98   Point=442   GlobalX=-9.5   GlobalY=-86   WALeft=0.5   WARight=0.5
+   Strip=SA98   Point=443   GlobalX=85.5   GlobalY=-86   WBLeft=0.5   WBRight=0.5
+   Strip=SA99   Point=444   GlobalX=-9.5   GlobalY=-87   WALeft=0.5   WARight=0.5
+   Strip=SA99   Point=445   GlobalX=85.5   GlobalY=-87   WBLeft=0.5   WBRight=0.5
+   Strip=SB10   Point=568   GlobalX=6.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB10   Point=569   GlobalX=6.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB11   Point=570   GlobalX=7.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB11   Point=571   GlobalX=7.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB12   Point=572   GlobalX=8.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB12   Point=573   GlobalX=8.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB13   Point=574   GlobalX=9.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB13   Point=575   GlobalX=9.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB14   Point=576   GlobalX=10.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB14   Point=577   GlobalX=10.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB15   Point=578   GlobalX=11.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB15   Point=579   GlobalX=11.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB16   Point=580   GlobalX=12.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB16   Point=581   GlobalX=12.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB17   Point=582   GlobalX=13.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB17   Point=583   GlobalX=13.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB18   Point=584   GlobalX=14.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB18   Point=585   GlobalX=14.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB19   Point=586   GlobalX=15.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB19   Point=587   GlobalX=15.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB20   Point=588   GlobalX=16.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB20   Point=589   GlobalX=16.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB21   Point=590   GlobalX=17.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB21   Point=591   GlobalX=17.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB22   Point=592   GlobalX=18.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB22   Point=593   GlobalX=18.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB23   Point=594   GlobalX=19.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB23   Point=595   GlobalX=19.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB24   Point=596   GlobalX=20.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB24   Point=597   GlobalX=20.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB25   Point=598   GlobalX=21.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB25   Point=599   GlobalX=21.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB26   Point=600   GlobalX=22.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB26   Point=601   GlobalX=22.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB27   Point=602   GlobalX=23.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB27   Point=603   GlobalX=23.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB28   Point=604   GlobalX=24.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB28   Point=605   GlobalX=24.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB29   Point=606   GlobalX=25.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB29   Point=607   GlobalX=25.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB30   Point=608   GlobalX=26.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB30   Point=609   GlobalX=26.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB31   Point=610   GlobalX=27.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB31   Point=611   GlobalX=27.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB32   Point=612   GlobalX=28.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB32   Point=613   GlobalX=28.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB33   Point=614   GlobalX=29.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB33   Point=615   GlobalX=29.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB34   Point=616   GlobalX=30.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB34   Point=617   GlobalX=30.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB35   Point=618   GlobalX=31.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB35   Point=619   GlobalX=31.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB36   Point=620   GlobalX=32.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB36   Point=621   GlobalX=32.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB37   Point=622   GlobalX=33.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB37   Point=623   GlobalX=33.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB38   Point=624   GlobalX=34.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB38   Point=625   GlobalX=34.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB39   Point=626   GlobalX=35.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB39   Point=627   GlobalX=35.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB40   Point=628   GlobalX=36.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB40   Point=629   GlobalX=36.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB41   Point=630   GlobalX=37.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB41   Point=631   GlobalX=37.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB42   Point=632   GlobalX=38.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB42   Point=633   GlobalX=38.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB43   Point=634   GlobalX=39.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB43   Point=635   GlobalX=39.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB44   Point=636   GlobalX=40.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB44   Point=637   GlobalX=40.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB45   Point=638   GlobalX=41.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB45   Point=639   GlobalX=41.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB46   Point=640   GlobalX=42.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB46   Point=641   GlobalX=42.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB47   Point=642   GlobalX=43.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB47   Point=643   GlobalX=43.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB48   Point=644   GlobalX=44.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB48   Point=645   GlobalX=44.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB49   Point=646   GlobalX=45.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB49   Point=647   GlobalX=45.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB50   Point=648   GlobalX=46.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB50   Point=649   GlobalX=46.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB51   Point=650   GlobalX=47.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB51   Point=651   GlobalX=47.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB52   Point=652   GlobalX=48.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB52   Point=653   GlobalX=48.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB53   Point=654   GlobalX=49.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB53   Point=655   GlobalX=49.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB54   Point=656   GlobalX=50.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB54   Point=657   GlobalX=50.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB55   Point=658   GlobalX=51.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB55   Point=659   GlobalX=51.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB56   Point=660   GlobalX=52.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB56   Point=661   GlobalX=52.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB57   Point=662   GlobalX=53.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB57   Point=663   GlobalX=53.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB58   Point=664   GlobalX=54.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB58   Point=665   GlobalX=54.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB59   Point=666   GlobalX=55.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB59   Point=667   GlobalX=55.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB60   Point=668   GlobalX=56.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB60   Point=669   GlobalX=56.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB61   Point=670   GlobalX=57.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB61   Point=671   GlobalX=57.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB62   Point=672   GlobalX=58.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB62   Point=673   GlobalX=58.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB63   Point=674   GlobalX=59.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB63   Point=675   GlobalX=59.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB64   Point=676   GlobalX=60.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB64   Point=677   GlobalX=60.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB65   Point=678   GlobalX=61.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB65   Point=679   GlobalX=61.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB66   Point=680   GlobalX=62.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB66   Point=681   GlobalX=62.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB67   Point=682   GlobalX=63.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB67   Point=683   GlobalX=63.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB68   Point=684   GlobalX=64.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB68   Point=685   GlobalX=64.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB69   Point=686   GlobalX=65.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB69   Point=687   GlobalX=65.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB70   Point=688   GlobalX=66.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB70   Point=689   GlobalX=66.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB71   Point=690   GlobalX=67.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB71   Point=691   GlobalX=67.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB72   Point=692   GlobalX=68.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB72   Point=693   GlobalX=68.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB73   Point=694   GlobalX=69.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB73   Point=695   GlobalX=69.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB74   Point=696   GlobalX=70.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB74   Point=697   GlobalX=70.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB75   Point=698   GlobalX=71.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB75   Point=699   GlobalX=71.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB76   Point=700   GlobalX=72.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB76   Point=701   GlobalX=72.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SB77   Point=702   GlobalX=73.5   GlobalY=21   WALeft=0.5   WARight=0.5
+   Strip=SB77   Point=703   GlobalX=73.5   GlobalY=-131.5   WBLeft=0.5   WBRight=0.5
+   Strip=SA100   Point=446   GlobalX=-9.5   GlobalY=-88   WALeft=0.5   WARight=0.5
+   Strip=SA100   Point=447   GlobalX=85.5   GlobalY=-88   WBLeft=0.5   WBRight=0.5
+   Strip=SA101   Point=448   GlobalX=-9.5   GlobalY=-89   WALeft=0.5   WARight=0.5
+   Strip=SA101   Point=449   GlobalX=85.5   GlobalY=-89   WBLeft=0.5   WBRight=0.5
+   Strip=SA102   Point=450   GlobalX=-9.5   GlobalY=-90   WALeft=0.5   WARight=0.5
+   Strip=SA102   Point=451   GlobalX=85.5   GlobalY=-90   WBLeft=0.5   WBRight=0.5
+   Strip=SA103   Point=452   GlobalX=-9.5   GlobalY=-91   WALeft=0.5   WARight=0.5
+   Strip=SA103   Point=453   GlobalX=85.5   GlobalY=-91   WBLeft=0.5   WBRight=0.5
+   Strip=SA104   Point=454   GlobalX=-9.5   GlobalY=-92   WALeft=0.5   WARight=0.5
+   Strip=SA104   Point=455   GlobalX=85.5   GlobalY=-92   WBLeft=0.5   WBRight=0.5
+   Strip=SA105   Point=456   GlobalX=-9.5   GlobalY=-93   WALeft=0.5   WARight=0.5
+   Strip=SA105   Point=457   GlobalX=85.5   GlobalY=-93   WBLeft=0.5   WBRight=0.5
+   Strip=SA106   Point=458   GlobalX=-9.5   GlobalY=-94   WALeft=0.5   WARight=0.5
+   Strip=SA106   Point=459   GlobalX=85.5   GlobalY=-94   WBLeft=0.5   WBRight=0.5
+   Strip=SA107   Point=460   GlobalX=-9.5   GlobalY=-95   WALeft=0.5   WARight=0.5
+   Strip=SA107   Point=461   GlobalX=85.5   GlobalY=-95   WBLeft=0.5   WBRight=0.5
+   Strip=SA108   Point=462   GlobalX=-9.5   GlobalY=-96   WALeft=0.5   WARight=0.5
+   Strip=SA108   Point=463   GlobalX=85.5   GlobalY=-96   WBLeft=0.5   WBRight=0.5
+   Strip=SA109   Point=464   GlobalX=-9.5   GlobalY=-97   WALeft=0.5   WARight=0.5
+   Strip=SA109   Point=465   GlobalX=85.5   GlobalY=-97   WBLeft=0.5   WBRight=0.5
+   Strip=SA110   Point=466   GlobalX=-9.5   GlobalY=-98   WALeft=0.5   WARight=0.5
+   Strip=SA110   Point=467   GlobalX=85.5   GlobalY=-98   WBLeft=0.5   WBRight=0.5
+   Strip=SA111   Point=468   GlobalX=-9.5   GlobalY=-99   WALeft=0.5   WARight=0.5
+   Strip=SA111   Point=469   GlobalX=85.5   GlobalY=-99   WBLeft=0.5   WBRight=0.5
+   Strip=SA112   Point=470   GlobalX=-9.5   GlobalY=-100   WALeft=0.5   WARight=0.5
+   Strip=SA112   Point=471   GlobalX=85.5   GlobalY=-100   WBLeft=0.5   WBRight=0.5
+   Strip=SA113   Point=472   GlobalX=-9.5   GlobalY=-101   WALeft=0.5   WARight=0.5
+   Strip=SA113   Point=473   GlobalX=85.5   GlobalY=-101   WBLeft=0.5   WBRight=0.5
+   Strip=SA114   Point=474   GlobalX=-9.5   GlobalY=-102   WALeft=0.5   WARight=0.5
+   Strip=SA114   Point=475   GlobalX=85.5   GlobalY=-102   WBLeft=0.5   WBRight=0.5
+   Strip=SA115   Point=476   GlobalX=-9.5   GlobalY=-103   WALeft=0.5   WARight=0.5
+   Strip=SA115   Point=477   GlobalX=85.5   GlobalY=-103   WBLeft=0.5   WBRight=0.5
+   Strip=SA116   Point=478   GlobalX=-9.5   GlobalY=-104   WALeft=0.5   WARight=0.5
+   Strip=SA116   Point=479   GlobalX=85.5   GlobalY=-104   WBLeft=0.5   WBRight=0.5
+   Strip=SA117   Point=480   GlobalX=-9.5   GlobalY=-105   WALeft=0.5   WARight=0.5
+   Strip=SA117   Point=481   GlobalX=85.5   GlobalY=-105   WBLeft=0.5   WBRight=0.5
+   Strip=SA118   Point=482   GlobalX=-9.5   GlobalY=-106   WALeft=0.5   WARight=0.5
+   Strip=SA118   Point=483   GlobalX=85.5   GlobalY=-106   WBLeft=0.5   WBRight=0.5
+   Strip=SA119   Point=484   GlobalX=-9.5   GlobalY=-107   WALeft=0.5   WARight=0.5
+   Strip=SA119   Point=485   GlobalX=85.5   GlobalY=-107   WBLeft=0.5   WBRight=0.5
+   Strip=SA120   Point=486   GlobalX=-9.5   GlobalY=-108   WALeft=0.5   WARight=0.5
+   Strip=SA120   Point=487   GlobalX=85.5   GlobalY=-108   WBLeft=0.5   WBRight=0.5
+   Strip=SA121   Point=488   GlobalX=-9.5   GlobalY=-109   WALeft=0.5   WARight=0.5
+   Strip=SA121   Point=489   GlobalX=85.5   GlobalY=-109   WBLeft=0.5   WBRight=0.5
+   Strip=SA122   Point=490   GlobalX=-9.5   GlobalY=-110   WALeft=0.5   WARight=0.5
+   Strip=SA122   Point=491   GlobalX=85.5   GlobalY=-110   WBLeft=0.5   WBRight=0.5
+   Strip=SA123   Point=492   GlobalX=-9.5   GlobalY=-111   WALeft=0.5   WARight=0.5
+   Strip=SA123   Point=493   GlobalX=85.5   GlobalY=-111   WBLeft=0.5   WBRight=0.5
+   Strip=SA124   Point=494   GlobalX=-9.5   GlobalY=-112   WALeft=0.5   WARight=0.5
+   Strip=SA124   Point=495   GlobalX=85.5   GlobalY=-112   WBLeft=0.5   WBRight=0.5
+   Strip=SA125   Point=496   GlobalX=-9.5   GlobalY=-113   WALeft=0.5   WARight=0.5
+   Strip=SA125   Point=497   GlobalX=85.5   GlobalY=-113   WBLeft=0.5   WBRight=0.5
+   Strip=SA126   Point=498   GlobalX=-9.5   GlobalY=-114   WALeft=0.5   WARight=0.5
+   Strip=SA126   Point=499   GlobalX=85.5   GlobalY=-114   WBLeft=0.5   WBRight=0.5
+   Strip=SA127   Point=500   GlobalX=-9.5   GlobalY=-115   WALeft=0.5   WARight=0.5
+   Strip=SA127   Point=501   GlobalX=85.5   GlobalY=-115   WBLeft=0.5   WBRight=0.5
+   Strip=SA128   Point=502   GlobalX=-9.5   GlobalY=-116   WALeft=0.5   WARight=0.5
+   Strip=SA128   Point=503   GlobalX=85.5   GlobalY=-116   WBLeft=0.5   WBRight=0.5
+   Strip=SA129   Point=504   GlobalX=-9.5   GlobalY=-117   WALeft=0.5   WARight=0.5
+   Strip=SA129   Point=505   GlobalX=85.5   GlobalY=-117   WBLeft=0.5   WBRight=0.5
+   Strip=SA130   Point=506   GlobalX=-9.5   GlobalY=-118   WALeft=0.5   WARight=0.5
+   Strip=SA130   Point=507   GlobalX=85.5   GlobalY=-118   WBLeft=0.5   WBRight=0.5
+   Strip=SA131   Point=508   GlobalX=-9.5   GlobalY=-119   WALeft=0.5   WARight=0.5
+   Strip=SA131   Point=509   GlobalX=85.5   GlobalY=-119   WBLeft=0.5   WBRight=0.5
+   Strip=SA132   Point=510   GlobalX=-9.5   GlobalY=-120   WALeft=0.5   WARight=0.5
+   Strip=SA132   Point=511   GlobalX=85.5   GlobalY=-120   WBLeft=0.5   WBRight=0.5
+   Strip=SA133   Point=512   GlobalX=-9.5   GlobalY=-121   WALeft=0.5   WARight=0.5
+   Strip=SA133   Point=513   GlobalX=85.5   GlobalY=-121   WBLeft=0.5   WBRight=0.5
+   Strip=SA134   Point=514   GlobalX=-9.5   GlobalY=-122   WALeft=0.5   WARight=0.5
+   Strip=SA134   Point=515   GlobalX=85.5   GlobalY=-122   WBLeft=0.5   WBRight=0.5
+   Strip=SA135   Point=516   GlobalX=-9.5   GlobalY=-123   WALeft=0.5   WARight=0.5
+   Strip=SA135   Point=517   GlobalX=85.5   GlobalY=-123   WBLeft=0.5   WBRight=0.5
+ 
+TABLE:  "COORDINATE SYSTEMS"
+   CoordSys=GLOBAL   Type=Cartesian   OriginGx=0   OriginGy=0   RotAngle=0
+ 
+TABLE:  "GRID LINES"
+   CoordSys=GLOBAL   AxisDir=X   GridID=A   Ordinate=0   Visible=Yes   BubbleLoc=End   GridColor=10461087   BubbleSize=1.524   HideAll=No
+   CoordSys=GLOBAL   AxisDir=X   GridID=B   Ordinate=74.5000034   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Y   GridID=1   Ordinate=-117.299994   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Y   GridID=2   Ordinate=5.29999956   Visible=Yes   BubbleLoc=End
+ 
+TABLE:  "MATERIAL PROPERTIES 01 - GENERAL"
+   Material=4000Psi   Type=Concrete   Color=Blue   Notes="Normalweight f'c = 4 ksi added 6/9/2015 11:04:01 AM"
+   Material=A416Gr270   Type=Tendon   Color=Magenta   Notes="ASTM A416 Grade 270 added 6/9/2015 11:04:01 AM"
+   Material=A615Gr60   Type=Rebar   Color=Cyan   Notes="ASTM A615 Grade 60 added 6/9/2015 11:04:01 AM"
+   Material=MAT1   Type=Concrete   Color=Blue   Notes="Normalweight f'c = 4 ksi added 6/9/2015 11:04:01 AM"
+ 
+TABLE:  "MATERIAL PROPERTIES 03 - CONCRETE"
+   Material=4000Psi   E=24855578.2847654   U=0.2   A=9.9E-06   UnitWt=23.563121614979   Fc=27579.0315580631   LtWtConc=No
+   Material=MAT1   E=24855581.5074307   U=0.2   A=9.9E-06   UnitWt=0   Fc=27579.0315580631   LtWtConc=No
+ 
+TABLE:  "MATERIAL PROPERTIES 04 - REBAR"
+   Material=A615Gr60   E=199947978.795958   UnitWt=76.9728639422648   Fy=413685.473370947   Fu=620528.21005642
+ 
+TABLE:  "MATERIAL PROPERTIES 05 - TENDON"
+   Material=A416Gr270   E=196500599.8512   UnitWt=76.9728639422648   Fy=1689905.15872032   Fu=1861584.63016926
+ 
+TABLE:  "BEAM PROPERTIES 01 - GENERAL"
+   Beam=B250X1000   Type=Rectangular   Color=Cyan
+   Beam="Steel Deck-W"   Type=Rectangular   Color=Gray8Dark
+ 
+TABLE:  "BEAM PROPERTIES 02 - RECTANGULAR BEAM"
+   Beam=B250X1000   MatProp=4000Psi   Depth=1   WidthTop=0.25   WidthBot=0.25
+   Beam="Steel Deck-W"   MatProp=MAT1   Depth=7.50000024   WidthTop=0.002000000064   WidthBot=0.002000000064
+ 
+TABLE:  "BEAM PROPERTIES 06 - DESIGN DATA"
+   Beam=B250X1000   MatRebarL=A615Gr60   MatRebarS=A615Gr60   FlngWOpt="Analysis Property"   CoverTop=0.05   CoverBot=0.075   NoDesign=No
+   Beam="Steel Deck-W"   MatRebarL=A615Gr60   MatRebarS=A615Gr60   FlngWOpt="Analysis Property"   CoverTop=0.750000024   CoverBot=0.750000024   NoDesign=No
+ 
+TABLE:  "SLAB PROPERTIES 01 - GENERAL"
+   Slab=FOUND   Type=Footing   Color=Blue
+   Slab=SLAB   Type=Slab   Color=Blue
+ 
+TABLE:  "SLAB PROPERTIES 02 - SOLID SLABS"
+   Slab=FOUND   Type=Footing   MatProp=4000Psi   Thickness=1   Ortho=No
+   Slab=SLAB   Type=Slab   MatProp=4000Psi   Thickness=0.2   Ortho=No
+ 
+TABLE:  "REINFORCING BAR SIZES"
+   RebarID=6   Area=2.82999992370605E-05   Diameter=0.006
+   RebarID=8   Area=5.02999992370605E-05   Diameter=0.008
+   RebarID=10   Area=7.85E-05   Diameter=0.01
+   RebarID=12   Area=0.000113099998474121   Diameter=0.012
+   RebarID=14   Area=0.000153899993896484   Diameter=0.014
+   RebarID=16   Area=0.000201100006103516   Diameter=0.016
+   RebarID=18   Area=0.0002545   Diameter=0.018
+   RebarID=20   Area=0.000314200012207031   Diameter=0.02
+   RebarID=22   Area=0.000380100006103516   Diameter=0.022
+   RebarID=25   Area=0.000490899993896484   Diameter=0.025
+   RebarID=26   Area=0.000530900024414062   Diameter=0.026
+   RebarID=28   Area=0.000615799987792969   Diameter=0.028
+   RebarID=32   Area=0.000804200012207031   Diameter=0.032
+   RebarID=36   Area=0.00101790002441406   Diameter=0.036
+   RebarID=40   Area=0.00125659997558594   Diameter=0.04
+   RebarID=50   Area=0.0019635   Diameter=0.05
+ 
+TABLE:  "COLUMN PROPERTIES 01 - GENERAL"
+   Column=COL1   Type=Rectangular   Color=Cyan
+ 
+TABLE:  "COLUMN PROPERTIES 02 - RECTANGULAR"
+   Column=COL1   MatProp=4000Psi   SecDim2=0.6096   SecDim3=0.3048   AutoRigid=No   AutoDrop=No   IncludeCap=No
+ 
+TABLE:  "WALL PROPERTIES"
+   Wall=WALL1   MatProp=4000Psi   Thickness=0.3048   AutoRigid=No   OutOfPlane=Yes   Color=Magenta
+ 
+TABLE:  "SOIL PROPERTIES"
+   Soil=S100kPa   Subgrade=4000   Color=Cyan
+   Soil=S160Kpa   Subgrade=6400   Color=Cyan
+ 
+TABLE:  "SPRING PROPERTIES - LINE"
+   Spring=LSPR1   VertStiff=6.89475788951578   RotStiff=0.004448222   NonlinOpt="None (Linear)"   Color=Yellow
+ 
+TABLE:  "SPRING PROPERTIES - POINT"
+   Spring=PSPR1   Ux=0   Uy=0   Uz=0.175126850393701   Rx=0   Ry=0   Rz=0   NonlinOpt="None (Linear)"   Color=Blue
+ 
+TABLE:  "LOAD PATTERNS"
+   LoadPat=Dead_ABOVE   Type=DEAD   SelfWtMult=1
+   LoadPat=Live_ABOVE   Type=LIVE   SelfWtMult=0
+   LoadPat=MEP_ABOVE   Type="SUPER DEAD"   SelfWtMult=0
+   LoadPat=Wind_ABOVE   Type=WIND   SelfWtMult=0
+ 
+TABLE:  "LOAD CASES 01 - GENERAL"
+   LoadCase=Dead   Type=LinStatic   DesignOpt=Auto   DesignType=DEAD
+   LoadCase=Live   Type=LinStatic   DesignOpt=Auto   DesignType=LIVE
+   LoadCase=MEP   Type=LinStatic   DesignOpt=Auto   DesignType="SUPER DEAD"
+   LoadCase=Wind   Type=LinStatic   DesignOpt=Auto   DesignType=WIND
+ 
+TABLE:  "LOAD CASES 02 - STATIC"
+   LoadCase=Dead   InitialCond=Zero   AType=Linear
+   LoadCase=Live   InitialCond=Zero   AType=Linear
+   LoadCase=MEP   InitialCond=Zero   AType=Linear
+   LoadCase=Wind   InitialCond=Zero   AType=Linear
+ 
+TABLE:  "LOAD CASES 06 - LOADS APPLIED"
+   LoadCase=Dead   LoadPat=Dead_ABOVE   SF=1
+   LoadCase=Live   LoadPat=Live_ABOVE   SF=1
+   LoadCase=MEP   LoadPat=MEP_ABOVE   SF=1
+   LoadCase=Wind   LoadPat=Wind_ABOVE   SF=1
+ 
+TABLE:  "LOAD COMBINATIONS"
+   Combo=DStlS1   Load=Dead   SF=1.4   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS1
+   Combo=DStlS1   Load=MEP   SF=1.4
+   Combo=DStlS2   Load=Dead   SF=1.4   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS2
+   Combo=DStlS2   Load=Live   SF=1.6
+   Combo=DStlS2   Load=MEP   SF=1.4
+   Combo=DStlS3   Load=Dead   SF=1.2   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS3
+   Combo=DStlS3   Load=Live   SF=1.2
+   Combo=DStlS3   Load=MEP   SF=1.2
+   Combo=DStlS3   Load=Wind   SF=1.2
+   Combo=DStlS4   Load=Dead   SF=1.2   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS4
+   Combo=DStlS4   Load=Live   SF=1.2
+   Combo=DStlS4   Load=MEP   SF=1.2
+   Combo=DStlS4   Load=Wind   SF=-1.2
+   Combo=DStlS5   Load=Dead   SF=1.4   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS5
+   Combo=DStlS5   Load=MEP   SF=1.4
+   Combo=DStlS5   Load=Wind   SF=1.4
+   Combo=DStlS6   Load=Dead   SF=1.4   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS6
+   Combo=DStlS6   Load=MEP   SF=1.4
+   Combo=DStlS6   Load=Wind   SF=-1.4
+   Combo=DStlS7   Load=Dead   SF=1   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS7
+   Combo=DStlS7   Load=MEP   SF=1
+   Combo=DStlS7   Load=Wind   SF=1.4
+   Combo=DStlS8   Load=Dead   SF=1   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes=DStlS8
+   Combo=DStlS8   Load=MEP   SF=1
+   Combo=DStlS8   Load=Wind   SF=-1.4
+   Combo=FOUND3   Load=Dead   SF=1   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=Yes   DSServLong=No   AutoDesign=No
+   Combo=FOUND3   Load=Live   SF=1
+   Combo=FOUND3   Load=MEP   SF=1
+   Combo=DCONU1   Load=Dead   SF=1.4   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU1   Load=MEP   SF=1.4
+   Combo=DCONU2   Load=Dead   SF=1.2   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU2   Load=Live   SF=1.6
+   Combo=DCONU2   Load=MEP   SF=1.2
+   Combo=DCONU3   Load=Dead   SF=1.2   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU3   Load=Live   SF=1
+   Combo=DCONU3   Load=MEP   SF=1.2
+   Combo=DCONU3   Load=Wind   SF=1.6
+   Combo=DCONU4   Load=Dead   SF=1.2   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU4   Load=Live   SF=1
+   Combo=DCONU4   Load=MEP   SF=1.2
+   Combo=DCONU4   Load=Wind   SF=-1.6
+   Combo=DCONU5   Load=Dead   SF=0.9   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU5   Load=Wind   SF=1.6
+   Combo=DCONU6   Load=Dead   SF=0.9   Type="Linear Add"   DSStrength=Yes   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=Yes
+   Combo=DCONU6   Load=Wind   SF=-1.6
+   Combo="FOUND 1"   Load=Dead   SF=1   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes="Added 6/9/2015 4:23:01 PM"
+   Combo="FOUND 1"   Load=MEP   SF=1
+   Combo="FOUND 1"   Load=Wind   SF=1
+   Combo=FOUND2   Load=Dead   SF=1   Type="Linear Add"   DSStrength=No   DSServInit=No   DSServNorm=No   DSServLong=No   AutoDesign=No   Notes="Added 6/9/2015 4:23:21 PM"
+   Combo=FOUND2   Load=MEP   SF=1
+   Combo=FOUND2   Load=Wind   SF=-1
+ 
+TABLE:  "GROUP DEFINITIONS"
+   Group=ALL   Color=Red
+ 
+TABLE:  "SLAB PROPERTY ASSIGNMENTS"
+   Area=3   SlabProp=FOUND
+   Area=4   SlabProp=FOUND
+   Area=5   SlabProp=FOUND
+   Area=6   SlabProp=FOUND
+   Area=7   SlabProp=FOUND
+   Area=8   SlabProp=FOUND
+   Area=9   SlabProp=FOUND
+   Area=10   SlabProp=FOUND
+   Area=11   SlabProp=FOUND
+   Area=12   SlabProp=FOUND
+   Area=13   SlabProp=FOUND
+   Area=14   SlabProp=FOUND
+   Area=15   SlabProp=FOUND
+   Area=16   SlabProp=FOUND
+   Area=17   SlabProp=FOUND
+   Area=18   SlabProp=FOUND
+   Area=19   SlabProp=FOUND
+   Area=20   SlabProp=FOUND
+   Area=21   SlabProp=FOUND
+   Area=22   SlabProp=FOUND
+   Area=23   SlabProp=FOUND
+   Area=24   SlabProp=FOUND
+   Area=25   SlabProp=FOUND
+   Area=26   SlabProp=FOUND
+   Area=27   SlabProp=FOUND
+   Area=28   SlabProp=FOUND
+   Area=29   SlabProp=FOUND
+   Area=30   SlabProp=FOUND
+   Area=31   SlabProp=FOUND
+   Area=32   SlabProp=FOUND
+   Area=33   SlabProp=FOUND
+   Area=34   SlabProp=FOUND
+   Area=35   SlabProp=SLAB
+   Area=38   SlabProp=SLAB
+   Area=39   SlabProp=SLAB
+   Area=43   SlabProp=SLAB
+   Area=44   SlabProp=SLAB
+   Area=45   SlabProp=SLAB
+   Area=47   SlabProp=SLAB
+   Area=48   SlabProp=SLAB
+   Area=49   SlabProp=SLAB
+   Area=50   SlabProp=SLAB
+   Area=54   SlabProp=SLAB
+   Area=55   SlabProp=SLAB
+   Area=56   SlabProp=SLAB
+   Area=59   SlabProp=SLAB
+   Area=60   SlabProp=SLAB
+   Area=61   SlabProp=SLAB
+   Area=62   SlabProp=SLAB
+   Area=63   SlabProp=SLAB
+   Area=65   SlabProp=SLAB
+   Area=66   SlabProp=SLAB
+   Area=67   SlabProp=SLAB
+   Area=68   SlabProp=SLAB
+   Area=69   SlabProp=SLAB
+   Area=71   SlabProp=SLAB
+ 
+TABLE:  "BEAM PROPERTY ASSIGNMENTS"
+   Line=28   BeamProp=B250X1000
+   Line=37   BeamProp=B250X1000
+   Line=W8-W   BeamProp=B250X1000
+   Line=W9-W   BeamProp=B250X1000
+   Line=W10-W   BeamProp=B250X1000
+   Line=W11-W   BeamProp=B250X1000
+   Line=W12-W   BeamProp=B250X1000
+   Line=W13-W   BeamProp=B250X1000
+   Line=W14-W   BeamProp=B250X1000
+ 
+TABLE:  "BEAM INSERTION POINT"
+   Line=28   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=37   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W8-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W9-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W10-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W11-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W12-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W13-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+   Line=W14-W   CardinalPt="8 (box edge midpoint)"   OffsetXI=0   OffsetYI=0   OffsetZI=0   OffsetXJ=0   OffsetYJ=0   OffsetZJ=0
+ 
+TABLE:  "SOIL PROPERTY ASSIGNMENTS"
+   Area=3   SoilProp=S160Kpa
+   Area=4   SoilProp=S160Kpa
+   Area=5   SoilProp=S160Kpa
+   Area=6   SoilProp=S160Kpa
+   Area=7   SoilProp=S160Kpa
+   Area=8   SoilProp=S160Kpa
+   Area=9   SoilProp=S160Kpa
+   Area=10   SoilProp=S160Kpa
+   Area=11   SoilProp=S160Kpa
+   Area=12   SoilProp=S160Kpa
+   Area=13   SoilProp=S160Kpa
+   Area=14   SoilProp=S160Kpa
+   Area=15   SoilProp=S160Kpa
+   Area=16   SoilProp=S160Kpa
+   Area=17   SoilProp=S160Kpa
+   Area=18   SoilProp=S160Kpa
+   Area=19   SoilProp=S160Kpa
+   Area=20   SoilProp=S160Kpa
+   Area=21   SoilProp=S160Kpa
+   Area=22   SoilProp=S160Kpa
+   Area=23   SoilProp=S160Kpa
+   Area=24   SoilProp=S160Kpa
+   Area=25   SoilProp=S160Kpa
+   Area=26   SoilProp=S160Kpa
+   Area=27   SoilProp=S160Kpa
+   Area=28   SoilProp=S160Kpa
+   Area=29   SoilProp=S160Kpa
+   Area=30   SoilProp=S160Kpa
+   Area=31   SoilProp=S160Kpa
+   Area=32   SoilProp=S160Kpa
+   Area=33   SoilProp=S160Kpa
+   Area=34   SoilProp=S160Kpa
+   Area=35   SoilProp=S100kPa
+   Area=38   SoilProp=S100kPa
+   Area=39   SoilProp=S100kPa
+   Area=43   SoilProp=S100kPa
+   Area=44   SoilProp=S100kPa
+   Area=45   SoilProp=S100kPa
+   Area=47   SoilProp=S100kPa
+   Area=48   SoilProp=S100kPa
+   Area=49   SoilProp=S100kPa
+   Area=50   SoilProp=S100kPa
+   Area=54   SoilProp=S100kPa
+   Area=55   SoilProp=S100kPa
+   Area=56   SoilProp=S100kPa
+   Area=59   SoilProp=S100kPa
+   Area=60   SoilProp=S100kPa
+   Area=61   SoilProp=S100kPa
+   Area=62   SoilProp=S100kPa
+   Area=63   SoilProp=S100kPa
+   Area=65   SoilProp=S100kPa
+   Area=66   SoilProp=S100kPa
+   Area=67   SoilProp=S100kPa
+   Area=68   SoilProp=S100kPa
+   Area=69   SoilProp=S100kPa
+   Area=71   SoilProp=S100kPa
+ 
+TABLE:  "LOAD ASSIGNMENTS - LINE OBJECTS - DISTRIBUTED LOADS"
+   Line=W8-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=15.9999934   FOverLA=70   FOverLB=70
+   Line=W9-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=16.0000188   FOverLA=70   FOverLB=70
+   Line=W10-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=15.9999934   FOverLA=70   FOverLB=70
+   Line=W11-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=15.9999934   FOverLA=70   FOverLB=70
+   Line=W12-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=15.9999934   FOverLA=70   FOverLB=70
+   Line=W13-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=16.00001118   FOverLA=70   FOverLB=70
+   Line=W14-W   LoadPat=Dead_ABOVE   Type=Force   Dir=Gravity   DistType=RelDist   RelDistA=0   RelDistB=1   AbsDistA=0   AbsDistB=16.00000102   FOverLA=70   FOverLB=70
+ 
+TABLE:  "LOAD ASSIGNMENTS - POINT LOADS"
+   Point=67   LoadPat=Dead_ABOVE   Fx=-1.7612410288794   Fy=3.3832713916912   Fgrav=141.21872692506   Mx=-9.17064154072799   My=-3.32755942173754   Mz=-0.0606711523645341   XDim=0   YDim=0
+   Point=67   LoadPat=Live_ABOVE   Fx=-0.5521395591498   Fy=2.3103446765142   Fgrav=32.803764548538   Mx=-6.83768652509846   My=-1.13801267245169   Mz=-0.102295501379906   XDim=0   YDim=0
+   Point=67   LoadPat=MEP_ABOVE   Fx=-0.36809312839764   Fy=1.5402297843428   Fgrav=21.869176365692   Mx=-4.5584580600151   My=-0.758675114967792   Mz=-0.0681970046860988   XDim=0   YDim=0
+   Point=67   LoadPat=Wind_ABOVE   Fx=42.323079730532   Fy=-0.8055004981814   Fgrav=-107.69821591744   Mx=1.85027248579205   My=179.66849065976   Mz=-0.578010436984332   XDim=0   YDim=0
+   Point=69   LoadPat=Dead_ABOVE   Fx=0.7569152382086   Fy=0.05561518553938   Fgrav=162.5080063815   Mx=-2.41175290190543   My=4.01595118788141   Mz=-0.079499804586941   XDim=0   YDim=0
+   Point=69   LoadPat=Live_ABOVE   Fx=0.40550899189288   Fy=0.035081885860062   Fgrav=46.53414032638   Mx=0.34974174388443   My=1.51605429383455   Mz=-0.0484267368171328   XDim=0   YDim=0
+   Point=69   LoadPat=MEP_ABOVE   Fx=0.2703393575834   Fy=0.023387923906708   Fgrav=31.02276763129   Mx=0.23316116258962   My=1.01070305086443   Mz=-0.0322844912114218   XDim=0   YDim=0
+   Point=69   LoadPat=Wind_ABOVE   Fx=43.468310070208   Fy=1.6782323133152   Fgrav=-134.10112690286   Mx=-2.31100658084424   My=184.140543564303   Mz=0.125847145833831   XDim=0   YDim=0
+   Point=71   LoadPat=Dead_ABOVE   Fx=0.43517547439526   Fy=0.0802953001442   Fgrav=163.03182900422   Mx=-0.117694046881184   My=2.79202258430942   Mz=-0.0461524649969276   XDim=0   YDim=0
+   Point=71   LoadPat=Live_ABOVE   Fx=0.26681796711932   Fy=0.1507900551669   Fgrav=43.144475060386   Mx=-0.393500432997154   My=0.959199590006483   Mz=-0.0236586072008164   XDim=0   YDim=0
+   Point=71   LoadPat=MEP_ABOVE   Fx=0.17787865957362   Fy=0.1005267034446   Fgrav=28.76298189085   Mx=-0.262333621998102   My=0.639466280352816   Mz=-0.015772401034383   XDim=0   YDim=0
+   Point=71   LoadPat=Wind_ABOVE   Fx=43.324823773154   Fy=0.569074385126   Fgrav=-131.42836823194   Mx=-0.151205463054103   My=183.594261868705   Mz=0.000421918040697613   XDim=0   YDim=0
+   Point=73   LoadPat=Dead_ABOVE   Fx=0.23389009272876   Fy=0.09221150861334   Fgrav=162.96007918336   Mx=-0.205459765782314   My=1.97559074959546   Mz=-0.0210317887881036   XDim=0   YDim=0
+   Point=73   LoadPat=Live_ABOVE   Fx=0.14522853216474   Fy=0.07022692757608   Fgrav=43.700863116368   Mx=-0.0499862891440569   My=0.478617109367778   Mz=-0.0100321407679425   XDim=0   YDim=0
+   Point=73   LoadPat=MEP_ABOVE   Fx=0.09681902144316   Fy=0.04681793688998   Fgrav=29.133910226986   Mx=-0.0333241889965433   My=0.319077997588626   Mz=-0.00668809346867887   XDim=0   YDim=0
+   Point=73   LoadPat=Wind_ABOVE   Fx=43.52331678346   Fy=-0.4220513067598   Fgrav=-127.2327162771   Mx=0.194775241516353   My=184.306857247016   Mz=-0.0185696909718773   XDim=0   YDim=0
+   Point=75   LoadPat=Dead_ABOVE   Fx=0.2725805942381   Fy=-0.16945919841868   Fgrav=163.51557314672   Mx=0.256897921403434   My=2.13310404321493   Mz=0.0275678939217803   XDim=0   YDim=0
+   Point=75   LoadPat=Live_ABOVE   Fx=0.17555691010072   Fy=-0.1202961588903   Fgrav=44.101278716142   Mx=0.0885438793813968   My=0.599964408026722   Mz=0.0149931558996633   XDim=0   YDim=0
+   Point=75   LoadPat=MEP_ABOVE   Fx=0.11703792523974   Fy=-0.0801974392602   Fgrav=29.400852477428   Mx=0.0590292453886086   My=0.399976272017814   Mz=0.00999543538336154   XDim=0   YDim=0
+   Point=75   LoadPat=Wind_ABOVE   Fx=43.181444233428   Fy=-1.6331006529032   Fgrav=-131.81531906372   Mx=1.51265909942861   My=183.015214569855   Mz=-0.0119120706440712   XDim=0   YDim=0
+   Point=111   LoadPat=Dead_ABOVE   Fx=7.481099827596   Fy=-3.171771335435   Fgrav=350.63092122112   Mx=8.25747321688185   My=22.367134000913   Mz=-0.15948374920814   XDim=0   YDim=0
+   Point=111   LoadPat=Live_ABOVE   Fx=4.9163973655   Fy=0.35209901241   Fgrav=147.3769344263   Mx=-1.03949170077551   My=13.8077641649092   Mz=0.0124114636315672   XDim=0   YDim=0
+   Point=111   LoadPat=MEP_ABOVE   Fx=3.2775976505704   Fy=0.23473267494   Fgrav=98.25130444494   Mx=-0.692994542506898   My=9.20517874625237   Mz=0.00827430569816628   XDim=0   YDim=0
+   Point=111   LoadPat=Wind_ABOVE   Fx=41.471182942424   Fy=3.2170248771298   Fgrav=-258.1407759817   Mx=-8.69834796681817   My=175.440259037348   Mz=-0.0127924485080008   XDim=0   YDim=0
+   Point=112   LoadPat=Dead_ABOVE   Fx=6.557773490612   Fy=0.621018497531   Fgrav=316.5083433658   Mx=-1.75628491778788   My=19.6934946710015   Mz=-0.024370637654934   XDim=0   YDim=0
+   Point=112   LoadPat=Live_ABOVE   Fx=6.221318874976   Fy=-0.029077800354678   Fgrav=168.51186057934   Mx=0.0723829008894129   My=17.2571348010538   Mz=-0.000888909349107388   XDim=0   YDim=0
+   Point=112   LoadPat=MEP_ABOVE   Fx=4.1475457683766   Fy=-0.019385200236452   Fgrav=112.34127004104   Mx=0.0482552710257699   My=11.5047490017133   Mz=-0.000592606270399872   XDim=0   YDim=0
+   Point=112   LoadPat=Wind_ABOVE   Fx=33.909436849968   Fy=-0.456269699317   Fgrav=-263.34390573732   Mx=1.12119329740856   My=154.262380852676   Mz=-0.0998841111593334   XDim=0   YDim=0
+   Point=113   LoadPat=Dead_ABOVE   Fx=6.568684979178   Fy=-0.652044845981   Fgrav=316.4743144675   Mx=1.87826334975636   My=19.7410612881363   Mz=0.0228561888756588   XDim=0   YDim=0
+   Point=113   LoadPat=Live_ABOVE   Fx=6.22989059877   Fy=0.01540052300285   Fgrav=168.4910873826   Mx=-0.0187995021339965   My=17.2946344690515   Mz=0.000917073531814419   XDim=0   YDim=0
+   Point=113   LoadPat=MEP_ABOVE   Fx=4.1532608440022   Fy=0.010267016817974   Fgrav=112.3273915884   Mx=-0.0125330014226643   My=11.5297525465397   Mz=0.000611382316881333   XDim=0   YDim=0
+   Point=113   LoadPat=Wind_ABOVE   Fx=33.863406648712   Fy=0.6105625068978   Fgrav=-262.98658006406   Mx=-1.73056278938668   My=154.037202068947   Mz=0.104311715828292   XDim=0   YDim=0
+   Point=160   LoadPat=Dead_ABOVE   Fx=2.3519026353714   Fy=2.9032246113176   Fgrav=291.69584967426   Mx=-8.31761730627187   My=8.39882741885615   Mz=-0.0564995939372638   XDim=0   YDim=0
+   Point=160   LoadPat=Live_ABOVE   Fx=1.1835726788494   Fy=2.0153550518956   Fgrav=188.35996059   Mx=-5.70449943511192   My=3.61868519617673   Mz=-0.00342996887962586   XDim=0   YDim=0
+   Point=160   LoadPat=MEP_ABOVE   Fx=0.7890483042922   Fy=1.343569886323   Fgrav=125.57330706   Mx=-3.80299962340794   My=2.41245679745115   Mz=-0.00228664591975058   XDim=0   YDim=0
+   Point=160   LoadPat=Wind_ABOVE   Fx=46.15893280068   Fy=-0.692319047969   Fgrav=-315.10479587814   Mx=2.23857313053795   My=188.404026456421   Mz=0.192575991629111   XDim=0   YDim=0
+   Point=161   LoadPat=Dead_ABOVE   Fx=0.4514958674666   Fy=-0.1857646454641   Fgrav=391.85103761742   Mx=0.339538761001435   My=2.97343556088026   Mz=-0.0423372494527486   XDim=0   YDim=0
+   Point=161   LoadPat=Live_ABOVE   Fx=-0.8173843680766   Fy=-0.17792452074244   Fgrav=253.8520227404   Mx=0.399036690098354   My=-1.98197665268444   Mz=-0.0325205843305783   XDim=0   YDim=0
+   Point=161   LoadPat=MEP_ABOVE   Fx=-0.544922763777   Fy=-0.11861633233422   Fgrav=169.23465217212   Mx=0.266024497727182   My=-1.32131814507242   Mz=-0.0216803895537189   XDim=0   YDim=0
+   Point=161   LoadPat=Wind_ABOVE   Fx=49.2711758052   Fy=-0.2047901357803   Fgrav=-437.0696162873   Mx=0.684092354073008   My=196.681973655942   Mz=0.0525444014762955   XDim=0   YDim=0
+   Point=162   LoadPat=Dead_ABOVE   Fx=0.4668511298106   Fy=0.23637549228904   Fgrav=391.81367255262   Mx=-0.543575030799707   My=3.037597391138   Mz=0.0342598955360333   XDim=0   YDim=0
+   Point=162   LoadPat=Live_ABOVE   Fx=-0.8027065699432   Fy=0.20603981926898   Fgrav=253.85384651142   Mx=-0.512143100584902   My=-1.92467639168702   Mz=0.0291204524871828   XDim=0   YDim=0
+   Point=162   LoadPat=MEP_ABOVE   Fx=-0.5351375650214   Fy=0.13735989434006   Fgrav=169.23589767428   Mx=-0.341428771384881   My=-1.28311797107414   Mz=0.0194136312252939   XDim=0   YDim=0
+   Point=162   LoadPat=Wind_ABOVE   Fx=49.12981131004   Fy=0.149655980968   Fgrav=-437.16178344714   Mx=-0.462602186376911   My=196.163034291333   Mz=-0.0365978795068378   XDim=0   YDim=0
+   Point=203   LoadPat=Dead_ABOVE   Fx=3.1138279060186   Fy=-0.9430715496198   Fgrav=405.32194415778   Mx=2.1955213875616   My=10.3987912578775   Mz=0.649464534707906   XDim=0   YDim=0
+   Point=203   LoadPat=Live_ABOVE   Fx=1.3429947312184   Fy=-1.2319470930994   Fgrav=265.8615549071   Mx=3.17563774779029   My=4.01841425736725   Mz=0.696224101139158   XDim=0   YDim=0
+   Point=203   LoadPat=MEP_ABOVE   Fx=0.8953301173604   Fy=-0.8212979137922   Fgrav=177.24105143214   Mx=2.11709183186019   My=2.67894283824483   Mz=0.464149400759438   XDim=0   YDim=0
+   Point=203   LoadPat=Wind_ABOVE   Fx=46.01111838362   Fy=0.44314201758616   Fgrav=-437.59535164548   Mx=-0.996235907180284   My=188.70919850602   Mz=0.0644019343386779   XDim=0   YDim=0
+   Point=204   LoadPat=Dead_ABOVE   Fx=2.4879844220842   Fy=0.31202889484736   Fgrav=390.02535386196   Mx=-0.984867711654744   My=8.42833340950876   Mz=-0.016798958682752   XDim=0   YDim=0
+   Point=204   LoadPat=Live_ABOVE   Fx=0.9740044854078   Fy=0.27058481047336   Fgrav=245.0712325124   Mx=-0.800866026457327   My=2.85691768617098   Mz=-0.00752084257381233   XDim=0   YDim=0
+   Point=204   LoadPat=MEP_ABOVE   Fx=0.6493363236052   Fy=0.1803898588215   Fgrav=163.38083650234   Mx=-0.533910646643272   My=1.90461141416452   Mz=-0.00501389429597596   XDim=0   YDim=0
+   Point=204   LoadPat=Wind_ABOVE   Fx=46.23206157036   Fy=-0.25230088324678   Fgrav=-436.87029145948   Mx=0.861523067015495   My=189.326660650062   Mz=-0.00715629360187896   XDim=0   YDim=0
+   Point=205   LoadPat=Dead_ABOVE   Fx=2.5020087764058   Fy=-0.26749102759014   Fgrav=389.75712607536   Mx=0.803070925586509   My=8.49820888306462   Mz=0.0289601270009256   XDim=0   YDim=0
+   Point=205   LoadPat=Live_ABOVE   Fx=0.9803801220004   Fy=-0.24522220516708   Fgrav=244.91705713788   Mx=0.699515801432757   My=2.89838990110091   Mz=0.0140766115888338   XDim=0   YDim=0
+   Point=205   LoadPat=MEP_ABOVE   Fx=0.6535865997262   Fy=-0.16348145528398   Fgrav=163.27803809192   Mx=0.466343905283451   My=1.93225993406727   Mz=0.00938440546619243   XDim=0   YDim=0
+   Point=205   LoadPat=Wind_ABOVE   Fx=46.14082853714   Fy=-0.013464096312478   Fgrav=-435.73132421638   Mx=0.222327611321282   My=188.868733098405   Mz=-0.0190464530961616   XDim=0   YDim=0
+   Point=273   LoadPat=Dead_ABOVE   Fx=-5.152869295242   Fy=3.0963686346686   Fgrav=293.52180032304   Mx=-8.91569238182418   My=-11.8573972805758   Mz=0.238939094261013   XDim=0   YDim=0
+   Point=273   LoadPat=Live_ABOVE   Fx=-3.9633644675334   Fy=1.5600630717742   Fgrav=159.10373760268   Mx=-4.4200798786948   My=-10.2696190812227   Mz=0.136193958416618   XDim=0   YDim=0
+   Point=273   LoadPat=MEP_ABOVE   Fx=-2.6422429783556   Fy=1.0400418995754   Fgrav=106.06914357438   Mx=-2.946720295746   My=-6.84641234419898   Mz=0.0907959609792617   XDim=0   YDim=0
+   Point=273   LoadPat=Wind_ABOVE   Fx=57.38077381562   Fy=-0.5726147250158   Fgrav=-222.05061608912   Mx=1.7856688848146   My=221.142513347109   Mz=-0.0595197803647427   XDim=0   YDim=0
+   Point=274   LoadPat=Dead_ABOVE   Fx=-6.346131536074   Fy=-0.13549413210438   Fgrav=357.95883317948   Mx=0.08600481629298   My=-15.4894531025762   Mz=-0.0284083655406458   XDim=0   YDim=0
+   Point=274   LoadPat=Live_ABOVE   Fx=-5.022767698186   Fy=-0.11356395282218   Fgrav=196.52017936678   Mx=0.204881735347013   My=-13.3349904054345   Mz=-0.00233947876022184   XDim=0   YDim=0
+   Point=274   LoadPat=MEP_ABOVE   Fx=-3.348512540161   Fy=-0.07570931670886   Fgrav=131.01343808378   Mx=0.136587823564675   My=-8.88998946084556   Mz=-0.00155965288343069   XDim=0   YDim=0
+   Point=274   LoadPat=Wind_ABOVE   Fx=59.07051990676   Fy=-0.1511823883473   Fgrav=-289.90855407466   Mx=0.56515106755631   My=225.50451901866   Mz=-0.042793945469662   XDim=0   YDim=0
+   Point=275   LoadPat=Dead_ABOVE   Fx=-4.0610572087418   Fy=0.08468017946292   Fgrav=346.1822099167   Mx=-0.327572084784772   My=-10.1771794055101   Mz=0.00273323883237856   XDim=0   YDim=0
+   Point=275   LoadPat=Live_ABOVE   Fx=-3.253996719105   Fy=0.035726015094994   Fgrav=188.93137918812   Mx=-0.134484610790413   My=-9.13530666224168   Mz=0.000443913364191003   XDim=0   YDim=0
+   Point=275   LoadPat=MEP_ABOVE   Fx=-2.16933114607   Fy=0.023817341913922   Fgrav=125.95425279208   Mx=-0.0896564184920927   My=-6.09020481811058   Mz=0.000295942205132389   XDim=0   YDim=0
+   Point=275   LoadPat=Wind_ABOVE   Fx=42.339106674398   Fy=-0.06963193340136   Fgrav=-291.1921774972   Mx=0.330252085161108   My=185.013916368227   Mz=-0.0126229373543491   XDim=0   YDim=0
+   Point=276   LoadPat=Dead_ABOVE   Fx=-6.2215057003   Fy=-0.1260946386784   Fgrav=347.57859576694   Mx=0.437708575798624   My=-15.3736323443223   Mz=-0.00640399196166788   XDim=0   YDim=0
+   Point=276   LoadPat=Live_ABOVE   Fx=-4.817219807788   Fy=-0.0541264101182   Fgrav=188.847040899   Mx=0.184261663311496   My=-12.8932309842104   Mz=-0.00282741169551836   XDim=0   YDim=0
+   Point=276   LoadPat=MEP_ABOVE   Fx=-3.2114788339402   Fy=-0.036084261550208   Fgrav=125.898027266   Mx=0.122841071212718   My=-8.59548882927142   Mz=-0.00188494075372944   XDim=0   YDim=0
+   Point=276   LoadPat=Wind_ABOVE   Fx=59.02670492006   Fy=-0.11381162982314   Fgrav=-291.36156579096   Mx=0.447901503030966   My=225.19663533293   Mz=0.00969232982646439   XDim=0   YDim=0
+   Point=787   LoadPat=Dead_ABOVE   Fx=-1.7674293953258   Fy=-3.3967828660162   Fgrav=141.85353268668   Mx=9.31687894743522   My=-3.34018434762506   Mz=0.0855129254987803   XDim=0   YDim=0
+   Point=787   LoadPat=Live_ABOVE   Fx=-0.5560717873978   Fy=-2.2850534206888   Fgrav=32.963019792582   Mx=6.77925415601626   My=-1.1408926559927   Mz=0.144201080957536   XDim=0   YDim=0
+   Point=787   LoadPat=MEP_ABOVE   Fx=-0.37071455458668   Fy=-1.5233687988518   Fgrav=21.975346528388   Mx=4.51950314729364   My=-0.760595292303198   Mz=0.0961340765686582   XDim=0   YDim=0
+   Point=787   LoadPat=Wind_ABOVE   Fx=41.857608884008   Fy=2.7334786805088   Fgrav=-27.91730816532   Mx=-11.4703790137503   My=178.661343806697   Mz=0.734603243122097   XDim=0   YDim=0
+   Point=789   LoadPat=Dead_ABOVE   Fx=0.9285690114332   Fy=0.01340811988683   Fgrav=162.5911881329   Mx=2.31773030860123   My=4.71156381507298   Mz=0.0683622450128438   XDim=0   YDim=0
+   Point=789   LoadPat=Live_ABOVE   Fx=0.5036530497054   Fy=-0.038001196131776   Fgrav=46.4765803337   Mx=-0.300580458734807   My=1.91379934125574   Mz=0.042488988091257   XDim=0   YDim=0
+   Point=789   LoadPat=MEP_ABOVE   Fx=0.33576856635694   Fy=-0.025334132237258   Fgrav=30.984397268318   Mx=-0.200386972489871   My=1.27586660411996   Mz=0.0283259882946767   XDim=0   YDim=0
+   Point=789   LoadPat=Wind_ABOVE   Fx=43.459133388222   Fy=-3.8199702486748   Fgrav=-101.58084309416   Mx=8.98910428083448   My=184.05320628391   Mz=-0.0890327308834328   XDim=0   YDim=0
+   Point=791   LoadPat=Dead_ABOVE   Fx=0.4617561363318   Fy=-0.15959771265578   Fgrav=163.13774117004   Mx=0.23320353190417   My=2.89599123297318   Mz=0.0561772255951996   XDim=0   YDim=0
+   Point=791   LoadPat=Live_ABOVE   Fx=0.28623668026032   Fy=-0.20171583610944   Fgrav=43.271787622248   Mx=0.442805547846569   My=1.03505162258035   Mz=0.0282904771598418   XDim=0   YDim=0
+   Point=791   LoadPat=MEP_ABOVE   Fx=0.19082445350688   Fy=-0.13447722407296   Fgrav=28.847858414832   Mx=0.295203736225992   My=0.690034339730338   Mz=0.0188603218727225   XDim=0   YDim=0
+   Point=791   LoadPat=Wind_ABOVE   Fx=43.307564671794   Fy=-2.0988784267452   Fgrav=-131.32948425688   Mx=0.645128515549278   My=183.521725602195   Mz=0.0181051877026027   XDim=0   YDim=0
+   Point=809   LoadPat=Dead_ABOVE   Fx=7.478568789278   Fy=3.1501236182498   Fgrav=350.75969724802   Mx=-8.16046895368172   My=22.3601854333268   Mz=0.150318419084684   XDim=0   YDim=0
+   Point=809   LoadPat=Live_ABOVE   Fx=4.920916759052   Fy=-0.36170285715466   Fgrav=147.43262616574   Mx=1.0822025684932   My=13.8260338133432   Mz=-0.0167772768921863   XDim=0   YDim=0
+   Point=809   LoadPat=MEP_ABOVE   Fx=3.2806108761532   Fy=-0.24113526775792   Fgrav=98.28840261642   Mx=0.721468303672242   My=9.21735625217824   Mz=-0.0111848482485285   XDim=0   YDim=0
+   Point=809   LoadPat=Wind_ABOVE   Fx=41.536576254046   Fy=-3.1079451324236   Fgrav=-258.36572256824   Mx=8.21234933196191   My=175.678770032054   Mz=0.0413666080011016   XDim=0   YDim=0
+   Point=838   LoadPat=Dead_ABOVE   Fx=2.3544274461786   Fy=-2.8551148662766   Fgrav=291.7753394014   Mx=8.12295459765496   My=8.4154407095533   Mz=0.0669955013133319   XDim=0   YDim=0
+   Point=838   LoadPat=Live_ABOVE   Fx=1.1953279951288   Fy=-1.988671057762   Fgrav=188.5127570157   Mx=5.59641361892228   My=3.66187252095964   Mz=0.0150929554077753   XDim=0   YDim=0
+   Point=838   LoadPat=MEP_ABOVE   Fx=0.7968851818118   Fy=-1.3257805569006   Fgrav=125.6751713438   Mx=3.73094241261486   My=2.44124872392256   Mz=0.0100619676355373   XDim=0   YDim=0
+   Point=838   LoadPat=Wind_ABOVE   Fx=46.03344845806   Fy=0.6482901017908   Fgrav=-316.63409460174   Mx=-2.05763356044169   My=188.09625575553   Mz=-0.150207129018466   XDim=0   YDim=0
+   Point=861   LoadPat=Dead_ABOVE   Fx=3.1557101402596   Fy=0.9953448304528   Fgrav=405.10531574638   Mx=-2.3950243666727   My=10.5340826934018   Mz=-0.507072792958914   XDim=0   YDim=0
+   Point=861   LoadPat=Live_ABOVE   Fx=1.3622519739008   Fy=1.2480945837816   Fgrav=265.70617851264   Mx=-3.2501128341337   My=4.08767283370326   Mz=-0.58490364199952   XDim=0   YDim=0
+   Point=861   LoadPat=MEP_ABOVE   Fx=0.9081681308746   Fy=0.8320630558544   Fgrav=177.13745234176   Mx=-2.16674188942246   My=2.72511409262045   Mz=-0.389935761333014   XDim=0   YDim=0
+   Point=861   LoadPat=Wind_ABOVE   Fx=46.45442818814   Fy=-0.8971556676692   Fgrav=-438.70438235452   Mx=2.62951988020855   My=189.927288053122   Mz=-0.029467948657396   XDim=0   YDim=0
+   Point=911   LoadPat=Dead_ABOVE   Fx=-4.909876272048   Fy=-3.1047014889412   Fgrav=293.4345262074   Mx=8.94658130690371   My=-10.9500408968376   Mz=-0.246187071670033   XDim=0   YDim=0
+   Point=911   LoadPat=Live_ABOVE   Fx=-3.824663567707   Fy=-1.5634904268252   Fgrav=158.95080773032   Mx=4.43294320259218   My=-9.75200163922822   Mz=-0.139520119086052   XDim=0   YDim=0
+   Point=911   LoadPat=MEP_ABOVE   Fx=-2.5497755635306   Fy=-1.0423269512168   Fgrav=105.96719032614   Mx=2.95529584501092   My=-6.50133517938441   Mz=-0.0930134127240344   XDim=0   YDim=0
+   Point=911   LoadPat=Wind_ABOVE   Fx=54.89635286418   Fy=0.05853508742462   Fgrav=-123.92444012904   Mx=-0.0175608154507804   My=214.367603458144   Mz=0.026143188999964   XDim=0   YDim=0
+   Point=912   LoadPat=Dead_ABOVE   Fx=-6.32230241082   Fy=0.14181478867306   Fgrav=358.27963895012   Mx=-0.0968530329933942   My=-15.3958451636304   Mz=-0.0212936537489904   XDim=0   YDim=0
+   Point=912   LoadPat=Live_ABOVE   Fx=-4.995148687788   Fy=0.11390437525184   Fgrav=196.36916222988   Mx=-0.202986753630659   My=-13.2383092788733   Mz=-0.013949481048216   XDim=0   YDim=0
+   Point=912   LoadPat=MEP_ABOVE   Fx=-3.3300977907254   Fy=0.0759362649953   Fgrav=130.91277481992   Mx=-0.135324540082052   My=-8.82554064909727   Mz=-0.00929965214906338   XDim=0   YDim=0
+   Point=912   LoadPat=Wind_ABOVE   Fx=58.76982009956   Fy=0.021222707365988   Fgrav=-284.51793176174   Mx=0.104590697992257   My=224.675549256385   Mz=0.0436000922945   XDim=0   YDim=0
+   Point=1213   LoadPat=Dead_ABOVE   Fx=0.31399919030004   Fy=-2.2293269851172   Fgrav=450.015499185   Mx=5.66495700122869   My=2.60057542420476   Mz=-0.25949702463519   XDim=0   YDim=0
+   Point=1213   LoadPat=Live_ABOVE   Fx=0.9032274906992   Fy=2.223897485344   Fgrav=221.64782958702   Mx=-6.20371051701745   My=2.94001464556322   Mz=-0.162399209988535   XDim=0   YDim=0
+   Point=1213   LoadPat=MEP_ABOVE   Fx=0.6021518087402   Fy=1.4825986201108   Fgrav=147.76521972468   Mx=-4.13580663472884   My=1.96000901047655   Mz=-0.108266139992357   XDim=0   YDim=0
+   Point=1213   LoadPat=Wind_ABOVE   Fx=47.92549968576   Fy=0.9678699424476   Fgrav=-412.47464065156   Mx=-2.61423755091246   My=194.143656267461   Mz=0.957286982655276   XDim=0   YDim=0
+   Point=1215   LoadPat=Dead_ABOVE   Fx=-0.592616600061   Fy=-7.62563145682   Fgrav=350.56824577314   Mx=19.9932208513701   My=0.369415906849513   Mz=0.029319283206503   XDim=0   YDim=0
+   Point=1215   LoadPat=Live_ABOVE   Fx=0.32024138023264   Fy=-2.0106150265324   Fgrav=154.46281862564   Mx=5.0693755010687   My=1.44366603746378   Mz=0.00721371814619906   XDim=0   YDim=0
+   Point=1215   LoadPat=MEP_ABOVE   Fx=0.21349423866102   Fy=-1.3404103142364   Fgrav=102.9752272445   Mx=3.379583290763   My=0.962443949652625   Mz=0.00480914543079938   XDim=0   YDim=0
+   Point=1215   LoadPat=Wind_ABOVE   Fx=47.30813095438   Fy=4.3728940293632   Fgrav=-299.98804719778   Mx=-11.3332606133826   My=191.649967890306   Mz=-0.156939782577719   XDim=0   YDim=0
+   Point=1217   LoadPat=Dead_ABOVE   Fx=-5.380644950974   Fy=4.1126921697178   Fgrav=306.8052143061   Mx=-10.4084977853788   My=-12.7389614853128   Mz=-0.031023094575607   XDim=0   YDim=0
+   Point=1217   LoadPat=Live_ABOVE   Fx=-2.4297749889922   Fy=0.4901460236024   Fgrav=121.04755255054   Mx=-1.0560031921329   My=-6.04796769582198   Mz=-0.0491739055561172   XDim=0   YDim=0
+   Point=1217   LoadPat=MEP_ABOVE   Fx=-1.6198502892096   Fy=0.32676403056234   Fgrav=80.69835353962   Mx=-0.704002090426988   My=-4.03197808726519   Mz=-0.0327826074702394   XDim=0   YDim=0
+   Point=1217   LoadPat=Wind_ABOVE   Fx=49.83952513014   Fy=1.284295104062   Fgrav=-20.401721272558   Mx=-3.34410492153142   My=199.809732948442   Mz=0.155047625482336   XDim=0   YDim=0
+   Point=1219   LoadPat=Dead_ABOVE   Fx=0.1775558965853   Fy=2.2133921194466   Fgrav=452.4526800188   Mx=-5.65397148535217   My=2.19851322609302   Mz=-0.0606412791731554   XDim=0   YDim=0
+   Point=1219   LoadPat=Live_ABOVE   Fx=0.854472308646   Fy=-2.2130945333948   Fgrav=222.09710000902   Mx=6.15607610897937   My=2.79620980243535   Mz=-0.0503809338875014   XDim=0   YDim=0
+   Point=1219   LoadPat=MEP_ABOVE   Fx=0.569648205764   Fy=-1.4753965038706   Fgrav=148.06471851194   Mx=4.10405111593571   My=1.86414024490636   Mz=-0.033587285492173   XDim=0   YDim=0
+   Point=1219   LoadPat=Wind_ABOVE   Fx=50.76435496616   Fy=1.5592428196374   Fgrav=-288.88279408146   Mx=-3.86590506225823   My=202.227495513923   Mz=-0.347572209009792   XDim=0   YDim=0
+   Point=1221   LoadPat=Dead_ABOVE   Fx=-0.642756958445   Fy=7.666942094534   Fgrav=350.2294247034   Mx=-20.1657035062822   My=0.182779980135473   Mz=-0.102942983595617   XDim=0   YDim=0
+   Point=1221   LoadPat=Live_ABOVE   Fx=0.28802375344882   Fy=2.0301369384238   Fgrav=154.1480179547   Mx=-5.15624841377363   My=1.33483904073162   Mz=-0.0464844483487736   XDim=0   YDim=0
+   Point=1221   LoadPat=MEP_ABOVE   Fx=0.19201586528736   Fy=1.3534244773418   Fgrav=102.76531564832   Mx=-3.4374981892835   My=0.889892769144303   Mz=-0.0309896284663544   XDim=0   YDim=0
+   Point=1221   LoadPat=Wind_ABOVE   Fx=47.42013718434   Fy=-4.482402137848   Fgrav=-303.11536967488   Mx=11.6781242368519   My=192.185629011057   Mz=0.259148805362008   XDim=0   YDim=0
+   Point=1223   LoadPat=Dead_ABOVE   Fx=-5.392352671278   Fy=-4.1364576853972   Fgrav=306.59298963448   Mx=10.4871069869739   My=-12.7900080354827   Mz=0.269169091760664   XDim=0   YDim=0
+   Point=1223   LoadPat=Live_ABOVE   Fx=-2.4407865625532   Fy=-0.4933892222626   Fgrav=121.20577580708   Mx=1.06936308439681   My=-6.08689097278858   Mz=0.102374816736744   XDim=0   YDim=0
+   Point=1223   LoadPat=MEP_ABOVE   Fx=-1.627190745154   Fy=-0.32892604438322   Fgrav=80.80386536546   Mx=0.712908685269592   My=-4.05792731519238   Mz=0.0682498815906572   XDim=0   YDim=0
+   Point=1223   LoadPat=Wind_ABOVE   Fx=53.93575932328   Fy=1.4799038872232   Fgrav=-192.12022057548   Mx=-3.71295183673273   My=210.578430919309   Mz=-0.106857490216134   XDim=0   YDim=0
+ 
+TABLE:  "DESIGN PREFERENCES 01 - RESISTANCE FACTORS"
+   PhiTen=0.9   PhiComp=0.65   PhiShear=0.75
+ 
+TABLE:  "DESIGN PREFERENCES 02 - REBAR COVER - SLABS"
+   CoverTop=0.01905   CoverBot=0.01905   BarSize=18   InnerLayer=B   PTCGSTop=0.0254   PTCGSBotExt=0.04445   PTCGSBotInt=0.0254   SlabType="Two Way"
+ 
+TABLE:  "DESIGN PREFERENCES 03 - REBAR COVER - BEAMS"
+   CoverTop=0.0381   CoverBot=0.0381   BarSizeF=28   BarSizeS=12   PTCGSTop=0.0508   PTCGSBot=0.0508
+ 
+TABLE:  "DESIGN PREFERENCES 04 - PRESTRESS DATA"
+   InitConcRat=0.8   InitTopTen=3   InitBotTen=3   InitExComp=0.6   FinTopTen=6   FinBotTen=6   FinExComp=0.6   SusExComp=0.45   LLFraction=0.5
+ 
+TABLE:  "SLAB DESIGN OVERWRITES 01 - STRIP BASED"
+   Strip=SA1   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA2   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA3   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA4   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA5   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA6   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA7   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA8   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA9   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB2   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB3   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB4   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB5   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB6   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB7   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB8   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB9   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA10   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA11   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA12   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA13   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA14   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA15   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA16   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA17   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA18   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA19   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA20   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA21   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA22   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA23   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA24   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA25   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA26   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA27   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA28   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA29   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA30   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA31   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA32   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA33   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA34   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA35   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA36   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA37   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA38   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA39   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA40   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA41   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA42   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA43   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA44   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA45   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA46   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA47   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA48   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA49   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA50   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA51   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA52   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA53   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA54   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA55   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA56   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA57   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA58   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA59   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA60   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA61   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA62   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA63   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA64   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA65   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA66   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA67   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA68   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA69   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA70   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA71   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA72   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA73   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA74   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA75   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA76   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA77   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA78   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA79   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA80   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA81   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA82   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA83   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA84   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA85   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA86   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA87   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA88   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA89   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA90   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA91   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA92   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA93   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA94   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA95   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA96   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA97   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA98   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA99   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB10   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB11   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB12   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB13   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB14   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB15   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB16   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB17   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB18   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB19   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB20   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB21   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB22   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB23   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB24   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB25   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB26   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB27   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB28   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB29   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB30   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB31   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB32   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB33   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB34   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB35   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB36   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB37   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB38   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB39   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB40   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB41   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB42   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB43   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB44   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB45   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB46   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB47   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB48   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB49   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB50   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB51   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB52   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB53   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB54   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB55   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB56   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB57   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB58   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB59   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB60   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB61   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB62   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB63   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB64   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB65   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB66   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB67   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB68   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB69   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB70   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB71   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB72   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB73   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB74   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB75   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB76   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SB77   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA100   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA101   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA102   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA103   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA104   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA105   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA106   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA107   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA108   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA109   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA110   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA111   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA112   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA113   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA114   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA115   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA116   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA117   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA118   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA119   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA120   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA121   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA122   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA123   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA124   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA125   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA126   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA127   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA128   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA129   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA130   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA131   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA132   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA133   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA134   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+   Strip=SA135   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=A615Gr60   CoverType=Preferences
+ 
+TABLE:  "SLAB DESIGN OVERWRITES 02 - FINITE ELEMENT BASED"
+   Area=3   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=4   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=5   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=6   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=7   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=8   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=9   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=10   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=11   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=12   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=13   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=14   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=15   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=16   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=17   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=18   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=19   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=20   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=21   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=22   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=23   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=24   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=25   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=26   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=27   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=28   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=29   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=30   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=31   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=32   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=33   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=34   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=35   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=38   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=39   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=43   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=44   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=45   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=47   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=48   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=49   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=50   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=54   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=55   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=56   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=59   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=60   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=61   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=62   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=63   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=65   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=66   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=67   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=68   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=69   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=71   RebarMat=A615Gr60   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+ 
+TABLE:  "BEAM DESIGN OVERWRITES"
+   Line=9   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=28   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=37   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W8-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W9-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W10-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W11-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W12-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W13-W   CoverType=Section   RLLF=1   IgnorePT=No
+   Line=W14-W   CoverType=Section   RLLF=1   IgnorePT=No
+ 
+END TABLE DATA

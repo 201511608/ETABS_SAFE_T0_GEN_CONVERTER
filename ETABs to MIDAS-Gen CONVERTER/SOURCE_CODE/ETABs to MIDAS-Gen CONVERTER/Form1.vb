@@ -2096,7 +2096,7 @@ Public Class Form1
                     dtMPO_read.Rows.Add(mc(b), mc(b + 1), mc(b + 2), mc(b + 3), mc(b + 4))
                 Next
 
-                '''''''''''''''''''''''''''''''''''''''''''''''''''  NOTREQUIRED.
+                '''''''''''''''''''''''''''''''''''''''''''''''''''  NOTREQUIRED..
                 'ElseIf words(a).Contains("""SLAB PROPERTIES 01 - GENERAL""") Then
                 '    temp = words(a).Remove(2, ("""SLAB PROPERTIES 01 - GENERAL""").Length)
                 '    Dim mc As MatchCollection = Regex.Matches(temp, "((?<==)[\w\.+-]+)")
