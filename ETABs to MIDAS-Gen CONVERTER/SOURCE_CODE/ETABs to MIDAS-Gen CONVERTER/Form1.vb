@@ -4149,7 +4149,7 @@ Public Class Form1
                         Dim matnf As String = nf(0)("Section_mat").ToString
                         Dim nfmat() As DataRow = dtMatgrade.Select("Material_name = '" & matnf & "'")
                         If nfmat.Count > 0 Then
-                            dtCrtdElem.Rows(n).Item("Material") = nfmat(0)
+                            dtCrtdElem.Rows(n).Item("Material") = nfmat(0)(0).ToString()
                         End If
                     End If
                 Else
