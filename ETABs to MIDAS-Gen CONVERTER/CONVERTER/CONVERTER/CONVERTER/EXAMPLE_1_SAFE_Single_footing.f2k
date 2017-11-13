@@ -1,0 +1,495 @@
+File C:\Users\midas\Desktop\Single_footing_SAFE_EXAMPLE_1.f2k was saved on 7/6/17 at 15:08:30
+ 
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAFE   Version=12.3.2   ProgLevel="Post Tensioning"   LicenseNum=Trial   CurrUnits="N, mm, C"   MergeTol=1   ModelDatum=0   StHtAbove=0   StHtBelow=0   ConcCode="ACI 318-08"
+ 
+TABLE:  "MASS SOURCE"
+   LoadPat=DEAD   Multiplier=1
+ 
+TABLE:  "PROJECT INFORMATION"
+   Item="Client Name"
+   Item="Project Name"
+   Item="Project Number"
+   Item="Company Name"
+   Item=Engineer
+   Item=Checker
+   Item=Supervisor
+   Item="Model Name"
+   Item="Model Description"
+   Item="Revision Number"
+   Item="Issue Number"
+ 
+TABLE:  "AUTOMATIC SLAB MESH OPTIONS"
+   MeshOpt=Rectangular   Localize=Yes   Merge=Yes   MaxSize=1200
+ 
+TABLE:  "CRACKING ANALYSIS REINFORCEMENT"
+   ReinfOpt="FE Design"   MinReinfT=0.0018   MinReinfC=0   UserModRup=No
+ 
+TABLE:  "ADVANCED SAPFIRE OPTIONS"
+   SolverOpt=Advanced   ProcessOpt=Auto   Always32Bit=No
+ 
+TABLE:  "ADVANCED MODELING OPTIONS"
+   2DOnly=No   RigDiaTop=No   NoOffsets=Yes
+ 
+TABLE:  "OBJECT GEOMETRY - POINT COORDINATES"
+   Point=1   GlobalX=-2000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=2   GlobalX=2000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=3   GlobalX=2000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=4   GlobalX=-2000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=5   GlobalX=-300   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=6   GlobalX=300   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=7   GlobalX=300   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=8   GlobalX=-300   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=9   GlobalX=0   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=10   GlobalX=-2000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=11   GlobalX=2000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=12   GlobalX=0   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=13   GlobalX=0   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=40   GlobalX=4000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=41   GlobalX=8000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=42   GlobalX=8000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=43   GlobalX=4000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=44   GlobalX=5700   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=45   GlobalX=6300   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=46   GlobalX=6300   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=47   GlobalX=5700   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=48   GlobalX=6000   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=49   GlobalX=4000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=50   GlobalX=8000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=51   GlobalX=6000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=52   GlobalX=6000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=53   GlobalX=10000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=54   GlobalX=14000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=55   GlobalX=14000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=56   GlobalX=10000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=57   GlobalX=11700   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=58   GlobalX=12300   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=59   GlobalX=12300   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=60   GlobalX=11700   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=61   GlobalX=12000   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=62   GlobalX=10000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=63   GlobalX=14000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=64   GlobalX=12000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=65   GlobalX=12000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=66   GlobalX=16000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=67   GlobalX=20000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=68   GlobalX=20000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=69   GlobalX=16000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=70   GlobalX=17700   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=71   GlobalX=18300   GlobalY=-300   GlobalZ=0   SpecialPt=No
+   Point=72   GlobalX=18300   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=73   GlobalX=17700   GlobalY=300   GlobalZ=0   SpecialPt=No
+   Point=74   GlobalX=18000   GlobalY=0   GlobalZ=0   SpecialPt=Yes
+   Point=75   GlobalX=16000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=76   GlobalX=20000   GlobalY=0   GlobalZ=0   SpecialPt=No
+   Point=77   GlobalX=18000   GlobalY=-2000   GlobalZ=0   SpecialPt=No
+   Point=78   GlobalX=18000   GlobalY=2000   GlobalZ=0   SpecialPt=No
+   Point=79   GlobalX=-2000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=80   GlobalX=2000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=81   GlobalX=2000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=82   GlobalX=-2000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=83   GlobalX=-300   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=84   GlobalX=300   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=85   GlobalX=300   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=86   GlobalX=-300   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=87   GlobalX=0   GlobalY=6000   GlobalZ=0   SpecialPt=Yes
+   Point=88   GlobalX=-2000   GlobalY=6000   GlobalZ=0   SpecialPt=No
+   Point=89   GlobalX=2000   GlobalY=6000   GlobalZ=0   SpecialPt=No
+   Point=90   GlobalX=0   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=91   GlobalX=0   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=92   GlobalX=4000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=93   GlobalX=8000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=94   GlobalX=8000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=95   GlobalX=4000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=96   GlobalX=5700   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=97   GlobalX=6300   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=98   GlobalX=6300   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=99   GlobalX=5700   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=100   GlobalX=6000   GlobalY=6000   GlobalZ=0   SpecialPt=Yes
+   Point=101   GlobalX=10000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=102   GlobalX=14000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=103   GlobalX=14000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=104   GlobalX=10000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=105   GlobalX=11700   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=106   GlobalX=12300   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=107   GlobalX=12300   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=108   GlobalX=11700   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=109   GlobalX=12000   GlobalY=6000   GlobalZ=0   SpecialPt=Yes
+   Point=110   GlobalX=16000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=111   GlobalX=20000   GlobalY=4000   GlobalZ=0   SpecialPt=No
+   Point=112   GlobalX=20000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=113   GlobalX=16000   GlobalY=8000   GlobalZ=0   SpecialPt=No
+   Point=114   GlobalX=17700   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=115   GlobalX=18300   GlobalY=5700   GlobalZ=0   SpecialPt=No
+   Point=116   GlobalX=18300   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=117   GlobalX=17700   GlobalY=6300   GlobalZ=0   SpecialPt=No
+   Point=118   GlobalX=18000   GlobalY=6000   GlobalZ=0   SpecialPt=Yes
+   Point=119   GlobalX=-2000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=120   GlobalX=2000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=121   GlobalX=2000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=122   GlobalX=-2000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=123   GlobalX=-300   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=124   GlobalX=300   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=125   GlobalX=300   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=126   GlobalX=-300   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=127   GlobalX=0   GlobalY=12000   GlobalZ=0   SpecialPt=Yes
+   Point=128   GlobalX=-2000   GlobalY=12000   GlobalZ=0   SpecialPt=No
+   Point=129   GlobalX=2000   GlobalY=12000   GlobalZ=0   SpecialPt=No
+   Point=130   GlobalX=0   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=131   GlobalX=0   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=132   GlobalX=4000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=133   GlobalX=8000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=134   GlobalX=8000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=135   GlobalX=4000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=136   GlobalX=5700   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=137   GlobalX=6300   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=138   GlobalX=6300   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=139   GlobalX=5700   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=140   GlobalX=6000   GlobalY=12000   GlobalZ=0   SpecialPt=Yes
+   Point=141   GlobalX=10000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=142   GlobalX=14000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=143   GlobalX=14000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=144   GlobalX=10000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=145   GlobalX=11700   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=146   GlobalX=12300   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=147   GlobalX=12300   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=148   GlobalX=11700   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=149   GlobalX=12000   GlobalY=12000   GlobalZ=0   SpecialPt=Yes
+   Point=150   GlobalX=16000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=151   GlobalX=20000   GlobalY=10000   GlobalZ=0   SpecialPt=No
+   Point=152   GlobalX=20000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=153   GlobalX=16000   GlobalY=14000   GlobalZ=0   SpecialPt=No
+   Point=154   GlobalX=17700   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=155   GlobalX=18300   GlobalY=11700   GlobalZ=0   SpecialPt=No
+   Point=156   GlobalX=18300   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=157   GlobalX=17700   GlobalY=12300   GlobalZ=0   SpecialPt=No
+   Point=158   GlobalX=18000   GlobalY=12000   GlobalZ=0   SpecialPt=Yes
+   Point=159   GlobalX=-2000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=160   GlobalX=2000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=161   GlobalX=2000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=162   GlobalX=-2000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=163   GlobalX=-300   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=164   GlobalX=300   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=165   GlobalX=300   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=166   GlobalX=-300   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=167   GlobalX=0   GlobalY=18000   GlobalZ=0   SpecialPt=Yes
+   Point=168   GlobalX=-2000   GlobalY=18000   GlobalZ=0   SpecialPt=No
+   Point=169   GlobalX=2000   GlobalY=18000   GlobalZ=0   SpecialPt=No
+   Point=170   GlobalX=0   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=171   GlobalX=0   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=172   GlobalX=4000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=173   GlobalX=8000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=174   GlobalX=8000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=175   GlobalX=4000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=176   GlobalX=5700   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=177   GlobalX=6300   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=178   GlobalX=6300   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=179   GlobalX=5700   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=180   GlobalX=6000   GlobalY=18000   GlobalZ=0   SpecialPt=Yes
+   Point=181   GlobalX=10000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=182   GlobalX=14000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=183   GlobalX=14000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=184   GlobalX=10000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=185   GlobalX=11700   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=186   GlobalX=12300   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=187   GlobalX=12300   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=188   GlobalX=11700   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=189   GlobalX=12000   GlobalY=18000   GlobalZ=0   SpecialPt=Yes
+   Point=190   GlobalX=16000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=191   GlobalX=20000   GlobalY=16000   GlobalZ=0   SpecialPt=No
+   Point=192   GlobalX=20000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=193   GlobalX=16000   GlobalY=20000   GlobalZ=0   SpecialPt=No
+   Point=194   GlobalX=17700   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=195   GlobalX=18300   GlobalY=17700   GlobalZ=0   SpecialPt=No
+   Point=196   GlobalX=18300   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=197   GlobalX=17700   GlobalY=18300   GlobalZ=0   SpecialPt=No
+   Point=198   GlobalX=18000   GlobalY=18000   GlobalZ=0   SpecialPt=Yes
+ 
+TABLE:  "OBJECT GEOMETRY - AREAS 01 - GENERAL"
+   Area=7   NumPoints=4   Point1=40   Point2=41   Point3=42   Point4=43   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=8   NumPoints=4   Point1=44   Point2=45   Point3=46   Point4=47   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=9   NumPoints=4   Point1=53   Point2=54   Point3=55   Point4=56   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=10   NumPoints=4   Point1=57   Point2=58   Point3=59   Point4=60   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=11   NumPoints=4   Point1=66   Point2=67   Point3=68   Point4=69   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=12   NumPoints=4   Point1=70   Point2=71   Point3=72   Point4=73   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=13   NumPoints=4   Point1=79   Point2=80   Point3=81   Point4=82   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=14   NumPoints=4   Point1=83   Point2=84   Point3=85   Point4=86   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=15   NumPoints=4   Point1=92   Point2=93   Point3=94   Point4=95   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=16   NumPoints=4   Point1=96   Point2=97   Point3=98   Point4=99   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=17   NumPoints=4   Point1=101   Point2=102   Point3=103   Point4=104   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=18   NumPoints=4   Point1=105   Point2=106   Point3=107   Point4=108   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=19   NumPoints=4   Point1=110   Point2=111   Point3=112   Point4=113   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=20   NumPoints=4   Point1=114   Point2=115   Point3=116   Point4=117   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=21   NumPoints=4   Point1=119   Point2=120   Point3=121   Point4=122   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=22   NumPoints=4   Point1=123   Point2=124   Point3=125   Point4=126   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=23   NumPoints=4   Point1=132   Point2=133   Point3=134   Point4=135   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=24   NumPoints=4   Point1=136   Point2=137   Point3=138   Point4=139   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=25   NumPoints=4   Point1=141   Point2=142   Point3=143   Point4=144   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=26   NumPoints=4   Point1=145   Point2=146   Point3=147   Point4=148   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=27   NumPoints=4   Point1=150   Point2=151   Point3=152   Point4=153   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=28   NumPoints=4   Point1=154   Point2=155   Point3=156   Point4=157   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=29   NumPoints=4   Point1=159   Point2=160   Point3=161   Point4=162   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=30   NumPoints=4   Point1=163   Point2=164   Point3=165   Point4=166   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=31   NumPoints=4   Point1=172   Point2=173   Point3=174   Point4=175   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=32   NumPoints=4   Point1=176   Point2=177   Point3=178   Point4=179   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=33   NumPoints=4   Point1=181   Point2=182   Point3=183   Point4=184   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=34   NumPoints=4   Point1=185   Point2=186   Point3=187   Point4=188   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=35   NumPoints=4   Point1=190   Point2=191   Point3=192   Point4=193   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+   Area=36   NumPoints=4   Point1=194   Point2=195   Point3=196   Point4=197   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=LOAD1   NumPoints=4   Point1=5   Point2=6   Point3=7   Point4=8   Auto=No   TotalArea=360000   AreaType=Slab   CurvedEdges=0
+   Area=FOOTING   NumPoints=4   Point1=1   Point2=2   Point3=3   Point4=4   Auto=No   TotalArea=16000000   AreaType=Slab   CurvedEdges=0
+ 
+TABLE:  "OBJECT GEOMETRY - DESIGN STRIPS"
+   Strip=CSA1   Point=10   GlobalX=-2000   GlobalY=0   WALeft=2000   WARight=2000
+   Strip=CSA1   Point=11   GlobalX=2000   GlobalY=0   WBLeft=2000   WBRight=2000
+   Strip=CSB1   Point=12   GlobalX=0   GlobalY=-2000   WALeft=2000   WARight=2000
+   Strip=CSB1   Point=13   GlobalX=0   GlobalY=2000   WBLeft=2000   WBRight=2000
+ 
+TABLE:  "COORDINATE SYSTEMS"
+   CoordSys=GLOBAL   Type=Cartesian   OriginGx=0   OriginGy=0   RotAngle=0
+ 
+TABLE:  "GRID LINES"
+   CoordSys=GLOBAL   AxisDir=X   GridID=A   Ordinate=0   Visible=Yes   BubbleLoc=End   GridColor=10461087   BubbleSize=1250   HideAll=No
+   CoordSys=GLOBAL   AxisDir=Y   GridID=1   Ordinate=0   Visible=Yes   BubbleLoc=Start
+ 
+TABLE:  "MATERIAL PROPERTIES 01 - GENERAL"
+   Material=A416MGr186   Type=Tendon   Color=Cyan   Notes="ASTM A416 Metric Grade 186 added 7/6/2017 3:05:19 PM"
+   Material=C30   Type=Concrete   Color=Yellow   Notes="Normalweight C30 added 7/6/2017 3:05:19 PM"
+   Material=CSA-G30.18Gr400   Type=Rebar   Color=Blue   Notes="CSA-G30.18 Grade 400 added 7/6/2017 3:05:19 PM"
+ 
+TABLE:  "MATERIAL PROPERTIES 03 - CONCRETE"
+   Material=C30   E=26667.312337931   U=0.2   A=9.9E-06   UnitWt=2.3563121614979E-05   Fc=30   LtWtConc=No
+ 
+TABLE:  "MATERIAL PROPERTIES 04 - REBAR"
+   Material=CSA-G30.18Gr400   E=200000   UnitWt=7.69728639422648E-05   Fy=400   Fu=500
+ 
+TABLE:  "MATERIAL PROPERTIES 05 - TENDON"
+   Material=A416MGr186   E=196500.5998512   UnitWt=7.69728639422648E-05   Fy=1690   Fu=1860
+ 
+TABLE:  "SLAB PROPERTIES 01 - GENERAL"
+   Slab=FOOTING   Type=Footing   Color=Blue
+   Slab=STIFF   Type=Stiff   Color=Green
+ 
+TABLE:  "SLAB PROPERTIES 02 - SOLID SLABS"
+   Slab=FOOTING   Type=Footing   MatProp=C30   Thickness=600   Ortho=No
+   Slab=STIFF   Type=Stiff   MatProp=C30   Thickness=600   Ortho=No
+ 
+TABLE:  "REINFORCING BAR SIZES"
+   RebarID=6   Area=28.2999992370605   Diameter=6
+   RebarID=8   Area=50.2999992370605   Diameter=8
+   RebarID=10   Area=78.5   Diameter=10
+   RebarID=12   Area=113.099998474121   Diameter=12
+   RebarID=14   Area=153.899993896484   Diameter=14
+   RebarID=16   Area=201.100006103516   Diameter=16
+   RebarID=18   Area=254.5   Diameter=18
+   RebarID=20   Area=314.200012207031   Diameter=20
+   RebarID=22   Area=380.100006103516   Diameter=22
+   RebarID=25   Area=490.899993896484   Diameter=25
+   RebarID=26   Area=530.900024414063   Diameter=26
+   RebarID=28   Area=615.799987792969   Diameter=28
+   RebarID=32   Area=804.200012207031   Diameter=32
+   RebarID=36   Area=1017.90002441406   Diameter=36
+   RebarID=40   Area=1256.59997558594   Diameter=40
+   RebarID=50   Area=1963.5   Diameter=50
+ 
+TABLE:  "SOIL PROPERTIES"
+   Soil=SOIL1   Subgrade=0.02   Color=Blue
+ 
+TABLE:  "SPRING PROPERTIES - LINE"
+   Spring=LSPR1   VertStiff=1   RotStiff=1   NonlinOpt="None (Linear)"   Color=Red
+ 
+TABLE:  "SPRING PROPERTIES - POINT"
+   Spring=PSPR1   Ux=0   Uy=0   Uz=1   Rx=0   Ry=0   Rz=0   NonlinOpt="None (Linear)"   Color=Yellow
+ 
+TABLE:  "LOAD PATTERNS"
+   LoadPat=DEAD   Type=DEAD   SelfWtMult=1
+   LoadPat=LIVE   Type=LIVE   SelfWtMult=0
+ 
+TABLE:  "LOAD CASES 01 - GENERAL"
+   LoadCase=DEAD   Type=LinStatic   DesignOpt=Auto   DesignType=DEAD
+   LoadCase=LIVE   Type=LinStatic   DesignOpt=Auto   DesignType=LIVE
+ 
+TABLE:  "LOAD CASES 02 - STATIC"
+   LoadCase=DEAD   InitialCond=Zero   AType=Linear
+   LoadCase=LIVE   InitialCond=Zero   AType=Linear
+ 
+TABLE:  "LOAD CASES 06 - LOADS APPLIED"
+   LoadCase=DEAD   LoadPat=DEAD   SF=1
+   LoadCase=LIVE   LoadPat=LIVE   SF=1
+ 
+TABLE:  "GROUP DEFINITIONS"
+   Group=ALL   Color=Red
+ 
+TABLE:  "SLAB PROPERTY ASSIGNMENTS"
+   Area=7   SlabProp=FOOTING
+   Area=8   SlabProp=STIFF
+   Area=9   SlabProp=FOOTING
+   Area=10   SlabProp=STIFF
+   Area=11   SlabProp=FOOTING
+   Area=12   SlabProp=STIFF
+   Area=13   SlabProp=FOOTING
+   Area=14   SlabProp=STIFF
+   Area=15   SlabProp=FOOTING
+   Area=16   SlabProp=STIFF
+   Area=17   SlabProp=FOOTING
+   Area=18   SlabProp=STIFF
+   Area=19   SlabProp=FOOTING
+   Area=20   SlabProp=STIFF
+   Area=21   SlabProp=FOOTING
+   Area=22   SlabProp=STIFF
+   Area=23   SlabProp=FOOTING
+   Area=24   SlabProp=STIFF
+   Area=25   SlabProp=FOOTING
+   Area=26   SlabProp=STIFF
+   Area=27   SlabProp=FOOTING
+   Area=28   SlabProp=STIFF
+   Area=29   SlabProp=FOOTING
+   Area=30   SlabProp=STIFF
+   Area=31   SlabProp=FOOTING
+   Area=32   SlabProp=STIFF
+   Area=33   SlabProp=FOOTING
+   Area=34   SlabProp=STIFF
+   Area=35   SlabProp=FOOTING
+   Area=36   SlabProp=STIFF
+   Area=LOAD1   SlabProp=STIFF
+   Area=FOOTING   SlabProp=FOOTING
+ 
+TABLE:  "SOIL PROPERTY ASSIGNMENTS"
+   Area=7   SoilProp=SOIL1
+   Area=9   SoilProp=SOIL1
+   Area=11   SoilProp=SOIL1
+   Area=13   SoilProp=SOIL1
+   Area=15   SoilProp=SOIL1
+   Area=17   SoilProp=SOIL1
+   Area=19   SoilProp=SOIL1
+   Area=21   SoilProp=SOIL1
+   Area=23   SoilProp=SOIL1
+   Area=25   SoilProp=SOIL1
+   Area=27   SoilProp=SOIL1
+   Area=29   SoilProp=SOIL1
+   Area=31   SoilProp=SOIL1
+   Area=33   SoilProp=SOIL1
+   Area=35   SoilProp=SOIL1
+   Area=FOOTING   SoilProp=SOIL1
+ 
+TABLE:  "LOAD ASSIGNMENTS - POINT LOADS"
+   Point=9   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=9   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=48   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=48   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=61   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=61   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=74   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=74   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=87   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=87   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=100   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=100   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=109   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=109   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=118   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=118   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=127   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=127   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=140   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=140   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=149   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=149   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=158   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=158   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=167   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=167   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=180   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=180   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=189   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=189   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+   Point=198   LoadPat=DEAD   Fx=0   Fy=0   Fgrav=1000000   Mx=50000000   My=50000000   Mz=0   XDim=600   YDim=600
+   Point=198   LoadPat=LIVE   Fx=0   Fy=0   Fgrav=500000   Mx=60000000   My=60000000   Mz=0   XDim=600   YDim=600
+ 
+TABLE:  "OBJECTS INCLUDED IN ANALYSIS MESH 01 - POINTS"
+   Point=9   Include=Yes
+   Point=48   Include=Yes
+   Point=61   Include=Yes
+   Point=74   Include=Yes
+   Point=87   Include=Yes
+   Point=100   Include=Yes
+   Point=109   Include=Yes
+   Point=118   Include=Yes
+   Point=127   Include=Yes
+   Point=140   Include=Yes
+   Point=149   Include=Yes
+   Point=158   Include=Yes
+   Point=167   Include=Yes
+   Point=180   Include=Yes
+   Point=189   Include=Yes
+   Point=198   Include=Yes
+ 
+TABLE:  "DESIGN PREFERENCES 01 - RESISTANCE FACTORS"
+   PhiTen=0.9   PhiComp=0.65   PhiShear=0.75
+ 
+TABLE:  "DESIGN PREFERENCES 02 - REBAR COVER - SLABS"
+   CoverTop=15   CoverBot=15   BarSize=18   InnerLayer=B   PTCGSTop=25   PTCGSBotExt=40   PTCGSBotInt=25   SlabType="Two Way"
+ 
+TABLE:  "DESIGN PREFERENCES 03 - REBAR COVER - BEAMS"
+   CoverTop=40   CoverBot=40   BarSizeF=28   BarSizeS=12   PTCGSTop=50   PTCGSBot=50
+ 
+TABLE:  "DESIGN PREFERENCES 04 - PRESTRESS DATA"
+   InitConcRat=0.8   InitTopTen=3   InitBotTen=3   InitExComp=0.6   FinTopTen=6   FinBotTen=6   FinExComp=0.6   SusExComp=0.45   LLFraction=0.5
+ 
+TABLE:  "SLAB DESIGN OVERWRITES 01 - STRIP BASED"
+   Strip=CSA1   Layer=A   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=CSA-G30.18Gr400   CoverType=Preferences
+   Strip=CSB1   Layer=B   DesignType=Column   RLLF=1   Design=Yes   IgnorePT=No   RebarMat=CSA-G30.18Gr400   CoverType=Preferences
+ 
+TABLE:  "SLAB DESIGN OVERWRITES 02 - FINITE ELEMENT BASED"
+   Area=7   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=8   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=9   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=10   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=11   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=12   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=13   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=14   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=15   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=16   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=17   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=18   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=19   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=20   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=21   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=22   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=23   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=24   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=25   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=26   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=27   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=28   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=29   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=30   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=31   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=32   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=33   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=34   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=35   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=36   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=LOAD1   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+   Area=FOOTING   RebarMat=CSA-G30.18Gr400   CoverType=Preferences   RLLF=1   Design=Yes   IgnorePT=No
+ 
+TABLE:  "PUNCHING SHEAR DESIGN OVERWRITES 01 - GENERAL"
+   Point=9   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=48   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=61   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=74   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=87   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=100   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=109   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=118   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=127   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=140   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=149   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=158   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=167   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=180   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=189   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+   Point=198   Check="Program Determined"   LocType=Auto   Perimeter=Auto   EffDepth=Auto   Openings=Auto   ReinfType=None
+ 
+END TABLE DATA

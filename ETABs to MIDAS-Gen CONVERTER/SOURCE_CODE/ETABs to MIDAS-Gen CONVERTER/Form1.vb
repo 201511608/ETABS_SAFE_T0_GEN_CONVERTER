@@ -3707,8 +3707,8 @@ Public Class Form1
     Public Function writing_section(ByVal out_file As StreamWriter)
         If dtProSection.Rows.Count > 0 Then
             out_file.WriteLine("*SECTION")
-            For Each row As DataRow In dtProSection.Rows  '' UPDATED YES,NO
-                out_file.WriteLine(row("Section_id") & ",  DBUSER ," & row("Section_name") & "   ,CC, 0, 0, 0, 0, 0, 0, YES, NO, " & row("Section_shape") & ", 2, " & row("d1") & ",  " & row("d2") & ", " & row("d3") & ", " & row("d4") & ", " & row("d5") & ",  " & row("d6") & ", " & row("d7") & ", " & row("d8"))
+            For Each row As DataRow In dtProSection.Rows  '' UPDATED YES,NO REMOVED
+                out_file.WriteLine(row("Section_id") & ",  DBUSER ," & row("Section_name") & "   ,CC, 0, 0, 0, 0, 0, 0, YES," & row("Section_shape") & ", 2, " & row("d1") & ",  " & row("d2") & ", " & row("d3") & ", " & row("d4") & ", " & row("d5") & ",  " & row("d6") & ", " & row("d7") & ", " & row("d8"))
             Next
         End If
     End Function
