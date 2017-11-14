@@ -3816,7 +3816,7 @@ Public Class Form1
                                     End If
                                     If neg_chk = 1 Then
                                         If CStr(dt_area_load_etabs.Rows(n_area_etabs).Item("Area_load_mag")) <> "0" Then
-                                            out_file.WriteLine(dt_final_element_list.Rows(n_area_ele).Item("Final_reference") & ", PRES, PLATE, FACE, " & lc_dir & ", 0, 0, 0, " & proj & ", " & dt_area_load_etabs.Rows(n_area_etabs).Item("Area_load_mag") & ", 0, 0, 0, 0,")
+                                            out_file.WriteLine(dt_final_element_list.Rows(n_area_ele).Item("Final_reference") & ", PRES, PLATE, FACE, " & lc_dir & ", 0, 0, 0, " & proj & ", -" & dt_area_load_etabs.Rows(n_area_etabs).Item("Area_load_mag") & ", 0, 0, 0, 0,")
                                         End If
                                         'If dt_area_load_etabs.Rows.Count > 3 Then
                                         '    dt_area_load_etabs.Rows(n_area_etabs).Delete()
