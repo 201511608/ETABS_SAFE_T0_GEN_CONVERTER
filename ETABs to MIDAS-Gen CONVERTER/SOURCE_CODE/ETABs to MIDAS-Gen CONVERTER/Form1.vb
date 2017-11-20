@@ -940,7 +940,7 @@ Public Class Form1
             ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
             If extension = ".$et" Or extension = ".e2k" Or extension = ".$ET" Or extension = ".E2K" Then
                 ETABS()
-                '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+                '''''''O''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
             ElseIf extension = ".f2k" Or extension = ".F2K" Then
                 SAFE()
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -1646,120 +1646,121 @@ Public Class Form1
                     End If
 
                     If parts(0) = "AREAASSIGN" Then
-                        area_ass.Checked = True
-                        area_ass.Enabled = True
-                        Dim lastnonempty As Integer = -1
-                        For k As Integer = 0 To parts.Count - 1
-                            If parts(k) <> "" Then
-                                lastnonempty = lastnonempty + 1
-                                parts(lastnonempty) = parts(k)
+                            area_ass.Checked = True
+                            area_ass.Enabled = True
+                            Dim lastnonempty As Integer = -1
+                            For k As Integer = 0 To parts.Count - 1
+                                If parts(k) <> "" Then
+                                    lastnonempty = lastnonempty + 1
+                                    parts(lastnonempty) = parts(k)
+                                End If
+                            Next
+                            If lastnonempty < 0 Then
+                                lastnonempty = 0
                             End If
-                        Next
-                        If lastnonempty < 0 Then
-                            lastnonempty = 0
+                            ReDim Preserve parts(lastnonempty)
+
+                            parsing_areaassign(parts(1), parts(2), parts(4))
                         End If
-                        ReDim Preserve parts(lastnonempty)
 
-                        parsing_areaassign(parts(1), parts(2), parts(4))
-                    End If
-
-                    If parts(0) = "AREA" Then
-                        area_conn.Checked = True
-                        area_conn.Enabled = True
-                        Dim lastnonempty As Integer = -1
-                        For k As Integer = 0 To parts.Count - 1
-                            If parts(k) <> "" Then
-                                lastnonempty = lastnonempty + 1
-                                parts(lastnonempty) = parts(k)
+                        If parts(0) = "AREA" Then
+                            area_conn.Checked = True
+                            area_conn.Enabled = True
+                            Dim lastnonempty As Integer = -1
+                            For k As Integer = 0 To parts.Count - 1
+                                If parts(k) <> "" Then
+                                    lastnonempty = lastnonempty + 1
+                                    parts(lastnonempty) = parts(k)
+                                End If
+                            Next
+                            If lastnonempty < 0 Then
+                                lastnonempty = 0
                             End If
-                        Next
-                        If lastnonempty < 0 Then
-                            lastnonempty = 0
-                        End If
-                        ReDim Preserve parts(lastnonempty)
+                            ReDim Preserve parts(lastnonempty)
 
-                        Dim p_split() As String = parts(2).Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-                        Dim nn As Integer = p_split(1)
+                            Dim p_split() As String = parts(2).Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                            Dim nn As Integer = p_split(1)
 
-                        For i_area = 0 To nn - 1
-                            nodes.Add(parts(3 + i_area))
-                        Next
-                        Dim nodes_array As String() = nodes.ToArray()
-                        If nodes_array.Count <= 4 Then
-                            parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1) ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-                        Else
-                            ' Dim points() As PointF
-                            Dim m_Points() As PointF = {}
-                            Dim rn As Integer = 0
-                            For j = 0 To nodes_array.Count - 1
-                                rn = 0
-                                For Each row As DataRow In dtcrtdnodeorg.Rows
-                                    If nodes_array(j) = dtcrtdnodeorg.Rows(rn).Item("Node_Number_org") Then
-                                        AddVertex(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")), 0)
-                                        ReDim Preserve m_Points(nodes_array.Count)
-                                        m_Points(j) = New PointF(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")))
-                                    End If
-                                    rn = rn + 1
+                            For i_area = 0 To nn - 1
+                                nodes.Add(parts(3 + i_area))
+                            Next
+                            Dim nodes_array As String() = nodes.ToArray()
+                            If nodes_array.Count <= 4 Then
+                                parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1) ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+                            Else
+                                ' Dim points() As PointF  '   // For Each row As DataRow In dtcrtdnodeorg.Rows
+
+                                Dim m_Points() As PointF = {}
+                                Dim rn As Integer = 0
+                                For j = 0 To nodes_array.Count - 1
+                                    rn = 0
+                                    For Each row As DataRow In dtcrtdnodeorg.Rows
+                                        If nodes_array(j) = dtcrtdnodeorg.Rows(rn).Item("Node_Number_org") Then
+                                            AddVertex(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")), 0)
+                                            ReDim Preserve m_Points(nodes_array.Count - 1) ' updated with -1
+                                            m_Points(j) = New PointF(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")))
+                                        End If
+                                        rn = rn + 1
+                                    Next
                                 Next
-                            Next
 
-                            Dim nodes_ind As New List(Of String)()
-                            Dim node_string() As String = CalculateTriangles()
-                            For k = 0 To node_string.Count - 1
-                                Dim nodes_array_index() As String = node_string(k).Split(",")
-                                Dim chk_inside As Integer = 1
-                                If node_string.Count > nodes_array.Count - 2 Then
-                                    chk_inside = 0
-                                    Dim cgx As Single = 0
-                                    Dim cgy As Single = 0
-                                    Dim chk_1 As Integer = 0
-                                    Dim chk_2 As Integer = 0
-                                    Dim chk_3 As Integer = 0
-                                    For lp_var = 0 To dtcrtdnodeorg.Rows.Count - 1
-                                        If nodes_array(nodes_array_index(0)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                            cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                            cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                            chk_1 = 1
-                                        End If
-                                        If nodes_array(nodes_array_index(1)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                            cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                            cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                            chk_2 = 2
-                                        End If
-                                        If nodes_array(nodes_array_index(2)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                            cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                            cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                            chk_3 = 3
-                                        End If
-                                        If chk_1 = 1 And chk_2 = 1 And chk_3 = 1 Then
-                                            Exit For
-                                        End If
-                                    Next
-                                    Dim return_chk As Boolean = PointInPolygon(m_Points, cgx, cgy)
-                                    If return_chk = True Then
-                                        chk_inside = 1
-                                    Else
+                                Dim nodes_ind As New List(Of String)()
+                                Dim node_string() As String = CalculateTriangles()
+                                For k = 0 To node_string.Count - 1
+                                    Dim nodes_array_index() As String = node_string(k).Split(",")
+                                    Dim chk_inside As Integer = 1
+                                    If node_string.Count > nodes_array.Count - 2 Then
                                         chk_inside = 0
+                                        Dim cgx As Single = 0
+                                        Dim cgy As Single = 0
+                                        Dim chk_1 As Integer = 0
+                                        Dim chk_2 As Integer = 0
+                                        Dim chk_3 As Integer = 0
+                                        For lp_var = 0 To dtcrtdnodeorg.Rows.Count - 1
+                                            If nodes_array(nodes_array_index(0)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
+                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
+                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
+                                                chk_1 = 1
+                                            End If
+                                            If nodes_array(nodes_array_index(1)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
+                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
+                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
+                                                chk_2 = 2
+                                            End If
+                                            If nodes_array(nodes_array_index(2)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
+                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
+                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
+                                                chk_3 = 3
+                                            End If
+                                            If chk_1 = 1 And chk_2 = 1 And chk_3 = 1 Then
+                                                Exit For
+                                            End If
+                                        Next
+                                        Dim return_chk As Boolean = PointInPolygon(m_Points, cgx, cgy)
+                                        If return_chk = True Then
+                                            chk_inside = 1
+                                        Else
+                                            chk_inside = 0
+                                        End If
                                     End If
-                                End If
-                                If chk_inside = 1 Then
-                                    For i_ind = 0 To 2
-                                        nodes_ind.Add(nodes_array(nodes_array_index(i_ind)))
-                                    Next
-                                End If
-                                Dim nodes_array_ind As String() = nodes_ind.ToArray()
-                                Dim conc_check As Integer = 0
-                                conc_check = straight_line_check(nodes_array_ind)
-                                If conc_check = 1 Then
-                                    parsing_area_conn(parts(1), nodes_array_ind, parts(3 + nn), 1)
-                                End If
+                                    If chk_inside = 1 Then
+                                        For i_ind = 0 To 2
+                                            nodes_ind.Add(nodes_array(nodes_array_index(i_ind)))
+                                        Next
+                                    End If
+                                    Dim nodes_array_ind As String() = nodes_ind.ToArray()
+                                    Dim conc_check As Integer = 0
+                                    ' conc_check = straight_line_check(nodes_array_ind)  'Up Dated with removal of line
+                                    If conc_check = 0 Then
+                                        parsing_area_conn(parts(1), nodes_array_ind, parts(3 + nn), 1)
+                                    End If
 
-                                nodes_ind.Clear()
-                            Next
-                            EmptyVertexList()
+                                    nodes_ind.Clear()
+                                Next
+                                EmptyVertexList()
+                            End If
+                            nodes.Clear()
                         End If
-                        nodes.Clear()
-                    End If
 
                     If parts(0) = "SHELLPROP" Then
                         thicknesses.Checked = True
