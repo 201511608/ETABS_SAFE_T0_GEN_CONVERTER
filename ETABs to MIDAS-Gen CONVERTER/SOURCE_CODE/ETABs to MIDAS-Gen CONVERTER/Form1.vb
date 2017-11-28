@@ -3,10 +3,14 @@ Imports System.IO
 Imports System.Text
 Imports System.Xml
 Imports System.Text.RegularExpressions
+Imports TriangleNet
+Imports TriangleNet.Geometry
+Imports MY_TRIANGLE_FUN.MY_TRIANGLE_CLASS
 
 
 Public Class Form1
-    
+
+
     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     'SAFE TABLES
     ''' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -76,6 +80,15 @@ Public Class Form1
     Dim dtBEAMLOAD_arrange As New DataTable 'BEAMLOAD
     Dim dtPOINTDISPLOAD_arrange As New DataTable 'NODAL DISPLACEMENT
 
+    '' NEW ETABS
+    Dim dt_AREA_CONN_TABLE As New DataTable
+    Dim dt_AREAASSIGN_TABLE As New DataTable
+    Dim dt_AREAASSIGN_OPEN_TABLE As New DataTable
+    Dim dt_DataStore_temp_TABLE As New DataTable
+    Dim dt_DataStore_temp_Opn_TABLE As New DataTable ' Opening slab tables
+    Dim dt_DataStore_temp_ID As New DataTable ' for storing list of quadratic points
+    Dim dt_ShellDrop_Drop_Table As New DataTable ' Store id of drops
+    ''
 
     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -735,6 +748,51 @@ Public Class Form1
 
             ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
             'ETABES_GEN_TABLES
+            '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+            'NEW
+            dt_AREA_CONN_TABLE.Columns.Add("ID")
+            dt_AREA_CONN_TABLE.Columns.Add("NUM_NODES", GetType(Array))
+            dt_AREA_CONN_TABLE.Columns.Add("ARRAY_NODE_ID")
+            dt_AREA_CONN_TABLE.Columns.Add("NUM")
+
+            dt_AREAASSIGN_TABLE.Columns.Add("ID")
+            dt_AREAASSIGN_TABLE.Columns.Add("FLOOR_ID")
+            dt_AREAASSIGN_TABLE.Columns.Add("SECTION/OPENING")
+
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("ID")
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("FLOOR_ID")
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("SECTION/OPENING")
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("Point_Array", GetType(Point()))
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("Point_ID_Array", GetType(String()))
+            dt_AREAASSIGN_OPEN_TABLE.Columns.Add("PointF_Array", GetType(PointF()))
+
+
+            dt_DataStore_temp_TABLE.Columns.Add("G_NODE_ID")
+            dt_DataStore_temp_TABLE.Columns.Add("L_ID")
+            dt_DataStore_temp_TABLE.Columns.Add("X")
+            dt_DataStore_temp_TABLE.Columns.Add("Y")
+            dt_DataStore_temp_TABLE.Columns.Add("Z")
+            dt_DataStore_temp_TABLE.Columns.Add("BOUNDARY_ID")
+            dt_DataStore_temp_TABLE.Columns.Add("GLOBAL_PLATE_ID")
+
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("G_NODE_ID")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("L_ID")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("X")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("Y")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("Z")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("BOUNDARY_ID")
+            dt_DataStore_temp_Opn_TABLE.Columns.Add("GLOBAL_PLATE_ID")
+
+            dt_DataStore_temp_ID.Columns.Add("ID")
+            dt_DataStore_temp_ID.Columns.Add("PointF", GetType(PointF()))
+            dt_DataStore_temp_ID.Columns.Add("Para_1")
+            dt_DataStore_temp_ID.Columns.Add("Para_2")
+
+            dt_ShellDrop_Drop_Table.Columns.Add("ID")
+            dt_ShellDrop_Drop_Table.Columns.Add("SLAB_TYPE")
+
+
+            ''''''''''''''''''''''''''''''''''''''''''''
             extension = Path.GetExtension(file_name)
             dtCrtdUnits.Columns.Add("Force", GetType(String)) '
             dtCrtdUnits.Columns.Add("Length", GetType(String)) '
@@ -959,6 +1017,7 @@ Public Class Form1
     End Sub
     Private Sub browse_button_Click(sender As Object, e As EventArgs) Handles browse_button.Click
         ' MessageBox.Show("Make sure all the elements are USER DEFINED")
+        Process_Text.Text = "SELECTING FILE..."
         OpenFileDialog.Title = "Enter the input file"
         OpenFileDialog.Filter = "ETABS/SAFE Text Files (*.$et, *e2k,*f2k)|*.$et;*.e2k;*.f2k|ETABS Text Files (*.$et,*e2k)|*.$et;*.e2k|SAFE Files (*f2k)|*.f2k|All Files (*.*)|*.*"
         OpenFileDialog.ShowDialog()
@@ -986,6 +1045,7 @@ Public Class Form1
 
 
         '    Application.DoEvents()
+        Process_Text.Text = "FILE SELECTED..."
     End Sub
     Public Function clear_checks()
         units.Checked = False
@@ -1060,7 +1120,7 @@ Public Class Form1
         dtCrtdUnits.Rows.Add(parts(1), parts(3), "BTU", parts(5))
     End Function
     Function ETABS()
-
+        Dim Chk1_DO_New_mesh As Boolean = False ' new
         Dim Material_id As Integer = 1
         Dim sec_id As Integer = 1
         Dim loadpattern_id As Integer = 1
@@ -1115,6 +1175,7 @@ Public Class Form1
                             End
                         End If
                         parsing_units(parts)  ' Writes 
+                        Process_Text.Text = "Reading UNITS"
                     End If
 
                     If parts(0) = "STORY" Then
@@ -1126,6 +1187,7 @@ Public Class Form1
                         End If
                         parsing_story(parts(1), story_pass(1))
                         once = 1
+                        Process_Text.Text = "Reading STORY"
                     End If
 
                     If once = 1 And parts(0) <> "STORY" Then
@@ -1148,10 +1210,12 @@ Public Class Form1
                             dtcrtdnodeorg.Rows.Add(parts(1), pt_pass(0), pt_pass(1), pt_pass(2))
                         End If
                         point_chk = 1
+                        Process_Text.Text = "Reading POINT"
                     End If
 
                     If parts(0) <> "POINT" And point_chk = 1 Then
                         nodenumber = 1
+
                         tot_org_nodes = dtcrtdnodeorg.Rows.Count
                         For l1 = 0 To dtStorydata.Rows.Count - 1
                             For l2 = 0 To dtcrtdnodeorg.Rows.Count - 1
@@ -1159,15 +1223,25 @@ Public Class Form1
                                 nodenumber = nodenumber + 1
                             Next
                         Next
-                        point_chk = 0
+                        point_chk = 10 'for triangulation
                         storydata_count = dtStorydata.Rows.Count - 1
                         node_count_infunc = dtCrtdNode.Rows.Count - 1
+                        Process_Text.Text = "Reading POINT"
                     End If
+
+
+                    'If point_chk = 10 And Chk1_DO_New_mesh = True Then          ' New Triangle Mesh function              '
+                    '    New_Trianguation_Mesh()
+                    '    NODE_PARSING_NEW() ' After Triangles
+                    '    point_chk = 0
+                    '    Chk1_DO_New_mesh = False
+                    'End If
 
                     If parts(0) = "LINE" Then
                         element_conn.Checked = True
                         element_conn.Enabled = True
                         parsing_elem_conn(parts(1), parts(3), parts(5), parts(6))
+                        Process_Text.Text = "Reading LINE"
                     End If
 
                     If parts(0) = "LINEASSIGN" Then
@@ -1233,9 +1307,11 @@ Public Class Form1
                         If parts(3) = "SPRINGPROP" Then
                             parsing_pointassign_spring(parts(1), parts(2), parts(4))
                         End If
+                        Process_Text.Text = "Reading POINTASSIGN"
                     End If
 
                     If parts(0) = "MATERIAL" Then
+                        Process_Text.Text = "Reading MATERIAL"
                         Dim Mat_count As Integer = 0    ''
                         Dim Mat_name As String = parts(1)  ''
 
@@ -1465,6 +1541,7 @@ Public Class Form1
                     End If
 
                     If parts(0) = "FRAMESECTION" Then
+                        Process_Text.Text = "Reading FRAMESECTION"
                         Dim lastnonempty As Integer = -1
                         For k As Integer = 0 To parts.Count - 1
                             If parts(k) <> "" Then
@@ -1547,13 +1624,16 @@ Public Class Form1
                     End If
 
                     If parts(0) = "LOADPATTERN" Then
+                        Process_Text.Text = "Reading LOADPATTERN"
                         load_pattern.Checked = True
                         load_pattern.Enabled = True
                         parsing_loadpattern(loadpattern_id, parts(1), parts(3))
                         loadpattern_id = loadpattern_id + 1
+                        'Chk1_DO_New_mesh = True ': point_chk = 10  ' True for New Triangle
                     End If
 
                     If parts(0) = "POINTLOAD" Then
+                        Process_Text.Text = "Reading POINTLOAD"
                         point_loads.Checked = True
                         point_loads.Enabled = True
                         Dim lastnonempty As Integer = -1
@@ -1572,6 +1652,7 @@ Public Class Form1
                     End If
 
                     If parts(0) = "LINELOAD" Then
+                        Process_Text.Text = "Reading LINELOAD"
                         line_loads.Checked = True
                         line_loads.Enabled = True
                         If lnas_chk = 0 Then
@@ -1646,129 +1727,82 @@ Public Class Form1
                     End If
 
                     If parts(0) = "AREAASSIGN" Then
-                            area_ass.Checked = True
-                            area_ass.Enabled = True
-                            Dim lastnonempty As Integer = -1
-                            For k As Integer = 0 To parts.Count - 1
-                                If parts(k) <> "" Then
-                                    lastnonempty = lastnonempty + 1
-                                    parts(lastnonempty) = parts(k)
-                                End If
-                            Next
-                            If lastnonempty < 0 Then
-                                lastnonempty = 0
+                        Process_Text.Text = "Reading AREAASSIGN..."
+                        area_ass.Checked = True
+                        area_ass.Enabled = True
+                        Dim lastnonempty As Integer = -1
+                        For k As Integer = 0 To parts.Count - 1
+                            If parts(k) <> "" Then
+                                lastnonempty = lastnonempty + 1
+                                parts(lastnonempty) = parts(k)
                             End If
-                            ReDim Preserve parts(lastnonempty)
-
-                            parsing_areaassign(parts(1), parts(2), parts(4))
+                        Next
+                        If lastnonempty < 0 Then
+                            lastnonempty = 0
+                        End If
+                        ReDim Preserve parts(lastnonempty)
+                        parsing_areaassign(parts(1), parts(2), parts(4))
+                        If parts(4) = "Yes" Then
+                            dt_AREAASSIGN_OPEN_TABLE.Rows.Add(parts(1), parts(2), parts(4))
+                        Else
+                            dt_AREAASSIGN_TABLE.Rows.Add(parts(1), parts(2), parts(4)) ' Store in tanle
                         End If
 
-                        If parts(0) = "AREA" Then
-                            area_conn.Checked = True
-                            area_conn.Enabled = True
-                            Dim lastnonempty As Integer = -1
-                            For k As Integer = 0 To parts.Count - 1
-                                If parts(k) <> "" Then
-                                    lastnonempty = lastnonempty + 1
-                                    parts(lastnonempty) = parts(k)
-                                End If
-                            Next
-                            If lastnonempty < 0 Then
-                                lastnonempty = 0
+                    End If
+
+                    If parts(0) = "AREA" Then
+                        Process_Text.Text = "Reading AREA..."
+                        area_conn.Checked = True
+                        area_conn.Enabled = True
+                        Dim lastnonempty As Integer = -1
+                        For k As Integer = 0 To parts.Count - 1
+                            If parts(k) <> "" Then
+                                lastnonempty = lastnonempty + 1
+                                parts(lastnonempty) = parts(k)
                             End If
-                            ReDim Preserve parts(lastnonempty)
+                        Next
+                        If lastnonempty < 0 Then
+                            lastnonempty = 0
+                        End If
+                        ReDim Preserve parts(lastnonempty) ' Changing its dimension to preset elements
 
-                            Dim p_split() As String = parts(2).Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-                            Dim nn As Integer = p_split(1)
+                        Dim p_split() As String = parts(2).Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                        Dim nn As Integer = p_split(1)
 
-                            For i_area = 0 To nn - 1
-                                nodes.Add(parts(3 + i_area))
-                            Next
-                            Dim nodes_array As String() = nodes.ToArray()
+                        For i_area = 0 To nn - 1
+                            nodes.Add(parts(3 + i_area))
+                        Next
+                        Dim nodes_array As String() = nodes.ToArray()
+                        'Write Direct !!! NO IF ELSE
+                        If parts(1)(0) = "W" Then 'Wall are done start with W id
+                            parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1)
+                            '       dt_AREA_CONN_TABLE.Rows.Add(parts(1), nodes_array, parts(3 + nn), 1)
+                        Else 'Floor and Drop
                             If nodes_array.Count <= 4 Then
-                                parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1) ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+                                ' Storing the data
+                                dt_AREA_CONN_TABLE.Rows.Add(parts(1), nodes_array, parts(3 + nn), 1)
+                                Dim a As String = parts(1)(0)
+                                '  parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1) ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
                             Else
-                                ' Dim points() As PointF  '   // For Each row As DataRow In dtcrtdnodeorg.Rows
-
-                                Dim m_Points() As PointF = {}
-                                Dim rn As Integer = 0
-                                For j = 0 To nodes_array.Count - 1
-                                    rn = 0
-                                    For Each row As DataRow In dtcrtdnodeorg.Rows
-                                        If nodes_array(j) = dtcrtdnodeorg.Rows(rn).Item("Node_Number_org") Then
-                                            AddVertex(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")), 0)
-                                            ReDim Preserve m_Points(nodes_array.Count - 1) ' updated with -1
-                                            m_Points(j) = New PointF(CSng(dtcrtdnodeorg.Rows(rn).Item("X1")), CSng(dtcrtdnodeorg.Rows(rn).Item("X2")))
-                                        End If
-                                        rn = rn + 1
-                                    Next
-                                Next
-
-                                Dim nodes_ind As New List(Of String)()
-                                Dim node_string() As String = CalculateTriangles()
-                                For k = 0 To node_string.Count - 1
-                                    Dim nodes_array_index() As String = node_string(k).Split(",")
-                                    Dim chk_inside As Integer = 1
-                                    If node_string.Count > nodes_array.Count - 2 Then
-                                        chk_inside = 0
-                                        Dim cgx As Single = 0
-                                        Dim cgy As Single = 0
-                                        Dim chk_1 As Integer = 0
-                                        Dim chk_2 As Integer = 0
-                                        Dim chk_3 As Integer = 0
-                                        For lp_var = 0 To dtcrtdnodeorg.Rows.Count - 1
-                                            If nodes_array(nodes_array_index(0)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                                chk_1 = 1
-                                            End If
-                                            If nodes_array(nodes_array_index(1)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                                chk_2 = 2
-                                            End If
-                                            If nodes_array(nodes_array_index(2)) = dtcrtdnodeorg.Rows(lp_var).Item("Node_Number_org") Then
-                                                cgx = cgx + dtcrtdnodeorg.Rows(lp_var).Item("X1") / 3
-                                                cgy = cgy + dtcrtdnodeorg.Rows(lp_var).Item("X2") / 3
-                                                chk_3 = 3
-                                            End If
-                                            If chk_1 = 1 And chk_2 = 1 And chk_3 = 1 Then
-                                                Exit For
-                                            End If
-                                        Next
-                                        Dim return_chk As Boolean = PointInPolygon(m_Points, cgx, cgy)
-                                        If return_chk = True Then
-                                            chk_inside = 1
-                                        Else
-                                            chk_inside = 0
-                                        End If
-                                    End If
-                                    If chk_inside = 1 Then
-                                        For i_ind = 0 To 2
-                                            nodes_ind.Add(nodes_array(nodes_array_index(i_ind)))
-                                        Next
-                                    End If
-                                    Dim nodes_array_ind As String() = nodes_ind.ToArray()
-                                    Dim conc_check As Integer = 0
-                                    ' conc_check = straight_line_check(nodes_array_ind)  'Up Dated with removal of line
-                                    If conc_check = 0 Then
-                                        parsing_area_conn(parts(1), nodes_array_ind, parts(3 + nn), 1)
-                                    End If
-
-                                    nodes_ind.Clear()
-                                Next
-                                EmptyVertexList()
+                                dt_AREA_CONN_TABLE.Rows.Add(parts(1), nodes_array, parts(3 + nn), 1)
+                                ' parsing_area_conn(parts(1), nodes_array, parts(3 + nn), 1)
                             End If
-                            nodes.Clear()
                         End If
+
+                        nodes.Clear() ' Imp
+                    End If
 
                     If parts(0) = "SHELLPROP" Then
+                        Process_Text.Text = "Reading SHELLPROP..."
                         thicknesses.Checked = True
                         thicknesses.Enabled = True
                         If parts.Count > 8 Then
                             If parts(3) = "Slab" Then
                                 Dim th_parts() As String = parts(parts.Count - 1).Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
                                 parsing_thickness(thickness_id_slab, parts(1), parts(5), th_parts(1))
+                                If parts(9) = "Drop" Then
+                                    dt_ShellDrop_Drop_Table.Rows.Add(parts(1), parts(9)) ' Store Id and SlabType
+                                End If
                                 thickness_id_slab = thickness_id_slab + 1
                             End If
                             If parts(3) = "Wall" Then
@@ -1784,6 +1818,7 @@ Public Class Form1
                     'End If
 
                     If parts(0) = "AREALOAD" Then
+                        Process_Text.Text = "Reading AREALOAD..."
                         If parts(5) <> "TEMP" Then
                             area_loading.Checked = True
                             area_loading.Enabled = True
@@ -1816,6 +1851,7 @@ Public Class Form1
                     End If
 
                     If parts(0) = "SHELLUNIFORMLOADSET" Then
+                        Process_Text.Text = "Reading SHELLUNIFORMLOADSET..."
                         unifloadset.Enabled = True
                         unifloadset.Checked = True
                         Dim lastnonempty As Integer = -1
@@ -1834,6 +1870,7 @@ Public Class Form1
                     End If
 
                     If parts(0) = "POINTSPRING" Then
+                        Process_Text.Text = "Reading POINTSPRING..."
                         constraints.Checked = True
                         constraints.Enabled = True
                         parsing_pointsprings(parts(1), parts(2))
@@ -1864,57 +1901,81 @@ Public Class Form1
 
         'End Using
         '    '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''END CHECKING'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        'New Function
+        Process_Text.Text = "MESHING..."
+        New_Trianguation_Mesh()  ' Perfoming New Triangulor Mesh
+        NODE_PARSING_NEW()       ' Adding Extra Nodes that Generated from the Trianglesss !!!
+
+        'New_Trianguation_Mesh()
+        'NODE_PARSING_NEW() ' After Triangles
+        Process_Text.Text = "REARRANGING ELEMENTS..."
         If ll_chk = 0 Then
             rearrange_elem()
             ll_chk = 1
         End If
-
+        Process_Text.Text = "PROCESSING ELEMENTS..."
         elem_section()
         area_element()
-
-        If dtboundary_conditions.Rows.Count = 0 Then
-            MessageBox.Show("Boundary Conditions Should be given by the User. Press OK to Continue file writting")
-        End If
+        Process_Text.Text = "BEGIN WRITING..."
+        'If dtboundary_conditions.Rows.Count = 0 Then
+        '    MessageBox.Show("Boundary Conditions Should be given by the User. Press OK to Continue file writting")
+        'End If
         ProgressBar_read.Value = ProgressBar_read.Maximum
         Using out_file As New StreamWriter(out_path)
             ProgressBar_writing.Minimum = 0
             ProgressBar_writing.Maximum = 10
+            Process_Text.Text = "WRITING UNITS..."
             writing_units(out_file) '
             ProgressBar_writing.Value = 1 '
             Application.DoEvents() '
+            Process_Text.Text = "WRITING NODES..."
             writing_node(out_file) '
             ProgressBar_writing.Value = 2 '
             Application.DoEvents() '
+            Process_Text.Text = "WRITING ELEMENTS..."
             writing_elem(out_file) '
             ProgressBar_writing.Value = 3 '
             Application.DoEvents() '
             'writing_story(out_file)
+            Process_Text.Text = "WRITING BOUNDARY AND SPRINGS..."
             writing_BoundaryConditions(out_file)
             writting_spring(out_file)
             ProgressBar_writing.Value = 4
             Application.DoEvents()
+            Process_Text.Text = "WRITING MATERIALS..."
             writing_material(out_file)
             ProgressBar_writing.Value = 5
             Application.DoEvents()
+            Process_Text.Text = "WRITING THICKNESS PLATES..."
             writing_thickness(out_file)
             ProgressBar_writing.Value = 6
             Application.DoEvents()
+            Process_Text.Text = "WRITING SECTION..."
             writing_section(out_file)
             ProgressBar_writing.Value = 7
             Application.DoEvents()
+            Process_Text.Text = "WRITING MODIFIER..."
             writing_modifier(out_file)
             ProgressBar_writing.Value = 8
             Application.DoEvents()
+            Process_Text.Text = "WRITING LOADPATTERN..."
             writing_loadpattern(out_file)
             ProgressBar_writing.Value = 9
             Application.DoEvents()
+            Process_Text.Text = "WRITING LOADS..."
             writing_load(out_file)
             ProgressBar_writing.Value = 10
             Application.DoEvents()
             'writing_floadtype(out_file)
             ' areaload_floorload()
             'writing_floorload(out_file)
+            Process_Text.Text = "READY TO USE"
             MessageBox.Show("Writting Completed." & vbNewLine & "Location :  " & CStr(out_path))
+
+            '' Changed Location
+            If dtboundary_conditions.Rows.Count = 0 Then
+                MessageBox.Show("Boundary Conditions Should be given by the User. Press OK to Continue file writting")
+            End If
 
             Process.Start(out_path)
         End Using
@@ -3488,6 +3549,242 @@ Public Class Form1
     Public Function parsing_areaassign(ByVal area_name As String, ByVal area_story As String, ByVal area_section As String)
         dtarea_assign.Rows.Add(area_name, area_story, area_section)
     End Function
+    Public Function NODE_PARSING_NEW()
+        ' nodenumber = 1
+        '   tot_org_nodes = dtcrtdnodeorg.Rows.Count
+        For l1 = 0 To dtStorydata.Rows.Count - 1
+            For l2 = tot_org_nodes To dtcrtdnodeorg.Rows.Count - 1
+                parsing_node(nodenumber, dtcrtdnodeorg.Rows(l2).Item("X1"), dtcrtdnodeorg.Rows(l2).Item("X2"), dtStorydata.Rows(l1).Item("Story_height") - dtcrtdnodeorg.Rows(l2).Item("Z_dash"), dtcrtdnodeorg.Rows(l2).Item("Node_Number_org"), dtStorydata.Rows(l1).Item("Story_name"))
+                nodenumber = nodenumber + 1
+            Next
+        Next
+        storydata_count = dtStorydata.Rows.Count - 1
+        node_count_infunc = dtCrtdNode.Rows.Count - 1
+    End Function
+    Public Function Open_Holes()
+        Dim i_C As Integer = 0
+        For Each row31_hole As DataRow In dt_AREAASSIGN_OPEN_TABLE.Rows
+            Dim Node_points2 = New Point() {}
+            Dim Node_points3 = New PointF() {}
+            Dim Node_Id() As String
+
+            For Each row3 As DataRow In dt_AREA_CONN_TABLE.Rows
+                If row31_hole.Item("ID") = row3.Item("ID") Then  ' ID to ID  MATCH  
+
+                    Dim Node_ID_array2 = row3.Item("NUM_NODES") '' Dim a = Node_ID_array(0) 'Test Delete !
+                    Dim a_length2 = Node_ID_array2.Length()
+                    ReDim Node_points2(a_length2 - 1) ' Test it
+                    ReDim Node_points3(a_length2 - 1)
+                    ReDim Node_Id(a_length2 - 1)
+                    Dim NP_count2 As Integer = 0
+                    For i = 0 To a_length2 - 1      'Id Coordinates
+                        For Each row4 As DataRow In dtcrtdnodeorg.Rows
+                            If row4.Item("Node_Number_org") = Node_ID_array2(i) Then '??? or Node_ID_array(i) not this it [its local it] take direct id
+                                Dim x1 As Double = CDbl(row4.Item("X1")) : Dim y1 As Double = CDbl(row4.Item("X2")) : Dim z1 As Double = CDbl(row4.Item("Z_dash"))
+                                Node_points2(NP_count2) = New Point(x1, y1) ' Check in statemnt for 
+                                Node_points3(NP_count2) = New PointF(x1, y1) ' Check in statemnt for 
+                                Node_Id(NP_count2) = row4.Item("Node_Number_org")
+                                NP_count2 = NP_count2 + 1
+                                Exit For   ' Break
+                            End If
+                            Application.DoEvents()
+                        Next
+                        Application.DoEvents()
+                    Next
+                    dt_AREAASSIGN_OPEN_TABLE.Rows(i_C).Item("Point_ID_Array") = Node_Id
+                End If
+            Next
+            dt_AREAASSIGN_OPEN_TABLE.Rows(i_C).Item("Point_Array") = Node_points2
+            dt_AREAASSIGN_OPEN_TABLE.Rows(i_C).Item("PointF_Array") = Node_points3
+            i_C = i_C + 1
+        Next
+    End Function
+    Public Function New_Trianguation_Mesh()
+        Open_Holes() ' Do once to collect new points to table
+        Dim Str_New_Node As String : Dim N_node_count As Integer = 1 ' New node string and numbering
+        Dim geometry1 As New InputGeometry()
+        For Each row1 As DataRow In dtcrtdstoryorg.Rows  ' Floors = row1
+
+            Dim Store_Data(1, 6) As Double  ' Truid_i  Triangle_id, x, y, z, Boundry
+            Dim Bdr_count As Integer = 1  ' For each floor different boundaries
+
+            ' Dim NPB_count As Integer = 1  ' Nodal boundary id !   'instead used    Bdr_count
+            For Each row2 As DataRow In dt_AREAASSIGN_TABLE.Rows   ' Floors to ID  MATCH
+                Dim NP_count As Integer = 0  ' doubts check this
+                If row1.Item("Story_name") = row2.Item("FLOOR_ID") Then ' STORY  to STORY   MATCH      :"EACH FLOOR"
+                    For Each row3 As DataRow In dt_AREA_CONN_TABLE.Rows
+                        ''''
+                        Dim m_Points(row3.Item("NUM_NODES").Length() - 1) As PointF '//3      ''''''''''''????
+                        If row2.Item("ID") = row3.Item("ID") Then  ' ID to ID  MATCH  
+                            ''''''''''''
+                            Dim Node_points = New Point() {} : Dim Node_pints_open
+                            Dim Node_ID_array = row3.Item("NUM_NODES") '' Dim a = Node_ID_array(0) 'Test Delete !
+                            Dim a_length = Node_ID_array.Length()
+                            ReDim Node_points(a_length - 1) ' Test it
+                            Dim chckout As Integer = 0
+                            Dim Chk_Do_mesh As Integer = 0  ' Check the plates are avilable for that particular floor
+                            Dim Loc_count As Integer = 0 ' For Every Element
+                            '''''''''''
+                            '''''''''''  ARRAY NODE READ OF EACH CONNECTIVITY
+                            For i = 0 To a_length - 1      'Id Coordinates
+                                For Each row4 As DataRow In dtcrtdnodeorg.Rows
+                                    If row4.Item("Node_Number_org") = Node_ID_array(i) Then '??? or Node_ID_array(i) not this it [its local it] take direct id
+                                        Dim x1 As Double = CDbl(row4.Item("X1")) : Dim y1 As Double = CDbl(row4.Item("X2")) : Dim z1 As Double = CDbl(row4.Item("Z_dash"))
+                                        dt_DataStore_temp_TABLE.Rows.Add(Node_ID_array(i), Loc_count, x1, y1, z1, Bdr_count, row3.Item("ID"))
+                                        m_Points(i) = New PointF(CSng(row4.Item("X1")), CSng(row4.Item("X2"))) '//3
+                                        Loc_count = Loc_count + 1 ' Local Start from zero triangles
+                                        Node_points(NP_count) = New Point(x1, y1, Bdr_count) ' Check in statemnt for 
+                                        NP_count = NP_count + 1
+                                        Exit For   ' Break
+                                    End If
+                                    Application.DoEvents()
+                                Next
+                                Application.DoEvents()
+                            Next
+                            ''''''''''
+                            ' geometry1.Clear()
+                            ''''''''''
+                            ' ADDING REGION 
+                            'Dim geometry1 As New InputGeometry() ' Every Element
+                            geometry1.AddRing(Node_points, Bdr_count) '
+                            Bdr_count = Bdr_count + 1 : Chk_Do_mesh = 1
+
+                            '' Add Holes
+                            For Each row31_hole As DataRow In dt_AREAASSIGN_OPEN_TABLE.Rows
+                                If row31_hole.Item("FLOOR_ID") = row1.Item("Story_name") Then
+                                    geometry1.AddRingAsHole(row31_hole.Item("Point_Array"), Bdr_count)
+                                    Bdr_count = Bdr_count + 1 : Chk_Do_mesh = 1
+                                    '''   Node_pints_open = row31_hole.Item("PointF_Array")
+                                    '''
+                                    'dt_DataStore_temp_TABLE.Rows.Add(Node_ID_array(i), Loc_count, x1, y1, z1, Bdr_count, row3.Item("ID"))
+                                    ''
+                                End If
+                            Next
+                            '''
+                            '''
+                            '''   For Each triangle
+                            If Chk_Do_mesh = 1 Then
+                                Dim nodes_array_ind As String()
+                                Dim mesh As New Mesh ' Every Floor Mesh Renewals
+                                mesh.Triangulate(geometry1)
+                                mesh.Behavior.MinAngle = MeshBar.Value  '' MeshBar.Value value from Gui Bar
+                                ' mesh.Behavior.MaxAngle = 40
+                                mesh.Smooth()
+                                mesh.Refine()
+
+                                ' mesh.Behavior.
+                                '    ' For each triangle
+                                For i = 0 To mesh.Triangles.Count() - 1
+                                    Dim test_7 = mesh.Triangles(0).GetVertex(0) : Dim test_8 = mesh.Triangles(0).GetVertex(1) : Dim test_9 = mesh.Triangles(0).GetVertex(2)
+                                    Dim N0 = mesh.Triangles(i).P0 : Dim N0_XY = mesh.Triangles(i).GetVertex(0) ' XY_CO(0, 0)  ' similar cross check for x y coordinate
+                                    Dim N1 = mesh.Triangles(i).P1 : Dim N1_XY = mesh.Triangles(i).GetVertex(1) ' XY_CO(1, 0)  ' similar cross check for x y coordinate
+                                    Dim N2 = mesh.Triangles(i).P2 : Dim N2_XY = mesh.Triangles(i).GetVertex(2) ' XY_CO(2, 0)  ' similar cross check for x y coordinate
+                                    Dim cgx As Double = (N0_XY.X + N1_XY.X + N2_XY.X) / 3 : Dim cgy As Double = (N0_XY.Y + N1_XY.Y + N2_XY.Y) / 3  ''  cgx of Trianges
+                                    Dim a = "0" : Dim b = "0" : Dim c = "0"  ' a,b,c global ID'S
+                                    Dim a_chk As Boolean = False : Dim b_chk As Boolean = False : Dim c_chk As Boolean = False  ' a,b,c global ID'S
+                                    Dim XY_CO(3 - 1, 2 - 1) As Double  ' X Y
+                                    Dim N_array_check(3) As String
+                                    Dim Tri_check_Open As Boolean = False ' False !!! For each triangle
+
+                                    '''
+                                    ''
+                                    For Each row31_hole As DataRow In dt_AREAASSIGN_OPEN_TABLE.Rows  ' Check triangle with in the hole or not
+                                        If row31_hole.Item("FLOOR_ID") = row1.Item("Story_name") Then
+                                            If PointInPolygon(row31_hole.Item("PointF_Array"), cgx, cgy) Then
+                                                Tri_check_Open = True
+                                                Exit For
+                                            End If
+                                        End If
+                                    Next
+
+                                    ''
+                                    '''
+
+
+
+                                    For Each row_N As DataRow In dtcrtdnodeorg.Rows
+                                        If row_N.Item("X1") = CStr(N0_XY.X) And row_N.Item("X2") = CStr(N0_XY.Y) And row_N(3) = "0" Then
+                                            a = row_N.Item("Node_Number_org") : a_chk = True
+                                        ElseIf row_N.Item("X1") = CStr(N1_XY.X) And row_N.Item("X2") = CStr(N1_XY.Y) And row_N(3) = "0" Then
+                                            b = row_N.Item("Node_Number_org") : b_chk = True
+                                        ElseIf row_N.Item("X1") = CStr(N2_XY.X) And row_N.Item("X2") = CStr(N2_XY.Y) And row_N(3) = "0" Then
+                                            c = row_N.Item("Node_Number_org") : c_chk = True
+                                        End If
+                                        If a_chk = True And b_chk = True And c_chk = True And PointInPolygon(m_Points, cgx, cgy) And Not Tri_check_Open Then
+                                            nodes_array_ind = {a, b, c}
+                                            parsing_area_conn(row3.Item("ID"), nodes_array_ind, row3.Item("ARRAY_NODE_ID"), row3.Item("NUM"))
+                                            Exit For
+                                        End If
+                                        Application.DoEvents()
+                                    Next
+                                    Application.DoEvents()
+
+
+                                    If a_chk = False Or b_chk = False Or c_chk = False Then
+                                        If a_chk = False Then
+                                            Str_New_Node = "New" & N_node_count
+                                            a_chk = True
+                                            dtcrtdnodeorg.Rows.Add(Str_New_Node, N0_XY.X, N0_XY.Y, dt_DataStore_temp_TABLE.Rows(0).Item("Z"))
+                                            a = Str_New_Node
+                                            N_node_count = N_node_count + 1
+                                        End If
+                                        If b_chk = False Then
+                                            Str_New_Node = "New" & N_node_count
+                                            b_chk = True
+                                            dtcrtdnodeorg.Rows.Add(Str_New_Node, N1_XY.X, N1_XY.Y, dt_DataStore_temp_TABLE.Rows(0).Item("Z"))
+                                            b = Str_New_Node
+                                            N_node_count = N_node_count + 1
+                                        End If
+                                        If c_chk = False Then
+                                            Str_New_Node = "New" & N_node_count
+                                            c_chk = True
+                                            dtcrtdnodeorg.Rows.Add(Str_New_Node, N2_XY.X, N2_XY.Y, dt_DataStore_temp_TABLE.Rows(0).Item("Z"))
+                                            c = Str_New_Node
+                                            N_node_count = N_node_count + 1
+                                        End If
+
+                                        ''''
+                                        ''
+                                        If a_chk = True And b_chk = True And c_chk = True And PointInPolygon(m_Points, cgx, cgy) And Not Tri_check_Open Then
+                                            nodes_array_ind = {a, b, c}
+                                            parsing_area_conn(row3.Item("ID"), nodes_array_ind, row3.Item("ARRAY_NODE_ID"), row3.Item("NUM"))
+                                            '       MessageBox.Show("Triangel is INCLUDED " & i)
+                                        End If
+                                        ''
+                                        ''''
+                                    End If
+
+
+
+
+                                Next ' for each triangle ends
+                            End If
+                            geometry1.Clear()
+                            dt_DataStore_temp_TABLE.Rows.Clear() ' Must be cleaned for every element
+                            Exit For  ' Must run only once
+                            ''
+                            ''''
+                            ''''''
+                            ''''''''
+                        End If
+                    Next
+
+                End If
+            Next
+
+            ' Per Floor
+            ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+            dt_DataStore_temp_TABLE.Rows.Clear() ' Must be at End of IF Chk_Do_mesh = 1
+            dt_DataStore_temp_Opn_TABLE.Rows.Clear() ' Clearing Temp dataBase
+            dt_DataStore_temp_ID.Rows.Clear() ' Clear Temp data of coordinate points
+
+            ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+            Application.DoEvents()
+        Next
+    End Function
+
+
 
     Public Function parsing_area_conn(ByVal area_name As String, ByVal node_us() As String, ByVal floor_Chk As String, ByVal chker As Integer)
         If node_us.Count = 3 Then
@@ -4399,7 +4696,30 @@ Public Class Form1
     End Sub
 
     Public Function delete_db()
+        '''NEW
 
+        dt_AREAASSIGN_TABLE.Columns.Clear()
+        dt_AREAASSIGN_TABLE.Rows.Clear()
+
+        dt_AREAASSIGN_OPEN_TABLE.Columns.Clear()
+        dt_AREAASSIGN_OPEN_TABLE.Rows.Clear()
+
+        dt_AREA_CONN_TABLE.Columns.Clear()
+        dt_AREA_CONN_TABLE.Rows.Clear()
+
+        dt_DataStore_temp_TABLE.Columns.Clear()
+        dt_DataStore_temp_TABLE.Rows.Clear()
+
+        dt_DataStore_temp_Opn_TABLE.Columns.Clear()
+        dt_DataStore_temp_Opn_TABLE.Rows.Clear()
+
+        dt_DataStore_temp_ID.Columns.Clear()
+        dt_DataStore_temp_ID.Rows.Clear()
+
+        dt_ShellDrop_Drop_Table.Columns.Clear()
+        dt_ShellDrop_Drop_Table.Rows.Clear()
+
+        ''' 
         dtCrtdUnits.Columns.Clear()
         dtCrtdUnits.Rows.Clear()
 
@@ -4720,6 +5040,16 @@ Public Class Form1
                         & vbNewLine & "10. WAFFLE AND RIBBED SLAB ASSUMED AS PLATED OF CONSTANT MIN SLAB DEPTH FROM SAFE,USER MUST INCLUDE FURTEHR PROPERTIES")
     End Sub
 
+    Private Sub Scroller_Mesh_Update(sender As Object, e As MouseEventArgs) Handles Label6.MouseClick, MeshBar.MouseMove
+        'Mesh.Behavior.MinAngle = MeshBar.Value  '' MeshBar.Value value from Gui Bar
+        Dim test10 As Integer = MeshBar.Value
+        Label6.Text = CInt(100 / 35 * CInt(MeshBar.Value))
+    End Sub
+
+    Private Sub MeshBar_MouseEnter(sender As Object, e As EventArgs) Handles MeshBar.MouseEnter
+        Dim test10 As Integer = MeshBar.Value
+        Label6.Text = CInt(100 / 35 * CInt(MeshBar.Value))
+    End Sub
 End Class
 
 

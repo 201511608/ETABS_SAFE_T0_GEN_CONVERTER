@@ -74,6 +74,9 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MY_TRIANGLE_FUN">
+      <HintPath>..\..\..\..\..\..\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\MY_TRIANGLE_FUN.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -83,6 +86,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Triangle">
+      <HintPath>.\Triangle.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />

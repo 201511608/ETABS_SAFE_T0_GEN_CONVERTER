@@ -44,6 +44,8 @@ Partial Class Form1
         Me.load_pattern = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.POINT_SPRING = New System.Windows.Forms.CheckBox()
+        Me.SURFACE_SPRING = New System.Windows.Forms.CheckBox()
         Me.point_disp_load = New System.Windows.Forms.CheckBox()
         Me.unifloadset = New System.Windows.Forms.CheckBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -54,10 +56,16 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.SURFACE_SPRING = New System.Windows.Forms.CheckBox()
-        Me.POINT_SPRING = New System.Windows.Forms.CheckBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.MeshBar = New System.Windows.Forms.TrackBar()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Process_Text = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        CType(Me.MeshBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -65,15 +73,15 @@ Partial Class Form1
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Constantia", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(185, -2)
+        Me.Label1.Location = New System.Drawing.Point(185, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(423, 39)
+        Me.Label1.Size = New System.Drawing.Size(442, 39)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ETABS/SAFE  ->  midas Gen"
+        Me.Label1.Text = "ETABS/SAFE  ->  MIDAS GEN"
         '
         'path_disp
         '
-        Me.path_disp.Location = New System.Drawing.Point(17, 69)
+        Me.path_disp.Location = New System.Drawing.Point(8, 40)
         Me.path_disp.Name = "path_disp"
         Me.path_disp.Size = New System.Drawing.Size(775, 20)
         Me.path_disp.TabIndex = 1
@@ -81,9 +89,9 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(18, 108)
+        Me.Button1.Location = New System.Drawing.Point(13, 169)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(775, 23)
+        Me.Button1.Size = New System.Drawing.Size(775, 38)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "CONVERT"
         Me.Button1.UseVisualStyleBackColor = True
@@ -94,7 +102,7 @@ Partial Class Form1
         '
         'ProgressBar_read
         '
-        Me.ProgressBar_read.Location = New System.Drawing.Point(18, 296)
+        Me.ProgressBar_read.Location = New System.Drawing.Point(13, 384)
         Me.ProgressBar_read.Name = "ProgressBar_read"
         Me.ProgressBar_read.Size = New System.Drawing.Size(770, 23)
         Me.ProgressBar_read.TabIndex = 3
@@ -104,7 +112,7 @@ Partial Class Form1
         Me.units.AutoSize = True
         Me.units.Enabled = False
         Me.units.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.units.Location = New System.Drawing.Point(36, 155)
+        Me.units.Location = New System.Drawing.Point(31, 243)
         Me.units.Name = "units"
         Me.units.Size = New System.Drawing.Size(64, 17)
         Me.units.TabIndex = 4
@@ -117,7 +125,7 @@ Partial Class Form1
         Me.points.AutoSize = True
         Me.points.Enabled = False
         Me.points.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.points.Location = New System.Drawing.Point(36, 201)
+        Me.points.Location = New System.Drawing.Point(31, 289)
         Me.points.Name = "points"
         Me.points.Size = New System.Drawing.Size(72, 17)
         Me.points.TabIndex = 5
@@ -130,7 +138,7 @@ Partial Class Form1
         Me.element_conn.AutoSize = True
         Me.element_conn.Enabled = False
         Me.element_conn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.element_conn.Location = New System.Drawing.Point(36, 224)
+        Me.element_conn.Location = New System.Drawing.Point(31, 312)
         Me.element_conn.Name = "element_conn"
         Me.element_conn.Size = New System.Drawing.Size(179, 17)
         Me.element_conn.TabIndex = 6
@@ -182,7 +190,7 @@ Partial Class Form1
         Me.story.AutoSize = True
         Me.story.Enabled = False
         Me.story.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.story.Location = New System.Drawing.Point(36, 178)
+        Me.story.Location = New System.Drawing.Point(31, 266)
         Me.story.Name = "story"
         Me.story.Size = New System.Drawing.Size(105, 17)
         Me.story.TabIndex = 10
@@ -297,7 +305,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 278)
+        Me.GroupBox1.Location = New System.Drawing.Point(2, 366)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(787, 49)
         Me.GroupBox1.TabIndex = 20
@@ -321,12 +329,36 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.sections)
         Me.GroupBox2.Controls.Add(Me.material)
         Me.GroupBox2.Controls.Add(Me.constraints)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 137)
+        Me.GroupBox2.Location = New System.Drawing.Point(1, 225)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(729, 135)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Data Read"
+        '
+        'POINT_SPRING
+        '
+        Me.POINT_SPRING.AutoSize = True
+        Me.POINT_SPRING.Enabled = False
+        Me.POINT_SPRING.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POINT_SPRING.Location = New System.Drawing.Point(402, 110)
+        Me.POINT_SPRING.Name = "POINT_SPRING"
+        Me.POINT_SPRING.Size = New System.Drawing.Size(115, 17)
+        Me.POINT_SPRING.TabIndex = 21
+        Me.POINT_SPRING.Text = "POINT SPRING"
+        Me.POINT_SPRING.UseVisualStyleBackColor = True
+        '
+        'SURFACE_SPRING
+        '
+        Me.SURFACE_SPRING.AutoSize = True
+        Me.SURFACE_SPRING.Enabled = False
+        Me.SURFACE_SPRING.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SURFACE_SPRING.Location = New System.Drawing.Point(222, 110)
+        Me.SURFACE_SPRING.Name = "SURFACE_SPRING"
+        Me.SURFACE_SPRING.Size = New System.Drawing.Size(134, 17)
+        Me.SURFACE_SPRING.TabIndex = 20
+        Me.SURFACE_SPRING.Text = "SURFACE SPRING"
+        Me.SURFACE_SPRING.UseVisualStyleBackColor = True
         '
         'point_disp_load
         '
@@ -356,7 +388,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 380)
+        Me.Label4.Location = New System.Drawing.Point(12, 502)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(333, 13)
         Me.Label4.TabIndex = 24
@@ -365,7 +397,7 @@ Partial Class Form1
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.ProgressBar_writing)
-        Me.GroupBox3.Location = New System.Drawing.Point(7, 325)
+        Me.GroupBox3.Location = New System.Drawing.Point(3, 447)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(787, 52)
         Me.GroupBox3.TabIndex = 26
@@ -381,7 +413,7 @@ Partial Class Form1
         '
         'browse_button
         '
-        Me.browse_button.Location = New System.Drawing.Point(362, 40)
+        Me.browse_button.Location = New System.Drawing.Point(361, 51)
         Me.browse_button.Name = "browse_button"
         Me.browse_button.Size = New System.Drawing.Size(94, 23)
         Me.browse_button.TabIndex = 27
@@ -390,7 +422,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(721, 380)
+        Me.Button2.Location = New System.Drawing.Point(717, 502)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 28
@@ -400,7 +432,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(741, 142)
+        Me.Button3.Location = New System.Drawing.Point(736, 230)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(52, 106)
         Me.Button3.TabIndex = 29
@@ -410,7 +442,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(119, 50)
+        Me.Label5.Location = New System.Drawing.Point(118, 61)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(200, 13)
         Me.Label5.TabIndex = 30
@@ -419,41 +451,77 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(502, 50)
+        Me.Label2.Location = New System.Drawing.Point(501, 61)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(140, 13)
         Me.Label2.TabIndex = 31
         Me.Label2.Text = "Import file  SAFE:   .f2k"
         '
-        'SURFACE_SPRING
+        'GroupBox5
         '
-        Me.SURFACE_SPRING.AutoSize = True
-        Me.SURFACE_SPRING.Enabled = False
-        Me.SURFACE_SPRING.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SURFACE_SPRING.Location = New System.Drawing.Point(222, 110)
-        Me.SURFACE_SPRING.Name = "SURFACE_SPRING"
-        Me.SURFACE_SPRING.Size = New System.Drawing.Size(134, 17)
-        Me.SURFACE_SPRING.TabIndex = 20
-        Me.SURFACE_SPRING.Text = "SURFACE SPRING"
-        Me.SURFACE_SPRING.UseVisualStyleBackColor = True
+        Me.GroupBox5.Controls.Add(Me.path_disp)
+        Me.GroupBox5.Location = New System.Drawing.Point(8, 42)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(788, 70)
+        Me.GroupBox5.TabIndex = 32
+        Me.GroupBox5.TabStop = False
         '
-        'POINT_SPRING
+        'MeshBar
         '
-        Me.POINT_SPRING.AutoSize = True
-        Me.POINT_SPRING.Enabled = False
-        Me.POINT_SPRING.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.POINT_SPRING.Location = New System.Drawing.Point(402, 110)
-        Me.POINT_SPRING.Name = "POINT_SPRING"
-        Me.POINT_SPRING.Size = New System.Drawing.Size(115, 17)
-        Me.POINT_SPRING.TabIndex = 21
-        Me.POINT_SPRING.Text = "POINT SPRING"
-        Me.POINT_SPRING.UseVisualStyleBackColor = True
+        Me.MeshBar.Location = New System.Drawing.Point(7, 118)
+        Me.MeshBar.Maximum = 35
+        Me.MeshBar.Minimum = 1
+        Me.MeshBar.Name = "MeshBar"
+        Me.MeshBar.Size = New System.Drawing.Size(791, 45)
+        Me.MeshBar.TabIndex = 0
+        Me.MeshBar.Value = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(299, 150)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(121, 13)
+        Me.Label3.TabIndex = 33
+        Me.Label3.Text = "Mesh Smooting      :"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(426, 150)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(14, 13)
+        Me.Label6.TabIndex = 33
+        Me.Label6.Text = "1"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(464, 150)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(51, 13)
+        Me.Label7.TabIndex = 33
+        Me.Label7.Text = "Percent"
+        '
+        'Process_Text
+        '
+        Me.Process_Text.AutoSize = True
+        Me.Process_Text.Location = New System.Drawing.Point(358, 431)
+        Me.Process_Text.Name = "Process_Text"
+        Me.Process_Text.Size = New System.Drawing.Size(23, 13)
+        Me.Process_Text.TabIndex = 33
+        Me.Process_Text.Text = "...."
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(807, 418)
+        Me.ClientSize = New System.Drawing.Size(807, 545)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Process_Text)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button3)
@@ -466,11 +534,11 @@ Partial Class Form1
         Me.Controls.Add(Me.points)
         Me.Controls.Add(Me.units)
         Me.Controls.Add(Me.ProgressBar_read)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.path_disp)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox5)
+        Me.Controls.Add(Me.MeshBar)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form1"
@@ -478,6 +546,9 @@ Partial Class Form1
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        CType(Me.MeshBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -516,4 +587,10 @@ Partial Class Form1
     Friend WithEvents point_disp_load As System.Windows.Forms.CheckBox
     Friend WithEvents SURFACE_SPRING As System.Windows.Forms.CheckBox
     Friend WithEvents POINT_SPRING As System.Windows.Forms.CheckBox
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents MeshBar As TrackBar
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Process_Text As System.Windows.Forms.Label
 End Class
