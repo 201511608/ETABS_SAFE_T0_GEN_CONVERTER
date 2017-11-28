@@ -1,0 +1,6 @@
+caution:
+File My_Triangle_fun.dll and My_Triangle_fun.pdb
+File Triangle.dll amd Triangle.pdb
+Must be at the loaciton "ETABs_SAFE to MIDAS-Gen CONVERTER.exe" 
+if not it dosen't works
+
