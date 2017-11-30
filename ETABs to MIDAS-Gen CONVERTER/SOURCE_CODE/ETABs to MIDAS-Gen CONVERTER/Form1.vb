@@ -3669,7 +3669,7 @@ Public Class Form1
                                 mesh.Triangulate(geometry1)
                                 mesh.Behavior.MinAngle = MeshBar.Value  '' MeshBar.Value value from Gui SliderBar
                                 ' mesh.Behavior.MaxAngle = 40
-                                mesh.Smooth()
+                                '  mesh.Smooth() ' removed creating error
                                 mesh.Refine()
 
 
